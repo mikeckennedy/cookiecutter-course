@@ -1,0 +1,4 @@
+bottle
+click
+beaker
+jinja2
