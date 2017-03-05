@@ -18,7 +18,7 @@ This course has three goals:
 
 ## Who is this course for?
 
-This course is widely applicable to developers, data scientists, and more. Anyone who wants to take advantage of the many existing templates or create their own.
+This course is widely applicable to developers, data scientists, and many more people. Anyone who wants to take advantage of the many existing templates or create their own templates.
 
 For the majority of this course, you **will not** need to know Python. Cookiecutter is built with Python but we'll teach you everything you need to setup your system with Python and run the code.
 
