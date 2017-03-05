@@ -12,9 +12,9 @@ Getting started with new projects in a reliable, easy, and reproducible way is v
 
 This course has three goals:
 
-1. Teach to you *fully* understand and leverage Cookiecutter to create and manage your projects.
-2. Provide the tools and techniques needed to create your own templates. This is especially important if you run a software project and need to bring on new developers (public or inside the corporate firewall).
-3. Show you how to contribute back to Cookiecutter. Once you begin leveraging Cookiecutter for your projects, you'll soon want to add *that one missing feature*. We'll cover everything you need in this course.
+1. Teach to you *fully understand* and leverage Cookiecutter to create and manage your projects.
+2. Provide the tools and techniques needed to *create your own templates*. This is especially important if you run a software project and need to bring on new developers (public or inside the corporate firewall).
+3. Show you how to *contribute back to Cookiecutter*. Once you begin leveraging Cookiecutter for your projects, you'll soon want to add *that one missing feature*. We'll cover everything you need in this course.
 
 ## Who is this course for?
 
