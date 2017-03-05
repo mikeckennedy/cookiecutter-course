@@ -1,7 +1,5 @@
 # Course: Using and Mastering Cookiecutter
 
-## Handout materials for our course on CookieCutter at Talk Python Training
-
 [![](https://raw.githubusercontent.com/mikeckennedy/cookiecutter-course/master/readme_resources/cookiecutter-course-sm-play.png?token=AB8PaZXF1TiEAIjUpRDZ0HqaTkl3OLz5ks5YxYYkwA%3D%3D)](https://training.talkpython.fm/courses/explore_cookiecutter_course/using-and-mastering-cookiecutter-templates-for-project-creation)
 
 [Take this course](https://training.talkpython.fm/courses/explore_cookiecutter_course/using-and-mastering-cookiecutter-templates-for-project-creation)
