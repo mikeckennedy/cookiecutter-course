@@ -1,0 +1,10 @@
+{
+    "project_name": "My project",
+    "project_slug": "{{cookiecutter.project_name.lower().strip().replace(' ', '-')}}",
+    "creator": "",
+    "created_on": "{% now 'local' %}",
+    "favorite_color": ["red","blue","green","yellow","cyan","white","black"],
+    "_extensions": [
+        "jinja2_time.TimeExtension"
+    ]
+}

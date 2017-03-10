@@ -1,0 +1,3 @@
+blue
+
+This is plain text.
