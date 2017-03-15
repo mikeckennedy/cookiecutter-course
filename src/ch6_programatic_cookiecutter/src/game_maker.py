@@ -1,7 +1,11 @@
 import os
 
 import collections
+import cookiecutter.main
 import cookiecutter.config
+import subprocess
+
+import sys
 
 GameCreateInfo = collections.namedtuple('GameCreateInfo',
                                         'project_name full_name game_type working_dir')
@@ -12,6 +16,14 @@ def main():
     create_info = gather_inputs()
     # print(create_info)
     proj_dir = build_game(create_info)
+
+    run = input(
+        "We've created {} at {}/game.py. Want to run it? [y]es, no: ".format(
+            create_info.project_name, proj_dir))
+    game_path = os.path.join(proj_dir, 'game.py')
+
+    if run == '' or run == 'y' or run == 'yes':
+        subprocess.call(['python3', game_path], stdin=sys.stdin, stdout=sys.stdout, stderr=sys.stderr, shell=False)
 
 
 def print_welcome():
@@ -44,8 +56,25 @@ def gather_inputs():
     return GameCreateInfo(package_name, full_name, game_type, working_dir)
 
 
-def build_game(create_info):
-    return ""
+def build_game(info):
+    print("Building game {} of type {}, just a moment ...".format(
+        info.project_name, info.game_type), flush=True)
+
+    working_dir = os.path.abspath(os.path.dirname(__file__))
+    template = os.path.join(working_dir, 'templates', 'cookiecutter-use-api')
+
+    proj_dir = cookiecutter.main.cookiecutter(
+        template,
+        no_input=True,
+        output_dir=info.working_dir,
+        extra_context={
+            'project_name': info.project_name,
+            'full_name': info.full_name,
+            'game_type': info.game_type
+        }
+    )
+
+    return proj_dir
 
 
 def to_package_style(text):
