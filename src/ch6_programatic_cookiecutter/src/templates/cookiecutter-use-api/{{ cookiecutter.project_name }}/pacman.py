@@ -1,0 +1,5 @@
+print("This is the pong game.")
+print()
+print("Unfortunately, I have no idea right now how to implement pacman in the terminal.")
+print("Please choose the hilo game type - you'll get an actual game!")
+print()
