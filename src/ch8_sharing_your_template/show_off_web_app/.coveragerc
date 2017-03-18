@@ -1,0 +1,3 @@
+[run]
+source = show_off_web_app
+omit = show_off_web_app/test*
