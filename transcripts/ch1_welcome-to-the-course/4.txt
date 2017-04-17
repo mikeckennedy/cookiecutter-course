@@ -1,6 +1,6 @@
 00:01 Everything you see me create during this course 
 00:04 will be available to you in this github repository 
-00:07 github.com/mikeyckennedy/cookiecutter-course.
+00:07 github.com/mikeckennedy/cookiecutter-course
 00:11 I think programming is best learned through examples, through trying it yourself, 
 00:16 so I want to make sure everything that I do in this course, 
 00:19 is saved and preserved for you. 
