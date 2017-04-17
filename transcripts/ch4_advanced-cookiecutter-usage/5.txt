@@ -1,0 +1,57 @@
+00:01 Okay so here we are in chapter 4, in the source control area. 
+00:04 Let's go ahead and try cookiecutter cookiecutter-bottle. 
+00:08 You can see it's asking various things, like these are just the defaults,
+00:11 let's see how we can change these, so what we can do is 
+00:15 we can actually create a default file 
+00:17 and the format of this file is going to be a yaml file.
+00:20 And you can put it wherever you want and then you point to it in cookiecutter, 
+00:24 but I am going to put it in that cookiecutters folder 
+00:27 because that's where I go for my cookiecutter stuff. 
+00:29 So you can call this whatever you want, it doesn't matter, 
+00:32 there is no like convention around naming, 
+00:34 so I am going to call mine defaults-kennedy.yaml, 
+00:36 we open this up and what we can put in here is a couple of things, 
+00:39 so we can start out by saying our default context 
+00:43 and then we set properties by doing colon here, 
+00:46 so we can set our full name, go and set our email here, 
+00:49 now there is no scheme or anything here, it just happens to be 
+00:53 if the template asks you for full_name it's going to look in here 
+00:58 to see if there is a value and use this instead of their default. 
+01:01 So you might have full name, you might have also full name, right, 
+01:06 you might have to enter these things several times, 
+01:08 but once we have this here, we can save this 
+01:11 and we can run the same thing with specifying the config file. 
+01:15 
+01:23 Like so, let's see what we got, oh look, what is your full name, 
+01:26 my full name is Michael, and my email is this, 
+01:29 and my github username is this, oh so refreshing. 
+01:31 And of course we probably don't have a default project name 
+01:34 or app name or things like that, or a really project description, 
+01:37 so these I don't really know how to set defaults for these 
+01:39 unless you create almost exactly the same app all the time, 
+01:42 so that's cool, so we can do this, now it would be great if I just ran it like this, 
+01:46 I don't have to say the config file, it would give me my values but clearly,
+01:49 it's not, so there is one final step for us to do, we need to go into our profile, 
+01:54 that starts our shell, and set an environment variable, 
+01:58 now if you're on Windows, you have to do this in a slightly different way, 
+02:01 you just set an environment variable under the advanced system settings. 
+02:04 Okay, but for now, let's do it on my Mac 
+02:07 and then I can show you how to do it on Windows as well.
+02:10 So we're going to manage our .profile here and notice, 
+02:13 I've got my path and my prompt but let's put it at the bottom, 
+02:16 what we want to do is we just want to put export statement 
+02:19 that says the cookiecutter config that you use is here, 
+02:24 screencaster/.cookiecutters/defaults-kennedy.yaml,
+02:29 alright, so if we go back over here, and we try to run this, 
+02:33 it's still the same, why, because we have to exit and start over. 
+02:39 Now, let's try one more time, okay, 
+02:42 so we're going to say cookiecutter-bottle, hit enter, 
+02:47 and perfect, it's now taken our defaults, so what we had to do is 
+02:52 we had to create that yaml file with our defaults, 
+02:54 and then we had to set an environment variable here 
+02:57 the name of the environment variable is COOKICUTTER_CONFIG all caps 
+03:01 and then just point at whatever the path is, so let's go ahead and roll with this, 
+03:05 enter, enter, enter, oh, that felt good, I'll call this Second Bottle App,
+03:11 let's just call it secondbottle and a demo of default values, 
+03:15 off it goes, and there we know we have our secondbottle created,
+03:20 this time, using our default values. 

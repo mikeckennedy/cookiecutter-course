@@ -1,0 +1,54 @@
+00:01 We just ran the cookiecutter-bottle template. 
+00:04 Let's look inside and see what happened. 
+00:07 From the outside, we typed in cookiecutter and we gave it the git repo, 
+00:10 it ask us a bunch of questions, we could either take the defaults or just hit enter, 
+00:14 and then, we had a project ready to go, all we had to do is cd into, 
+00:18 whatever we called our project, install the requirements and run the server, 
+00:22 just like that, we had our web application running bottle, 
+00:25 we didn't have to go and create all the files and set up the configs 
+00:28 or anything like that, so you saw we can use cookiecutter bottle 
+00:31 to get started really quickly with a bottle web app. 
+00:34 So, let's look behind the scenes. 
+00:36 When we ran the command, cookiecutter (space) git repo, 
+00:39 it ask for some inputs, it took those inputs 
+00:41 either the defaults or the ones we provided 
+00:43 and it applied those somehow to our app, first thing that happens, git clone. 
+00:48 So, cookiecutter is going to do a git clone of that repo 
+00:52 into our local .cookiecutter's hidden directory 
+00:55 now this is hidden on a Mac or on Linux, 
+00:58 on Windows it's still called .cookiecutters but the . (dot) doesn't mean hidden 
+01:01 in Windows so it just shows up in your user profile, 
+01:04 I guess that's probably unfortunate but it's not a big deal. 
+01:06 now you can see if we say ls we've got 
+01:09 cookiecutter bottle, cookiecutter template and one for Pyramid, 
+01:12 and once those are here we no longer have to use the remote address 
+01:15 we can just get them from here.
+01:17 If we happen to pass in a local template, not one on the network, 
+01:19 but just one on our file system, it wouldn't copy it here, 
+01:22 it would just run it out of that location. 
+01:24 And you see once I go into the cookiecutter-bottle, 
+01:27 my prompt changed to something recognizing it as git, 
+01:31 why- because as you saw, this is github repository, it just literally cloned it, 
+01:36 we have all the branches and everything. 
+01:38 If we do this on Windows, it's very similar, 
+01:40 but we just have a .cookiecutters folder, right, 
+01:43 but other than that, this is basically the same thing. 
+01:46 So, regardless of the operating system you have,
+01:49 you're going to take this directory, 
+01:51 you're going to feed it over to the cookiecutter engine; 
+01:53 the cookiecutter engine is going to look at a lot of things, 
+01:55 most importantly, cookiecutter.json and it's going to take our inputs, 
+01:58 really that's where the prompts come from and then take the inputs from that results, 
+02:01 feed it here and then take the directory structure plus our inputs 
+02:04 and generate our project skeleton.
+02:07 And then, you're done, you're done using cookiecutter 
+02:10 you can go now and work with your project and run it however you want. 
+02:13 If it's a Python project you can go run it with Python if it's a C++ project, 
+02:16 you open it up and compile it, whatever you want to do, it's now ready to roll. 
+02:21 We also saw that once we've installed the template because it copies it 
+02:25 and it clones it into that .cookiecutter's directory,
+02:27 we can just run it with the short name, 
+02:30 so if we say cookiecutter cookiecutter-bottle it's just going to look in
+02:33  .cookiecutters for that project and either it will find it and run it, 
+02:36 or it will just say I have no idea what this is.
+02:39 Right, but because we already ran it here, everything works like a charm. 

@@ -1,0 +1,48 @@
+00:02 Before we get into the details of how we actually use Cookiecutter
+00:06 and creating some projects, let's just take a quick survey 
+00:09 of some of what is out there. 
+00:11 So, the power of Cookiecutter is that there is all these existing templates, 
+00:15 and with just a single command line operation, 
+00:18 we can create projects that will vastly propel us forward 
+00:22 much much faster than just starting with an empty directory 
+00:25 and starting to create Python and resource files. 
+00:27 So, on the Cookiecutter read the docs page, 
+00:30 there is a thing called the pantry full of Cookiecutters. 
+00:34 And here you can browse through all the ones that are there, 
+00:37 so let's go take a quick tour. 
+00:39 So if you are just at cookiecutter.readthedocs.io you can see 
+00:42 here we have the Cookiecutter overall documentation and in this page, 
+00:45 this is like really where you should start right here, and in this page, 
+00:48 we have a pantry full of Cookiecutters, so here is a bunch, 
+00:51 and later on in this course, I will show you how to get your project, 
+00:56 your template here, but for now, let's just have a quick look. 
+00:59 So here we have Audrey's Cookiecutter package to help you get started, 
+01:03 here is one for creating a Flask project that uses Bootstrap to get started, 
+01:07 already supports user registration, so if you want to create a Flask web app 
+01:11 and you want to base it on Bootstrap and have user registration, 
+01:14 this might be really sweet place to start, here is a similar one, 
+01:17 but it actually has things like forgotten password and Heroku integration, and so on. 
+01:22 Here is one for Bottle, we'll take that one and play with that in a little bit, 
+01:25 a bunch here, so all these are Python ones and as we said, 
+01:29 Cookiecutter is not a Python thing, it works for any project, and in fact, 
+01:34 this IOS one really doesn't have any Python files, 
+01:39 but it's for this thing called Beeware, we'll talk again about that later as well. 
+01:42 So there is a Python section, Python Django, Python Pyramid,
+01:46 even some stuff for Cookiecutter metadata here, 
+01:50 so like Cookiecutters for Cookicutter templates and so on, 
+01:53 but there is also C, C#, Golang, Javascript and so on. 
+01:57 So, technically, Cookiecutetr runs on Python but it will generate any of these, right, 
+02:02 so this is a great listing here, but I am not sure how many are here
+02:07 if you flip through, I don't know, a couple of hundreds or something, 
+02:11 so let's do something else, let's go to github, 
+02:13 come over here and just type Cookiecutter, 
+02:15 now you can see there is 1321 public repositories called Cookiecutter, 
+02:21 okay, so there are many many more out there that people are not necessarily
+02:25 adding back to that pantry, like here is the Wildfish Django starter, 
+02:29 I have no idea what that is but there it is. 
+02:31 Cool, huh, so we could probably do a search here and then also limit this 
+02:35 to just Python if you are just interested in Python, 
+02:38 or if you are just working with Ruby, you could limit it to Ruby, 
+02:42 32 repositories there, and so on. 
+02:45 Okay, so that is pretty cool, let's take a look 
+02:49 at a few particular use cases out of this pantry here. 

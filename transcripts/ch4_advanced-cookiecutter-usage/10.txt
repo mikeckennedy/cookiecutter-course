@@ -1,0 +1,17 @@
+00:01 So let's look at this replay command as a concept. 
+00:05 So I want to come over here and we'll run cookicutter cookicutter-bottle 
+00:08 if we hit enter it's going to ask us a bunch of questions, right, 
+00:11 we've go to hit enter, we've got to fill this out and so on, 
+00:14 now, it would be nice if we wanted to exactly feed that 
+00:17 again and again and again, into this template. 
+00:20 Like I said, continuous integration, creating your own template, whatever, 
+00:23 so that is what this replay is all about, so now we can just say 
+00:26 --replay hit enter and boom, the same thing comes out 
+00:29 and it's exactly as if we had just entered those values before, 
+00:32 but instead, cookiecutter remembered them and played them back for us. 
+00:36 How does it work, well, if you look in your cookicutter_replay folder, 
+00:41 so that is either in your home directory on Mac OS or Linux 
+00:47 or similarly home directory in Windows, you'll see right here 
+00:50 we can pull this cookiecutter-bottle.json and here are 
+00:55 all of the values I exactly entered, so that just gets fed 
+00:58 as a dictionary directly to the template engine. 

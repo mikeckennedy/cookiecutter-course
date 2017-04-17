@@ -1,0 +1,69 @@
+00:00 Alright, let's talk about how to install the various tools,
+00:03 in Python on your operating system. 
+00:06 So there is only two tools, two resources you need
+00:08 to take this class outside the source code on the github repository. 
+00:11 One is, you're going to need Python 3, remember, 
+00:14 Python 3 does not come on OS 10, Python 2.7 does, 
+00:19 but Python 3 does not, so you've got install that, 
+00:22 as well as PyCharm, so let's go look at these.
+00:25 I pulled up the websites that we're going to be working with, 
+00:27 Python.org, this is where we get Python 3, 
+00:30 PyCharm over here in jetbrains.com,
+00:34 we're going to download PyCharm here 
+00:37 and I also pulled up the other three options Sublime text if you're interested in that, 
+00:40 Atom, you've got to watch this video, it's very funny, 
+00:43 a great little lightweight editor; we'll come over here, download this, click,
+00:46 just it defaults you to the latest of both 
+00:50 Python 2 and Python 3 for your operating system, 
+00:53 so pick this, download, save, I've already done that, 
+00:56 so let's go over here and see if I type Python, you'll get something, 
+01:01 but you'll see that Python 2.7.10 comes up, if I type Python 3, 
+01:06 there is no Python 3, so let's install Python 3 
+01:10 and make sure everything is set up good there. 
+01:14 So this is what I got off Python.org, just click through, 
+01:18 agree to whatever its going to make you agree to,  
+01:22 okay so Python is installed, let's just try a little trick again, 
+01:27 we can even do a -- version on the end, excellent, 
+01:31 so we have Python 3 installed, and it's the latest version. 
+01:34 So, that is off to a good start. next, PyCharm, 
+01:37 when you just click download it gives us a choice
+01:39 between what version do you want, 
+01:41 do you want the professional or the community edition, this is up to you, 
+01:44 I love this tool, I pay money for it, I am getting the professional, 
+01:48 the community is free, if you're wondering what the differences are 
+01:51 just come back here to the main PyCharm page 
+01:54 and you can see it will show you that actually the Python features themselves 
+01:57 there is not too much of a difference but the web development 
+02:00 and Python web frameworks and database stuff,
+02:03 that is only in the professional edition. 
+02:06 But, lucky for you, none of that is actually happening in this class 
+02:09 so you can pick either of these that you wish. 
+02:11 Once you have it downloaded, you'll have a dmg disk image here, 
+02:15 and I love their little installer here is the app, drag it over here, 
+02:18 wait a moment, and you should have PyCharm installed. 
+02:22 Now, let's finish installing, we'll eject that and we are just going to run PyCharm. 
+02:26 First time it will warn you this came off the internet, 
+02:31 be aware, yeah, we did that on purpose. 
+02:33 Make sure you get it from right place. 
+02:36 And here is PyCharm, I've already run it before, 
+02:39 but the first time you run it, it asks you for the settings,
+02:42 I like mine at this dark theme so everywhere it asks you about colors, 
+02:45 there is two places, you can say Dracula 
+02:47 if you want the same theme as me, or pick another one. 
+02:50 The other two editors are just Atom, here is Atom nice and clean,
+02:53 and Sublime text, again, super small, super clean. 
+02:57 Let me show you a technique that will be helpful for opening these projects 
+03:01 and basically work with Python projects in general. 
+03:04 So here I have request masters, I got this off of github, 
+03:07 this is the requests package and this is actually the source code 
+03:11 so here you can see here is all the Python files, this is like the project based, 
+03:14 if I want to open this in PyCharm, I just drop it on here, 
+03:17 this is a OS 10 only feature, but if I drop it like this, it will open the whole project, 
+03:21 you can see here is all the code that we need. 
+03:25 You can do a similar thing for Sublime text and you can do a similar thing for Atom. 
+03:30 So here is all the packages, same thing. 
+03:33 So that is a really helpful tip if you're jumping from project to project 
+03:36 and you want to just open up this project, 
+03:40 open up that after project, open up that before project, and so on,
+03:43 I am sure you will find it useful throughout the class. 
+03:46 Alright, that's it, this OS 10 system is ready to roll, ready to work on this class. 

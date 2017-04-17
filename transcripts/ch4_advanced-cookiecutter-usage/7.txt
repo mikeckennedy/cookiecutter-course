@@ -1,0 +1,17 @@
+00:01 Let me show you something that I ran into that seems really touchy, 
+00:05 with these default value files, we come over here 
+00:08 and we can run our cookiecutter, and it gives us our values, 
+00:11 everything looked great, and that looked super easy, right. 
+00:14 Well, let's go and make the most minor change, 
+00:17 and notice that there is a line 5 that is empty here, 
+00:20 if you are unfortunate enough to not have hit enter and then backed up one time, 
+00:24 you're going to run into something weird, 
+00:27 so let's leave it like this, right, all I did was remove that last blank line, 
+00:30 I changed nothing else about it, and now let's try this again, 
+00:33 if I hit enter, bam, unable to parse the yaml file, error, 
+00:37 none of the patterns match for github usernames, like oh what is this. 
+00:41 So apparently, I am not sure where this touchiness lies, 
+00:45 is this cookiecutter's built in yaml parser, is this actually the yaml specification, 
+00:49 I don't know, but let me just tell you, you really need a new line there, 
+00:54 so now if I do it again, everything works like a champ. 
+00:58 Okay, so super important, you have a blank line there. 

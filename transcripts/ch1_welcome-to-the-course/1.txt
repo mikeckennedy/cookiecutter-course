@@ -1,0 +1,87 @@
+00:01 Hello and welcome to Using and Mastering Cookiecutter.
+00:06 I'm really excited that you are taking this course 
+00:09 and that you are interested into looking into Cookiecutter. 
+00:12 It's a fantastic tool and it's really powerful, 
+00:15 I think you are going to learn and appreciate a lot of that power, in this course. 
+00:20 Let's begin by answering the question what is Cookiecutter? 
+00:23 Well, we can create a template, a set of files for any given project, 
+00:27 this could be a Python application, this could be an Apple application, 
+00:31 this could even just be some scientific research project template 
+00:35 that doesn't have any code at all, we're going to create this template 
+00:39 and we're going to feed it to the Cookiecutter engine.
+00:42 Now, this could be Python, it could be C++, it could be C#, 
+00:48 the language of the template is irrelevant, it's about managing files 
+00:51 and resources and creating project structure from some source template
+00:56 and asking the user a certain number of questions, 
+00:59 so things like what is your project called, 
+01:02 are you going to deploy this to the cloud, 
+01:05 what ORM are you going to use and so on. 
+01:07 So we are going to take the template and feed this information into Cookiecutter 
+01:10 and out pops a brand new shiny, ready to start project. 
+01:13 So that is what Cookiecutter is. 
+01:16 It takes templates called Cookiecutters, 
+01:19 and it generates via asking the users a couple of questions, 
+01:22 project templates for any type of app that you want to get started with. 
+01:26 Cookiecutter was created by Audrey Roy Greenfeld, back in 2013, 
+01:32 you may know Audrey from the Two Scoops of Django, 
+01:35 she and her husband Danny wrote this book and it's very well known Django book, 
+01:39 you can read Danny's announcement of the Cookiecutter project here at this url, 
+01:44 when they first launched it, it will give you a little background information 
+01:48 on what Cookiecutter is and why they created it. 
+01:51 So, when and how do you use Cookiecutter? 
+01:53 I think there is two cases, on one hand you might just be 
+01:56 a user who wants to just consume Cookiecutter templates,
+02:00 I want to create a new Django project that is set up 
+02:02 just so based on a Cookiecutter template, 
+02:05 I want to create a new Pyramid web app based on a Cookiecutter template.
+02:09 So, for these types of users, there is certain benefits, 
+02:13 first of all, you can easily create very complex and intricate projects, 
+02:17 the Cookiecutter can be set up to create the project however it needs to be done, 
+02:21 and all you have to do is answer a few basic questions, 
+02:24 and instead of worrying about what files you have to create, 
+02:27 how they are relatively located to each other, things like that, the formats, 
+02:30 you just answer a few questions and boom, you have some new app ready to roll. 
+02:34 It makes the process of creating projects very repeatable, and that is nice. 
+02:39 It also is faster onboarding for new developers, 
+02:42 so instead of teaching developers all the things you need to know 
+02:45 about the layout and structure of a project, you can just say run this command, 
+02:49 Cookiecutter (space) my template name, and boom, they are ready to go.
+02:53 On the other hand, you might want to create Cookiecutter template, 
+02:57 maybe you work at a company and you want to create 
+03:00 a Cookiecutter template for your team or your organization, 
+03:02 or you might run an open source project where you want to create 
+03:05 a template for users of that open source project. 
+03:08 So here you can possibly increase adoption of your project, 
+03:11 maybe it was something that was kind of hard to get started with, 
+03:14 and now because you have a simple template to do so, 
+03:17 it's easy, you can reduce support costs or support effort right, 
+03:22 you won't have to answer those, well, how do I get started, 
+03:24 how do I do this thing, or how do I set up that to get this thing to run, 
+03:28 your Cookiecutter template will get them beyond the initial setup steps 
+03:31 so you basically can skip a bunch of those questions and challenges. 
+03:35 You can help users fall into the pit of success, 
+03:39 by that I mean you can setup your project, so that everything is set up 
+03:43 in the best possible way before they even start to touch it, 
+03:46 and give them the guidance to get going, 
+03:48 not just creating the file structure and so on, 
+03:50 but actually asking them the right questions. 
+03:53 And as you will see in the programmatic part, 
+03:56 you can even wrap this up in a little application, 
+03:58 that makes this process of creation even nicer. 
+04:01 And, you could gain more exposure for your project, 
+04:03 if it's an open source project, you could get that project listed 
+04:06 in the Cookiecutter documentation saying here is a way to create this cool project, 
+04:10 people might look at that and go oh, I didn't know that existed, 
+04:13 let me check that out, and of course, it will be easy for them to do so, 
+04:16 because they just have to run your template. 
+04:18 Finally, if you work inside a company, this can provide
+04:21 a lot of consistency across your organization. 
+04:24 If the way all new projects that your company created is 
+04:27 by running a certain Cookiecutter template for your technology, 
+04:30 then you can be sure that there is a minimum level of consistency
+04:34 across all those projects and if you have a lot of projects, 
+04:37 a lot of developers all working in parallel, this can be super valuable 
+04:40 if you invest into these templates. 
+04:43 So, this is just some of the use cases 
+04:46 and some of the reasons that you might use Cookiecutter. 
+04:48 We'll talk about a whole bunch more as you go through this course.  

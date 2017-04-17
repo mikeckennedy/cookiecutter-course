@@ -1,0 +1,38 @@
+00:02 Let's talk about what you need to take this course, 
+00:05 what software you need set up to get going. 
+00:08 First of all, Cookiecutter is a Python application, 
+00:11 that means you are going to need Python on your system. 
+00:14 Now, depending on what operating system you're using, 
+00:17 you may or may not have Python, you may or may not have 
+00:20 the right version of Python, we're going to use Python 3 throughout this course 
+00:23 except for in one section where we actually edit Cookiecutter, 
+00:27 that is done more easily in Python 2 than it is in Python 3 
+00:31 because some of the dependencies. 
+00:34 So for the most part, unless you plan on actually editing
+00:37 and making changes to Cookiecutter itself, 
+00:39 as we do in one example just to show you how, 
+00:42 at the very end of the course, you're going to only need Python 3. 
+00:45 So you can get that at python.org and I am going to show you 
+00:48 how to install this on Windows, on Mac OS, 
+00:52 and you already have it on Ubuntu so I won't really talk too much about that part, 
+00:56 but I will show you how to install the editors for all three of those operating systems. 
+00:59 So after this video, you're going to see three separate videos, 
+01:03 one for Windows, one for Mac OS, and one for Linux. 
+01:06 Obviously, only watch the one that is relevant to the operating system you are using.
+01:11 Okay, so if you don't have Python 3, you can go to your terminal command line 
+01:14 and type Python (space) - V and see what comes out, 
+01:18 or Python 3 (space) - V and see what comes out; 
+01:22 if you don't have Python 3, you should go install it as outlined in the next video. 
+01:26 We're also going to need a solid Python enabled editor. 
+01:30 Now, much of this course you don't really need much of an editor at all, 
+01:34 you don't need to know anything about Python, 
+01:37 but there are few sections where we do 
+01:40 the programmatic API consumption of Cookiecutter, 
+01:43 and where we modify Cookiecutter, those two parts, 
+01:46 you're going to need a nice Python editor, I recommend PyCharm, 
+01:49 I'll show you how t get it and install it, if you want to use something else, 
+01:52 Visual Studio Code with the Python plugin, Sublime text, whatever, 
+01:56 you can use anything you want, but I'll show you 
+01:59 how to install the free community version of PyCharm, 
+02:01 and that is what I'll be using throughout this course, 
+02:03 for the demos that involve writing lots of Python.

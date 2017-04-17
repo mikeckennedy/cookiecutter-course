@@ -1,0 +1,36 @@
+00:01 Before we start working with Cookiecutter, let's talk about its philosophy,
+00:05 I think you'll appreciate the design and the thought that went into this tool, 
+00:09 first, its command line interface focused. 
+00:13 So it provides a command line utility for creating project from Cookiecutters, 
+00:16 it's extremely easy to use and get started with, 
+00:19 and you won't have to think too hard about the default behavior of it. 
+00:22 But it is flexible for more complex use cases, via optional arguments. 
+00:27 It's API accessible. It's entirely function based and stateless, 
+00:31 and it's usable in pieces for developers of other template generation tools, 
+00:37 so if you understand Cookiecutter, you can build tools that create projects yourself 
+00:41 that somehow leverage Cookiecutter itself 
+00:44 so you don't have to do that sort of core file directory text management. 
+00:48 It's Jinja 2 specific, so if you are familiar with Jinja 2 already, 
+00:53 then you'll be able to work with it and the parts of Jinja 2 that you use 
+00:58 are honestly quite simple so even if you don't know Jinja 2 
+01:01 it's still pretty easy to get started with. 
+01:04 Cookiecutter is extensible, you can give it Jinja 2 based extensions 
+01:09 as well as integrated with other Jinja 2 based project template tools, 
+01:12 it's open source, you have the freedom for Cookiecutter users
+01:16 to build and extend, there is no officially maintained Cookiecutter templates, 
+01:20 there is not like a packaging authority for Cookiecutetrs, 
+01:24 you just put them up there on the internet as some accessible thing 
+01:28 like a github repository and Cookiecutter can directly access and use those. 
+01:32 And Cookiecutter itself is friendly to commercial projects, 
+01:35 it has licensing that allows for private Cookiecutters 
+01:38 and even private Cookiecutter based tools. 
+01:41 So feel free to use this in your commercial application. 
+01:44 Finally, it's fast and focused, it's meant to just do one thing, 
+01:47 take a template and transform it into a ready to run project. 
+01:51 And you can generate these projects from the command line 
+01:55 or from the API and that's it, and it's ultra fast, 
+01:58 so if you want to leverage this in some kind of 
+02:01 high performance or performance critical tooling, 
+02:04 you should be fine with Cookiecutter, it's not slow at all. 
+02:08 If you want to learn more about this, 
+02:10 just check out the core committer guide here at this url. 

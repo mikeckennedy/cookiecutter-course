@@ -1,0 +1,85 @@
+00:02 The course is broken into three major sections. 
+00:05 It's going to start out with just what it takes to consume Cookiecutter.
+00:09 You know, if I am somebody and I see a Cookiecutter template out there 
+00:12 and I want to create a project on it, how do I do that, 
+00:15 what are the intricacies, and sort of advanced features there. 
+00:18 If I am like a project lead, or I run some kind of software development team, 
+00:22 or maybe I own an open source project, there is a different set of things 
+00:27 that I might care about around creating templates, and so on, 
+00:30 and if I want to contribute back to Cookiecutter, make it better, 
+00:33 make it match my workflow better, there is some edge care 
+00:37 that I need to bring in as a feature, we'll talk about how to do that. 
+00:40 So in the consuming Cookiecutter part, 
+00:42 we're going to talk about what you need to just run 
+00:45 and use Cookiecutter as a program, we're going to install Cookiecutter, 
+00:48 we're going to learn and talk about the command line interface for Cookicutter,
+00:53 we're going to survey the pantry full of cookies, 
+00:57 which is the official set of Cookiecutter templates 
+00:59 listed in the Cookiecutter documentation, there are many more 
+01:02 that people didn't bother to get back into the listing, 
+01:05 but there is quite a few interesting ones there 
+01:08 and you will understand the power of Cookiecutter as you go through them. 
+01:11 We'll talk about local versus remote templates, do you need internet connection, 
+01:15 how do these two things connect, we'll about profile defaults
+01:19 Cokiecutter ask you lots of questions, what's your name, 
+01:23 what's your email address, things like that, all the time, 
+01:26 and we'll see that you don't always have to answer those,
+01:28 you can set up defaults for them, how to use Cookiecutter 
+01:30 within virtual environments, replaying project creation 
+01:33 as in answering the exact questions, the exact same way 
+01:36 over and over again, in a reliable way, and things like that. 
+01:39 Now, if you're a project lead, you might want to create Cookiecutter templates 
+01:45 for your project, for your company or for your team, 
+01:48 and so we're going to talk about how do we create Cookiecutter templates, 
+01:51 what are the basics, we'll see that there is a Cookiecutter json file 
+01:55 and there is a certain project structure, that we use, 
+01:58 and that will form the template, we'll see how you can prompt he user, 
+02:02 there is a lot of choices on user input
+02:04 and what the types of questions you can ask are, 
+02:07 and we'll see that there is this concept of choice prompts 
+02:11 so if I want to ask the user hey, pick a web framework template for this, 
+02:16 do you want Jinja, do you want Chameleon, do you want Mako, 
+02:19 you can give them a list like that, and we also see
+02:22 that you can have complex default values, one of the real powerful things 
+02:26 about Cookicutter are its pre and post generation hooks, 
+02:30 this is arbitrary Python code that you write and ship with your template and it runs, 
+02:35 either right before the files are created and transformed, 
+02:38 but after the information has been gathered from the users, or entirely afterwards. 
+02:43 As in the case of the post generation hook. 
+02:46 We'll see that you might want to exclude certain files from transforms 
+02:49 if you want to ship a Cookiecutter template as part of your 
+02:52 Cookiecutter template that turns out to be a problem, 
+02:55 so we'll see how to solve that problem, how you can conditionally include 
+02:58 files and directories or maybe exclude them, 
+03:00 so in my case of the web template framework, 
+03:03 if you choose Mako you don't want to include the Jinja or the Chameleon templates 
+03:06 so you might want to exclude them here. 
+03:09 We'll do a little bit of a case study for various existing project templates, 
+03:13 some of the popular open source projects and companies 
+03:16 and how they are using Cookiecutter, 
+03:19 and finally, once we've learned about how to create these templates, 
+03:22 we'll see how you can get your template listed in the official documentation
+03:26 for people to discover your project. 
+03:29 Last but not least, as somebody who is creating Cookiecutter templates, 
+03:32 you may well want to use the programmatic interface, 
+03:35 not the command line interface to Cookiecutter. 
+03:38 So if you want to give your users an application 
+03:42 that they can run that will create projects, 
+03:44 you can internally invisibly wrap up Cookiecutter in this application,
+03:48 and you use whatever UI you want command line interface, 
+03:52 GUI, web app, it doesn't really matter, you can gather
+03:56 a bunch of information from the users and programmatically use Cookiecutter 
+03:59 to actually do the project's creation. 
+04:02 Now finally, as a contributor, we're going to see 
+04:04 how you can check out and build Cookiecutter locally, 
+04:07 how you locally register it as a package so that Python knows 
+04:11 how to find the source and then you can test it and things like that, 
+04:14 we'll talk a bit about the contributor guidelines, 
+04:16 we'll actually go through the process of adding a feature 
+04:19 or in this case really we're going to add a bug fix 
+04:22 but we're going to modify Cookiecutter and push that back
+04:24 to the open source project, so hopefully, by the time this course is done,
+04:27 there should be a feature that wasn't there at the beginning, 
+04:30 because we're going to do that as part of our demo. 
+04:33 Alright, so this is what we're going to learn about Cookiecutter
+04:36 so super cool project, there is a lot to cover and I hope you're excited to get started. 

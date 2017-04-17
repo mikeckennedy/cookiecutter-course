@@ -1,0 +1,49 @@
+00:01 So let's look at the examples. 
+00:03 Here the first one I want to talk about is Pyramid, 
+00:05 so Pyramid is web framework in Python, and it will create a variety of starter, 
+00:10 what are called scaffolds, basically all the starter code 
+00:13 along with associated css, Javascript, image files,
+00:16 and everything that you need to run this project.
+00:19 The way that you create these scaffolds has always been to run 
+00:22 a built in program when you install Pyramid called pcreate,
+00:26 so a little bit like the manage py in Django. 
+00:28 Now, in the most recent version of Pyramid 1.8.1 maybe 1.8.0, anyway, 
+00:34 very recently, they just switched to deprecate their own built in scaffold generator 
+00:39 and the recommended way to create new Pyramid projects going forward 
+00:42 is to actually use Cookiecutter, so one of them is pyramid-cookiecutter-starter 
+00:47 and that is basically the most plain and simple Pyramid web app, 
+00:51 they have other ones based on SQLAlchemy and things like that. 
+00:54 So this started project is in that pantry full of Cookiecutters, what's next? 
+00:57 Reproducible science, so check this out, look how cool this is, 
+01:01 so there is a Cookiecutter calledcookiecutter-reproducible-science, 
+01:05 and the idea is to have a very well known agreed upon structure, 
+01:10 for how you submit reports so if you are going to do some kind of research 
+01:13 that has computation behind it, then you will want to create one of these 
+01:18 and use this structure so that other people can go in and find your code and run it, 
+01:22 so here you can see they have things like the data that comes in, 
+01:25 the internal, the process, the raw data, the external data, the docs, 
+01:30 the notebooks, the reports, reports are like your papers, things like that, 
+01:34 as well as the source code that you might have used to generate these papers, 
+01:38 so how cool is that, if you're a scientist or some kind of academic 
+01:41 this is a really cool thing to get started with. 
+01:43 Now, how is that for a blast from the past, Atari 2600, 
+01:46 anybody want to play some pitfall- I remember playing this when I was a kid, 
+01:50 I loved this game, and in fact, I am sure there are still Atari 2600s out there, 
+01:55 but more importantly, there is probably emulators that you can get and run, 
+01:58 so you can go and get cookiecutter-atari2600 and that will give you 
+02:02 the assembler code that then you compile and can run on your Atari emulator, 
+02:07 so if you are feeling nostalgic, you want to ride an old school computer game 
+02:10 the hard way, with assembly code, here, give it a shot. 
+02:14 Finally, let's look at the meta template, so the Cookiecutter as Cookiecutter, 
+02:18 here is a really nice Cookiecutter called cookiecutter-template 
+02:22 and we're going to come back and look at this a number of times over, 
+02:26 the idea is if  I want to create a Cookiecutter project myself, 
+02:30 I want to create a Cookiecutter template myself, 
+02:32 I can use Cookiecutter on this thing 
+02:35 and it will generate the exact project structure
+02:38 recommended for creating a Cookiecutter template, 
+02:41 so there is a lot of cool things going on here we're going to study it 
+02:45 when we get into building your own templates, but for now, 
+02:48 just know if you want to get started with different things like Atari, 
+02:51 with data science, or even with creating your own Cookiecutter template, 
+02:54 there is a Cookiecutter template for it. 

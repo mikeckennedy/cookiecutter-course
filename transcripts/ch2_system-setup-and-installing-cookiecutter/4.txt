@@ -1,0 +1,84 @@
+00:01 Hello my Linux friends. Let's talk about what you've got to set up 
+00:04 on your machine to do this class, in the same way that I am at least. 
+00:08 You'll see that you actually already have Python and Python 3 
+00:11 installed in Linux if you're using something like Ubuntu, 
+00:15 so that's pretty awesome, I'll show you where to go
+00:17 to get it if you don't happen to have it. 
+00:20 And, I'll show you how to install PyCharm, it works wonderfully on Linux
+00:23 but it's a little bit of a pain to set up so I'll walk you through that. 
+00:27 So, here we are over in Ubuntu 15, brand new fresh version 
+00:32 I literally just downloaded it, and we're on the PyCharm page, 
+00:36 so we can go and download PyCharm, 
+00:39 you'll see there is actually two versions,
+00:41 there is a professional and a community edition, 
+00:44 we're going to download the professional edition, 
+00:46 you can get a 30 day free trial and if you pay for it like I do, 
+00:49 then obviously you could have it forever. 
+00:52 The main difference between the community and professional edition, 
+00:55 the community edition is always free, is the community edition does 
+00:58 a whole bunch of cool Python stuff, but doesn't do web or database work, 
+01:02 the professional edition does in addition to standard Python things, 
+01:05 web frameworks, typescript, database, designer type things. 
+01:10 So for this course, you can totally get by with community 
+01:13 but for professional work, well, maybe a professional is the thing to go with. 
+01:17 Some of the other editors you might choose, 
+01:20 if for some reason you don't want to use PyCharm, is you could use Atom, 
+01:24 this is a really great editor from github, I really like it, 
+01:27 and the video is hilarious so check out the video just for a laugh. 
+01:30 Sublime text is very popular and of course you can use Emacs or Vim 
+01:34 that a lot of people are using. 
+01:36 As I said, Ubuntu comes with Python 2 and 3 but for some reason 
+01:39 if you need to download it, just come over here, 
+01:41 Python.org, grab the latest version,
+01:44 it will automatically find the right thing for your operating system, 
+01:47 you could also install it with aptitude, you can do things like 
+01:50 apt-get install Python 3- dev, there is a couple of packages that you can install.
+01:55 So first, let's verify that I actually do have Python installed, Python 3, 
+01:59 so I can come over here and say Python 3-- version and we have 3.4.3 plus, 
+02:05 which makes it even better than 3.4.3, awesome, 
+02:08 and then we have PyCharm, we're going to go download it now, 
+02:12 it's kind of big so I actually already downloaded it, 
+02:15 go over here to my downloads folder, and we have the tarball right here, 
+02:18 so we need to decompress this and copy it somewhere else,
+02:22 so I come over here, right click and say extract here,
+02:25 and it will extract it out, now it has the version name here, let's find, 
+02:30 let's make a new location and let's just put it in my home 
+02:34 I like to create a folder called bin in my home and then in here
+02:38 I'll make a folder called PyCharm and within PyCharm I'll put PyCharm 5.0.4. 
+02:43 Now if you open it up you see there is nothing to run right away 
+02:47 but there is a bin folder within there and what we want to do is 
+02:51 we want to run this script, so I could double click it 
+02:54 and it will just open in gedit, not the best, 
+02:56 so I am going to come over here and just drop it, into my terminal, and run it. 
+03:01 Now, it turns out there is a problem, PyCharm is built on the IntelliJ platform, 
+03:06 the Ide platform, and that platform is Java based, 
+03:10 so we need to install Java before we can carry on. 
+03:13 So on Ubuntu, we'll just use apt get so we'll say sudo 
+03:18 for running super user, apt-get install open-gdk-8. 
+03:22 And I'll put in my password, I'll wait for a moment, 
+03:26 it says are you sure you want to do this, it might take a moment, 171 MB it's fine, go. 
+03:32 
+03:37 Excellent, well, that took a minute, but now we have Java installed, 
+03:41 let's try to run that again, PyCharm shell, now it's running, 
+03:46 you can see it says do you want to import previous versions, 
+03:48 well no, this is a brand new machine so no, not really. 
+03:51 Now normally I would just login with my Jetbrains account but for now, 
+03:54 I'll just evaluate it for free, which you guys should be able to do for this class. 
+03:58 
+04:01 When PyCharm first opens, it asks us what keyboard map 
+04:05 and Visual Theme we would like, I am going to leave the keyboard map alone, 
+04:09 but I like my code, my ides and Windows and stuff to be dark, not bright, 
+04:16 so dark background, light code, 
+04:19 so I am going to pick the Dracula theme for both, 
+04:22 the code colors as well as ide theme and we'll say ok, 
+04:26 and you can't make this change unless you restart so yes, let's let it restart. 
+04:33 Excellent, my PyCharm is running, it's nice and dark with its Dracula theme 
+04:36 now the one other thing I'd like to do is notice it's over here, 
+04:40 and I'd kind of like to not be running this shell script anymore, 
+04:44 straight from the terminal, so let's run it one more time, 
+04:47 notice it's gone from the launcher. 
+04:49 Now, it's up and running, I can lock it to the launcher, 
+04:52 and now this way, when it's gone, I want to launch it again, 
+04:56 I can just come over here and launch it straight out of the launcher. 
+04:59 Congratulations, you have PyCharm working on Ubuntu. 
+05:02 Time to head on over and build your first app, and have a great time doing it. 

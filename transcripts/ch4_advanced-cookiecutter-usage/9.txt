@@ -1,0 +1,41 @@
+00:01 Now sometimes when you're working, 
+00:03 you want to replay exactly what you just entered, 
+00:07 this is common if you're doing sort of template generation, 
+00:11 like if you're building a template for your own project, 
+00:13 or maybe even from continuous integration, so let's go over here 
+00:16 and just look really quick at this, notice that it's the bottle, 
+00:20 the cookiecutter for creating bottle, blah, blah, blah, right, 
+00:23 so this was passed to this template, right, the name of here and all sorts of stuff, 
+00:29 my name and so on, so let's erase this, and do one more time, 
+00:32 we're going to create it just as before, but instead of doing any of this stuff,
+00:37 we're going to say --replay, hit enter, and boom, done, 
+00:43 if we go back over here, we now have the Bottle, if we look at this, 
+00:49 we can see The Bottle like that 
+00:54 and we have the_bottle typed like this. 
+00:56 Those are exactly the values that we passed in, so what you can do 
+00:59 is that you can run a template and it may have some interesting questions 
+01:03 it was going to ask you, and we can just say --replay 
+01:06 and it's going to store that somewhere. 
+01:09 The question is where is this stored, well, if we look here, 
+01:14 we now have two cookiecutters we have a cookiecutter and a cookiecutter replay,
+01:19 we look in there, there is a cookiecutter bottle.json, 
+01:23 alright, so let's just look and see what's in there. 
+01:26 And notice, we have cookiecutter full name is Michael Kennedy, 
+01:30 those three came from our defaults, 
+01:33 I mean, we entered them into the system, but those came from the defaults. 
+01:37 This one and that one we passed on the command line 
+01:41 and this one was just the default out of the template 
+01:44 and so it's stored with the final results set of all the values passed to the template 
+01:48 before it ran it, in this file, right, so you can on a per template type bases
+01:54 always do cookiecutter, cookiecutter the thing--replay 
+01:58 and it's going to do that same this, so for example,
+02:01 on some sort of continuous integration thing,
+02:04 you could run this once and then it will store this value 
+02:06 or technically you could little adjust create this file, 
+02:10 and put it in the right place and then those values will be used 
+02:12 regardless of what gets put in the template.
+02:15 This is also super useful if you're developing your own template, 
+02:18 you want to type in something under certain circumstances, 
+02:21 see what is generated, oh it didn't come out right, go make it edit, 
+02:24 rerun it --replay, make an edit, rerun it --replay, you'll get the hang of it. 
+ 
