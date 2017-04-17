@@ -1,4 +1,4 @@
-00:01 Hello and welcome to Using and Mastering Cookiecutter.
+00:01 Hello and welcome to "Using and Mastering Cookiecutter".
 00:06 I'm really excited that you are taking this course 
 00:09 and that you are interested into looking into Cookiecutter. 
 00:12 It's a fantastic tool and it's really powerful, 
