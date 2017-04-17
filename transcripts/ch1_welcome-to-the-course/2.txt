@@ -33,7 +33,7 @@
 01:48 and so we're going to talk about how do we create Cookiecutter templates, 
 01:51 what are the basics, we'll see that there is a Cookiecutter json file 
 01:55 and there is a certain project structure, that we use, 
-01:58 and that will form the template, we'll see how you can prompt he user, 
+01:58 and that will form the template, we'll see how you can prompt the user, 
 02:02 there is a lot of choices on user input
 02:04 and what the types of questions you can ask are, 
 02:07 and we'll see that there is this concept of choice prompts 
