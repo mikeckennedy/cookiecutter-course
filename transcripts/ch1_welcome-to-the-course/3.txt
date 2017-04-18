@@ -10,17 +10,17 @@
 00:37 so if you understand Cookiecutter, you can build tools that create projects yourself 
 00:41 that somehow leverage Cookiecutter itself 
 00:44 so you don't have to do that sort of core file directory text management. 
-00:48 It's Jinja 2 specific, so if you are familiar with Jinja 2 already, 
-00:53 then you'll be able to work with it and the parts of Jinja 2 that you use 
-00:58 are honestly quite simple so even if you don't know Jinja 2 
+00:48 It's Jinja2 specific, so if you are familiar with Jinja2 already, 
+00:53 then you'll be able to work with it and the parts of Jinja2 that you use 
+00:58 are honestly quite simple so even if you don't know Jinja2 
 01:01 it's still pretty easy to get started with. 
-01:04 Cookiecutter is extensible, you can give it Jinja 2 based extensions 
-01:09 as well as integrated with other Jinja 2 based project template tools, 
+01:04 Cookiecutter is extensible, you can give it Jinja2 based extensions 
+01:09 as well as integrated with other Jinja2 based project template tools, 
 01:12 it's open source, you have the freedom for Cookiecutter users
 01:16 to build and extend, there is no officially maintained Cookiecutter templates, 
 01:20 there is not like a packaging authority for Cookiecutetrs, 
 01:24 you just put them up there on the internet as some accessible thing 
-01:28 like a github repository and Cookiecutter can directly access and use those. 
+01:28 like a GitHub repository and Cookiecutter can directly access and use those. 
 01:32 And Cookiecutter itself is friendly to commercial projects, 
 01:35 it has licensing that allows for private Cookiecutters 
 01:38 and even private Cookiecutter based tools. 
