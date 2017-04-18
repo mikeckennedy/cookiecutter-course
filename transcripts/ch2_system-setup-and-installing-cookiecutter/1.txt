@@ -20,8 +20,8 @@
 01:03 one for Windows, one for Mac OS, and one for Linux. 
 01:06 Obviously, only watch the one that is relevant to the operating system you are using.
 01:11 Okay, so if you don't have Python 3, you can go to your terminal command line 
-01:14 and type Python (space) - V and see what comes out, 
-01:18 or Python 3 (space) - V and see what comes out; 
+01:14 and type python -V and see what comes out, 
+01:18 or python3 -V and see what comes out; 
 01:22 if you don't have Python 3, you should go install it as outlined in the next video. 
 01:26 We're also going to need a solid Python enabled editor. 
 01:30 Now, much of this course you don't really need much of an editor at all, 
