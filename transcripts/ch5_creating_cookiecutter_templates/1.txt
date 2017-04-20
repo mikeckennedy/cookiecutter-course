@@ -1,0 +1,78 @@
+00:01 Now we've come to the really critical part of this course- creating templates. 
+00:06 While it's great to use and understand cookiecutter as a consumer, 
+00:10 the real power is taking the concept of cookiecutter templates 
+00:13 and applying them to your projects, your teams, your companies and so on.
+00:18 So, let's go through some of the reasons why we might want to create a template. 
+00:21 Well, first of all, they often can decrease frictions on projects that you use, 
+00:26 so imagine you have some project and it requires some setup, 
+00:30 certain number of files in certain place, folder structure and so on, 
+00:33 and if this does not have some kind of scaffolding tool already, 
+00:37 then a cookiecutter template would be awesome for you to add, 
+00:41 so even if you don't own that project, maybe creating a cookiecutter 
+00:44 that will generate it just the way you lie it is a good idea, and who knows, 
+00:48 you could submit that as a pull request back to the original team 
+00:51 and maybe they will take that and that could become the official way 
+00:55 to create your favorite project, so that is a really cool thing, 
+00:58 and we all use different projects so why not, right, this applies to everyone. 
+01:01 You can empower your team and make it easier to onboard new developers, 
+01:05 so what do I mean by that? 
+01:08 Well, suppose again, there is a certain way as a team 
+01:11 you have agreed upon any project of your language should look, 
+01:15 it should always have this folder structure, it should always have these files, 
+01:18 it should always have this readme, and some sort of startup script and so on, 
+01:21 so you can make it easier for all new projects to come out that way 
+01:25 and if you have a cookiecutter that always does that 
+01:28 when somebody new comes on the team just go this 
+01:30 for no matter what project you are working on,
+01:32 this is how it's going to look, this is why it works that way. 
+01:35 In the similar way you can start farther down the road 
+01:38 for what I am calling integrated projects, now for this 
+01:41 imagine you're working at a big company, and big could be 5, 10, 20, developers, 
+01:45 it doesn't have to be huge, but a team of developers 
+01:48 where you are all building on projects and you are all integrating 
+01:51 with the same subsystems over and over and over; 
+01:54 here is how we send outbound email, from any app that we use, 
+01:57 here is how we set up continuous integration, 
+02:00 here is how we integrate with runtime error monitoring, 
+02:02 things like Rollbar or New Rellic, things like that, 
+02:05 so if you've got a bunch of these things, 
+02:08 and every time you create a new project you need to install Rollbar 
+02:11 and setup the keys and the config files, you need to create the right thing 
+02:14 in the requirements and you need to set up this mail system 
+02:17 and you need to install say like some package that handles the mail for you, 
+02:20 and so on and so on, like the more of these things 
+02:23 that you commonly use within your company, 
+02:25 the more excellent it would be to start with the template that already integrates 
+02:29 all those things, you push a button and zzzip, it all comes our pre integrated, 
+02:34 so like by the time you start opening your project, the first file in an editor, 
+02:38 it's already got the email integrated, the way it works within your data center, 
+02:42 it's already got error monitoring, integrated with your keys, it just is ready to go. 
+02:46 So this is a super valuable way if you work inside a company, 
+02:50 you want to make that company more consistent, 
+02:53 make sure things that would be like well do we really need to add error monitoring 
+02:57 and like do we need to put that effort in and if that's just like a button press,
+03:00 that's just part of project creation then of course you put error monitoring, why not. 
+03:04 If you work on the other side of the story here, on an open source, 
+03:08 not within a company that is like very structured, 
+03:11 but you've got some open source project that has some setup basically in my mind, 
+03:16 if your open source project has more than two lines, 
+03:19 on how to get started it could use a cookiecutter template; 
+03:23 here is how I think it should go. 
+03:25 Pip install or somehow install, right, if it's Python pip, if it's Javascript npm, 
+03:28 install your project library, run your cookiecutter, 
+03:33 okay, maybe the other order, depending on how you want to do it, right, 
+03:36 maybe the cookicutter could be on github and it could generate 
+03:39 the some kind of requirement listing and then you install it there, 
+03:42 either way there should basically be two steps, 
+03:45 if you have a whole bunch of steps in an open source project, 
+03:47 there is a lot of people that will come along, they will try to get started 
+03:50 and go oh this is too complicated, I am out of here, right, so you can bundle up
+03:53 the best practices for getting started with your open source project, 
+03:55 as a cookicuter template. That's excellent. 
+03:57 And, this can regardless of whether you're inside of a company, 
+04:01 or you're in an open source project, this can lower the support overhead,
+04:04 all that startup stuff, all that initial integration that can just go away 
+04:08 because the template does it, you start beyond that place 
+04:11 when you create that project and start from there, rather than saying okay,
+04:14 here we go, create this directory, put these files here and so on, and so on, 
+04:18 right, so it can lower the support overhead across the board. 

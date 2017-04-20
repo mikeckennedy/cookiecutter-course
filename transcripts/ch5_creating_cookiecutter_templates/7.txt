@@ -1,0 +1,31 @@
+00:01 Blank defaults make a lot of sense, 
+00:03 sometimes you just don't want to have a value unless they type it in, 
+00:06 like you have no idea what the default could be, 
+00:09 or maybe you want to have a blank one and indicate you must enter this, 
+00:12 there is no choice but to type here something 
+00:14 that makes sense for your project. 
+00:17 So let's look at an example. 
+00:19 We come here and we run this cookiecutter template, 
+00:22 maybe it's going to come along and ask your name and your favorite color, 
+00:25 alright, well how do we make this like a required value. 
+00:28 Well, if we just wanted blank with no defaults, 
+00:31 and it's going to be empty unless they put something in,
+00:34 this is fine, all we have to do is have our json file have empty value 
+00:38 and you have an empty non default, but what it really means is 
+00:42 the default is an empty string, so it still could go a little bit wrong. 
+00:46 We saw that we tried to have some sort of keyword here 
+00:50 like hey let's try required and of course, we put required over there, 
+00:53 but that doesn't really do anything, so we saw that it will just use required. 
+00:56 What is required to make this keyword work or something like that is 
+01:00 writing a little bit of Python code in what is called a pre generation hook, 
+01:05 we're going to talk about hooks at the end of this chapter, 
+01:08 but a pre generation hook is code that runs after the data is collected here, 
+01:12 but before it actually executes the process that creates the directories, 
+01:17 copies the files, does the replacement, and you'll get a look 
+01:19 at what is called the context, and this context is all the values, 
+01:22 the keys and the values, basically listed in cookiecutter json, 
+01:26 so we could say if the value favorite color is still required, 
+01:29 or if it doesn't seem like some kind of color we could say no, no, 
+01:33 we're not going to run, we're going to cancel this, 
+01:36 tell you you need to enter a favorite color, 
+01:38 it's not amazing, but that's what it is. 

@@ -1,0 +1,101 @@
+00:01 It's time to work on the final finish product by creating a post generation hook. 
+00:05 So these are very useful, and one of the key reasons we might create 
+00:09 a post generation hook would be to display instructions about getting started. 
+00:14 So once your project is created, you might want to say hey user, 
+00:17 thanks for creating my project, here is the next steps you have to take 
+00:20 maybe you have to pip install the requirements, 
+00:23 or you've got to setup your system this way, or bunches of things. 
+00:26 So we can so a little nice message right at the end by using a post generation hook. 
+00:30 One of the things that is very common in these templates, 
+00:33 but is not built in to cookiecutter at the time of this recording, 
+00:36 is the ability to include or exclude files and directories conditionally. 
+00:41 So, we can write a little bit of code to do that, and I've changed our project, 
+00:45 just a tiny bit to set this up before us, so over here notice there is this folder 
+00:49 called color_files and it has a blue_file a green_file and a yellow_file. 
+00:54 If we look at the cookieuctter.json, I trimmed this down just for sanity sake, 
+00:58 so we have blue, green and yellow, 
+01:01 these three you can all create projects of that type, 
+01:03 remember our pre generation hook already will not allow you 
+01:06 to create a black one, because we were just playing around with that idea. 
+01:09 So we have these three realistic options for a color.
+01:12 Now, when you choose a color, what we want to do is only include the blue file, 
+01:16 which simply says this is the file that appears only in blue projects, 
+01:20 when you choose blue. If you choose green, we want to have only green, 
+01:23 we want to get rid of blue and yellow, if you choose green. Okay.
+01:26 We could take this in a much more advanced direction but I think if you see this,
+01:31 this will be enough for you to sort of bring this concept of conditionally 
+01:36 including files, directories and various things in your own projects. 
+01:40 So, how do we do that, we don't need any of these, let's work on this file one first, 
+01:46 and then we'll come back with the instructions second. 
+01:50 So, let's go here and let's go and set this up to have this main convention here 
+01:54 we'll go up here, we'll write at the top, I like to put this right at the top, 
+01:59 have the function that orchestrates what we're going to do. 
+02:02 So the first thing we're going to do is we're going to remove unused project files, 
+02:06 let's say, so that is going to go here and then we are also going to display 
+02:11 getting started instructions, so we're going to fill that out here in a minute. 
+02:18 Okay, so how are we going to remove our files, 
+02:21 let's try one more little helper function called delete_files, 
+02:24 this will be file_list, and this will be a working_dir.
+02:30 Okay so we're going to need to use an OS module in Python, 
+02:35 so we are going to import OS and let's just go down here and say 
+02:38 for file in file_list: full_file=os.path.join, we want to take the working directory 
+02:45 and in a platform independent way combine it with this file. 
+02:49 So this is going to be the file and then we're going to test whether it exists, 
+02:52 so we'll say if os.path.exists(full_file):, we're going to say os.remove(full_file). 
+02:58 So, we were given a set of files and if they exist, we want to delete them 
+03:04 so up here we are going to choose which ones do we send to this function, 
+03:07 which ones do we actually want to delete based on some sort of input. 
+03:11 Let's go ahead and also here say else print warning 
+03:15 could not find file to remove or something. 
+03:19 And we'll just print out the full file here. Hopefully, if we do things right, 
+03:22 we'll never ever see that warning, but just in case. 
+03:24 Now what we need to do is figure out the favorite color. 
+03:27 And as long as we spell this correctly, this will be cookiecutter.that.
+03:34 Like so, alright, so that is going to be the color, 
+03:38 and then we just need to test is it blue, green or yellow, 
+03:41 and first of all, let's get the working directory that is going to be the same, 
+03:43 so we'll say os.path.absolute path, and then we'll say os.path.current directory.
+03:50 So, when our hook executes, it's going to execute in the context 
+03:54 in the current directory, it's going to be where that template is, 
+04:00 where the files were created, okay. 
+04:03 Then we'll say like this, file list is empty, we'll say if favorite color is yellow, 
+04:09 say file list is going to be and we'll just put blue_file and yellow_file. 
+04:15 Sorry green_file, okay, we got blue_file.txt and green_file.txt, 
+04:21 now there is a bit of a problem in that, 
+04:23 this current directory here is actually this directory, 
+04:27 and we need to get into the colors file, so we could do one more step,
+04:31 if we know we're only working in the colors file folder, we'll just do like this. 
+04:35 Join that directory, with color files. 
+04:40 And then we can just say the short names here. 
+04:44 And let's just keep going, and finally in all of these we just say delete files, 
+04:49 we give it the file list and the working directory. 
+04:53 Okay, if everything is working correctly, 
+05:00 we should be able to delete these files, 
+05:03 okay, now what we're going to do is we want to create a few projects 
+05:06 and we should see if we choose blue, we'll only have that left, if we choose yellow, 
+05:10 we'll only have this, and so on. 
+05:12 Alright, let's go give this a shot. 
+05:14 So we're going to run cookiecutter cookiecutter-colors I am in the directory 
+05:18 that has the template that is why I can say it this way, it says my project, 
+05:21 this will be green project, green project is good, 
+05:24 this is going to be Michael, that's fine, 
+05:26 let's pick green, alright, let's see what happens. 
+05:30 Boom okay, so now we have the green project, so let's see what's in there, 
+05:34 color_files, ta-da, we have only the green one, beautiful. 
+05:39 Alright, let's try this again and this time let's do it with yellow. 
+05:42 So yellow project, yellow project like this, on this date, 
+05:48 make sure we pick yellow, and we'll say open yellow and this time, 
+05:53 we got the color_files, here, yellow, 
+05:56 okay, and so that is how this works, 
+05:59 we created a post generation hook and all of these files here
+06:04 were copied over in the project creation, 
+06:08 and if we had Jinja expressions in them, 
+06:11 they would have been expanded and filled out 
+06:14 and possibly conditionally done and so on. 
+06:16 Then, after all that was done, we said okay, 
+06:19 well probably some extra files were copied, 
+06:21 like blue_files were copied, even in the yellow projects, 
+06:24 we're just going to go and do a little bit of code here to clean them up, right, 
+06:27 figure out what they choose and then
+06:29 write just a tiny bit of code to go and delete them 
+06:32 and hey, how about that, we didn't mess up and see this warning. That's cool. 

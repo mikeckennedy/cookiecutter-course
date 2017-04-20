@@ -1,0 +1,51 @@
+00:01 We saw that the project folder structure is one of the core things 
+00:04 we have to work with, when creating these templates. 
+00:07 So here we're going to create a project, a cookicutter template 
+00:11 and we're calling it your project name, 
+00:14 probably it should be cookiecutter-your project name, 
+00:16 or something to that effect, the top level directory called
+00:19 your project name here, this is actually the name of the cookicutter template, 
+00:23 not the thing it generates, 
+00:26 and we also have a notes.txt, a readme maintainers.md, 
+00:29 these are just files that come along with the template
+00:33 that will not ever make their way to the user, 
+00:36 but whoever comes to the template they can read those they can use those, 
+00:39 there could even be a little scripts that do things for you. 
+00:42 We saw there is basically two things for this to be a cookiecutter template, 
+00:45 one we have to have our json file here, our cookiecutter.json, 
+00:50 this tells cookiecutter two things, 
+00:53 what are the replaceable values that we can use, 
+00:56 and what default values do they have, the other thing is what are the prompts, 
+01:00 basically they are the same thing, what questions do we ask the user. 
+01:04 Okay, so that is that one, we also need a project, 
+01:07 so here we're going to have a {{cookiecutter.project_name}} thing, 
+01:12 this is all Jinja type expressions, and then, 
+01:15 whatever we want to copy and modify for the users, 
+01:19 we're going to put that where ... goes, 
+01:22 as a subdirectory, or subfiles under this directory here. 
+01:25 Now, this is a simplified version of the template, 
+01:28 there is actually other things like pre and post generation hooks and whatnot, 
+01:31 but remember, we're starting from a bare directory, 
+01:34 a bare project and we're going to get more advanced
+01:36 and bring these things in as they make sense. If we want to run this, 
+01:39 we are going to come here and we're going to enter the cookiecutter 
+01:43 and then we'll say the name or location of the template, 
+01:45 if we've already installed it off of github or somewhere like that
+01:48 we can say the short name, in this case Pyramid cookiecutters starter 
+01:51 already given the full github name and it's cloned into .cookiecutters, 
+01:55 but if we don't, of course we have to say the full name, or if it's local, 
+01:58 we have to say the actual file path to it, and in there, 
+02:01 there is a cookiecutter.json with a bunch of questions,
+02:03 project name, repo name, 
+02:05 notice here we have an interesting pick number 1 or number 2 out of this list.
+02:09 That is called a choice value and we'll get the choice values later, 
+02:12 so where do these questions come from? 
+02:15 They come from cookiecutter.json, right, we've already seen this, 
+02:18 the keys here in this json object are the questions or the replaceable values 
+02:23 and the values in the cookiecutter.json those are the default values. 
+02:26 So that's it, you can see it is really really simple 
+02:30 to create these cookiecutter templates 
+02:33 and with all the benefits available to you that I laid out at the beginning, 
+02:36 why not, right, this is so easy to add so much reproducibility and reliability 
+02:40 to almost any type of software project 
+02:43 or just file structured thing that you're doing. 

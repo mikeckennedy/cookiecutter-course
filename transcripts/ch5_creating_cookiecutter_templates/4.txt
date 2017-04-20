@@ -1,0 +1,51 @@
+00:01 So we've seen that the prompts come from cookiecutter.json,
+00:04 and cookicutter.json as the json extension would indicate, seems very static, 
+00:10 like if it was cookiecutter.js well, maybe we put a whole bunch 
+00:15 of conditionals and things like that, but just a json file, 
+00:19 that indicates static values, so let's run this cokiecutter template cookiecutter template, 
+00:25 that's right, it's a meta cookiecutter template, 
+00:27 this is the one that we can use actually to create other cookiecutters, 
+00:30 I just want to look at a question it asks, so let's run this, 
+00:33 and it says great, what's your name, 
+00:37 my name is Michael, here is my email address, 
+00:39 my username "this will be the funnest project template evah'", 
+00:49 So if we say this, watch what the next prompt is.
+00:52 Cookiecutter-the-funnest-project-evah, now I think that little dash 
+00:57 might be causing me trouble but let's go and give it a shot anyway. 
+01:00 The important thing to notice is look it took this value, 
+01:03 that I entered here and it didn't just clone it, 
+01:06 it actually did something interesting here, it turned it into what is called a slug, 
+01:10 or project slug, it basically lower cased it, there is probably a bug in it, 
+01:14 should remove quotes and things like that, a punctuation, 
+01:17 and in here it put little dashes, right, so this is a good directory name 
+01:22 besides that little quote that got on the end, so we can keep going with this 
+01:26 and we just pick the defaults here, notice another thing, 
+01:28 look at that, that is actually today, right, that's the day that I am recording this.
+01:34 This value changes if I run this tomorrow it will say 2017, 03 10. 
+01:40 That's really cool, and the version oh no, this is a very advanced template, 
+01:43 it's there, do you want to copy the hooks- no, don't worry about the details here, 
+01:48 yeah, I don't think it can take this dash, but I suppose I did ti right, 
+01:53 it would also generate a thing that we could start, 
+01:56 so instead of one we did in a previous video with the bare template, 
+01:59 we can start from this one, we'll come back to this, 
+02:01 the important thing here is that we entered the value here, and it worked there, 
+02:05 and we also have time that is live here so these are two separate concepts 
+02:11 the first one we'e going to focus on is how did this happen, 
+02:14 so let's go over here and we'll say cd that, right, now if we look in here, 
+02:21 we'll see a couple of things, let's just look at this cookiecuter.json,
+02:25 so check this out, this is the one where I typed the the funnest project evah, 
+02:32 and down here, look what's in here, we have cookiecutter-and then we have, 
+02:38 I'll go and just wrap it for you, obviously, that doesn't make any sense, 
+02:41 but we have cookiecutter-{{ that's a Jinja expression, 
+02:46 and here that relates back to that, right, and then we'e doing additional processing, 
+02:50 lower replace cookiecutter strip replace spaces with this, 
+02:54 I think we could do a little bit more work, we could add our dash or quotes, 
+03:00 or things like that, punctuation we can get that out of here, 
+03:03 that would be no problem, we'll just add it on this, 
+03:07 so these values here they can actually be live Jinja expressions 
+03:11 and the value available to them, basically all the values, 
+03:16 all the questions that have been asked or prompts 
+03:19 that have been run previously are available, 
+03:21 in this case, particularly we're interested in project_name. 
+03:24 The other thing that's cool is, down here released it we have % now. 
+03:30 Okay what is % now, we'll come back and figure out what that is in a little bit.

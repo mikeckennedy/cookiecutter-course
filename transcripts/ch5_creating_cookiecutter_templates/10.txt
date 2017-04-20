@@ -1,0 +1,65 @@
+00:01 Remember this cool cookiecutter template. 
+00:05 It has some really interesting things we entered a project name 
+00:07 and it generate the slug, and it also asks for the release statement, 
+00:10 it said wait, that's today, this is actually when I ran it, 
+00:13 now this is when I wrote the slide, but whatever, 
+00:15 this is the date generated as the project or as the template is executed 
+00:20 to generate a project, so this is not actually a part of cookiecutter, 
+00:24 this capability does not exist in Jinja 2 either, in fact, 
+00:28 what this is is an extension to Jinja 2 itself 
+00:32 which we can plug in to cookiecutter, let's see how that works. 
+00:35 Over here, we have a list of extensions for Jinja, 
+00:38 you can see it talks about how to add them, 
+00:41 some internationalization stuff, expressions, loops, with statements,
+00:44 auto escaping extensions, and in fact, there is a whole API to write your own, 
+00:48 and some people have, so if we go over to github 
+00:52 and do a search for Jinja 2 extension, 
+00:54 you can see there is at least 25 of them on github, 
+00:57 so some about time, this one we're actually going to use, 
+01:00 some about markdown, some about highlighting code, 
+01:03 and some about Jinja and some about Django here, things like that. 
+01:06 So these extensions are really helpful, 
+01:09 and we can use them inside of cookiecutter.
+01:12 Unfortunately, the way they get sort of setup is not super amazing, 
+01:15 in order to use these extensions, you basically have to 
+01:19 install the system, so let's give this a shot and see how it works. 
+01:22 So over here, let's look at this first, so what I have done is 
+01:25 I have put the syntax to generate a year month day expression 
+01:33 based on datetime.now, right, so here you can say I'm in a run 
+01:37 now I'm going to feed it this local time operator here 
+01:41 and this is the extension stuff, so if I try to run this, this is not built in anywhere, 
+01:45 this is an extension that actually comes off of a place called PyPi, 
+01:50 the package manager for Python, it's not on my system, 
+01:53 I can go and try to run it, and it will say no, no, we cannot do this,
+01:57 there is no module named Jinja time, if I type pip list, you'll see yeah,
+02:03 there is Jinja but there is no JInja time. 
+02:07 So here is the bummer deal, if I want to do this, 
+02:11 if I want to actually have access to these extensions, here is the thing, 
+02:15 I have to outside of cookiecutter pip install Jinja 2-time. 
+02:21 I'm just going to go and download that, put it in my system, 
+02:24 and now if I pip list you can see Jinja 2 time. 
+02:28 Okay so that is step 1, the other thing to do is something 
+02:31 that we can do for the users, right, we need to come down here 
+02:34 and say we're going to have an _extensions,
+02:37 I believe that's a list, with the proper assignment there, 
+02:41 okay, it looks like we're missing a coma up here but, 
+02:44 we've got our extensions and our extension is Jinja 2 time 
+02:48 and now we're using it right here, 
+02:50 notice there is some of these things are underscore that apply 
+02:53 to cookiecutter that are not themselves prompt, 
+02:56 it obviously won't ask us what extension do we want here, 
+02:59 so let's try this, alright, so let's give this a shot, oh woops, 
+03:02 I still made a mistake here, I need actually not quite like this, 
+03:04 I need the .time extension. 
+03:07 There we go, okay, try again, excellent, it looks like it's working, right, 
+03:11 so my project will be timed project, and it's going to say time-project, beautiful,
+03:17 I'll take that, the creator, I still got to work on this, it's me, 
+03:21 created on look at that, that is today. 
+03:25 So that comes out of our now extension, 
+03:28 and because we've installed Jinja 2-time 
+03:31 as a package and then over here, we've imported the .time extension, 
+03:36 then we're good to go and I think created right now makes a lot of sense, 
+03:39 and you know what, I am feeling like cyan, boom, done. 
+03:42 Now, I don't actually put this value into our files, 
+03:45 we didn't reference cookiecutter.created on 
+03:48 but if we wanted to it would be the value of that string right there. 

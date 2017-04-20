@@ -1,0 +1,44 @@
+00:01 We've seen that we can use our post generation hook for deleting files, right, 
+00:05 we had a certain number of files here that we only wanted to keep some of them 
+00:10 in the situation where we picked up particular color. 
+00:14 A real world example of this would be a web application
+00:17 with different types of templates, Jinja, Chameleon, Mako and so on, 
+00:20 and you only want to keep the files that correspond to the ones selected, 
+00:25 by the creator, the person who ran the cookiecutter template.
+00:30 Now we're going to do one final thing here, we're going to display 
+00:33 some helpful instructions for the user, 
+00:37 okay, so when we run the cookiecutter template, 
+00:40 what we'd love to see is here we've created your project, 
+00:43 we asked you the questions, and here is a friendly little getting started message 
+00:47 so we can help people fall into the pit of success. 
+00:50 These are the next steps you should take, if you feel lost- don't, just do this. 
+00:54 So I've already pre created a little message here so I am just going to paste it in, 
+00:58 so we need to somehow get the favorite color 
+01:01 because my message says welcome to the color project, 
+01:05 and you choose this color, the world is a rainbow, but mostly, 
+01:08 it's this colored rainbow, okay, to get started read me, 
+01:12 obviously you would have different types of messages here, 
+01:15 but let's say we have this method up top here, that already is getting the color
+01:20 let's move this getting the favorite color out, and passed around. 
+01:24 Like so. Down here, we can pass in this favorite color, there we go, 
+01:32 it's not really a performance thing, this is actually just a static string, 
+01:37 it's pre replaced with the color when they selected it, 
+01:41 but I kind of like having this ability to get in one place and pass it around. 
+01:45 Alright, so now we should have a nice message when we're done with this. 
+01:49 Okay, let's create one final template, so again, it's going to be cookiecutter 
+01:53 and cookiecutter_colors, we're going to run this here, and let's see, 
+01:58 the project is going to be final exam 
+02:02 and of course our little dependent property here, 
+02:05 grab that and create this, you creator is going to be me, 
+02:09 so I'll just put MK it's created on this day, when I recorded it, 
+02:12 I am feeling yellow again and let's go, what is going to happen, 
+02:16 it's going to run our hook, it's going to remove the extra files, right, 
+02:20 the blue and the green, and it's also going to give us that nice message, 
+02:25 let's see how that works Boom, welcome to the color project, yellow, 
+02:29 the world is a rainbow, but mostly it's yellow, 
+02:33 so to get started, you can read the readme, how cool is that, 
+02:36 this is a super sleek project creation experience.
+02:40 I run the little thing and as we'll see later, you can actually run a custom script 
+02:44 out of your project and it could call this API, 
+02:47 and all the stuff is happening, and then when we are done, 
+02:50 we get this nice little message that we just added in our post generation hook.  

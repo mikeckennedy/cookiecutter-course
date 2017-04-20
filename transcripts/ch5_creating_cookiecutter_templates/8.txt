@@ -1,0 +1,33 @@
+00:01 Let's return to our attempt to making the user 
+00:03 enter something meaningful at a given step. 
+00:05 So we saw that blank values kind of indicate you should type something 
+00:08 but it doesn't really mean it, if you don't type it it's just empty
+00:12 this required we will be able to use this at some point, 
+00:16 using the pre generation hook to check for that value 
+00:19 no, no, that's not actually a value, you should have typed in something. 
+00:22 But, if this is a bounded set, let's suppose that your favorite color, 
+00:26 you could only have like the basic colors, cyan, green, yellow, red and so on. 
+00:30 Well, if that's the case, we can make them pick one of them, like so, 
+00:35 we come over here and within quotes, we could put stuff 
+00:38 so let's say red, blue, green, yellow, cyan, white and black, 
+00:45 I don't know if that covers it, but that seems 
+00:48 like some of the basic console colors that we can use, 
+00:51 this is just a what is called a choice variable.
+00:53 Now, those of you who know Python, this is actually a Python list, right here, 
+00:58 but really just a list in basic plain text here, of what the choices are. 
+01:05 Now if we run this, again, it's going to be a little bit different, 
+01:08 my project name will be with some choices, like this, creator, 
+01:15 now I have to enter something for now, I can test this later, 
+01:18 when we get to the hooks, look at this, boom, select a favorite color, 
+01:21 now there is still a default, it's still going to give me red if I just hit enter, 
+01:25 but I do love yellow, so let's go with yellow, now, 
+01:29 if we open up the with, let's see what we got. 
+01:32 Over here in colors, check that out, we have yellow right there, 
+01:36 alright, and that came from our choice variable 
+01:39 so here is a way to make the user sort of choose from a constraint set, 
+01:44 so it's in one sense a default value, and it's pretty good, 
+01:48 if you've got a bounded small set of things to pick from, 
+01:51 I totally recommend this, it's very user friendly, 
+01:54 but if you have an entirely open end of things like this that has to be answered, 
+01:58 like what is your name, well there is not really a list for that, 
+02:01 so we are going to have to check that in some other way. 

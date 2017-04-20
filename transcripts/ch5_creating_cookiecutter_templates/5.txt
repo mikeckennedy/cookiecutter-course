@@ -1,0 +1,39 @@
+00:01 So let's look at the concepts behind this dependent value thing.
+00:04 So if we come over here and we run the cookiecutter template template 
+00:07 that's the one that generates cookiecutter templates for us, 
+00:10 and we run it, it asks a bunch of questions: what's your name, 
+00:13 what's your email and so on, and then it gets to this point where it asks 
+00:16 what's the project name, and I just entered whatever I feel like, greatest thing ever; 
+00:20 and that's cool, but the next question is where things get interesting, right, 
+00:23 the project slug is actually a url style, a directory style name, 
+00:28 that incorporates that, so cookiecutter-greatest-thing-ever, 
+00:33 and then it goes on to ask us the rest of the questions. 
+00:36 So we saw that the project name is actually adapted over to here. 
+00:40 So, how do they do that, they did that with Jinja expressions, 
+00:44 and that's because this cookiecutter.json is more powerful 
+00:48 and more expressive than it initially seems, 
+00:51 so you can see we have project_name, and we can take that project name 
+00:55 and apply it as a Jinja template expression, so we're going to take it 
+00:59 and we're going to put it right there, remember, it's always {{cookiecutter. }} 
+01:04 and then it's the whole thing, right, it's whatever it's entered there 
+01:07 we can work with this, so cookiecutter.project_name 
+01:10 and now we can additional Python code on this. 
+01:13 Lowercase it, strip it, replace spaces with dashes, 
+01:16 as you saw, it maybe could use a little bit more work but not not bad at all. 
+01:20 And then it just goes on to ask the remaining questions. 
+01:23 So you could do very powerful and interesting things in these default values. 
+01:28 And I find that to be super helpful, if it asks me 
+01:32 what the name is and then what the slug is,
+01:35 maybe I don't even really totally understand what the slug means, 
+01:37 I don't understand that that's actually the directory name 
+01:40 which results in being the name of the template I am building with this template builder, 
+01:43 but the fact that it does this for me, even though it's like one line 
+01:46 of sort of expression Python bits here it's super helpful to me 
+01:49 as a consumer of this template. 
+01:52 To make sure that I fall into the pit of success, 
+01:54 I don't enter values that are not allowed, and so on. 
+01:57 You'll see that when we get to the hook section, 
+02:00 we could actually do way more powerful stuff than this, 
+02:02 but this is already really helpful because it provides the default 
+02:06 rather than just validating what we put in, 
+02:08 it actually provides an adapting default, which is great. 

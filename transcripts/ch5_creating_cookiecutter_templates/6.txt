@@ -1,0 +1,43 @@
+00:01 Let's take a moment and focus on required values. 
+00:04 Basically making sure that user enters something. 
+00:07 Now, we're going to try and see that we at least 
+00:11 can get to like a blank value thing, but we won't really be able 
+00:14 to solve this problem until we look at one more feature later on, 
+00:17 but let's give it a shot here and then we'll come back and look at it. 
+00:20 So I've done a little bit of reorganizing here, I've saved off the work 
+00:25 we have done so far into cookiecutter-colors-v1 and now, 
+00:28 this one I've changes a little bit, notice since that it had been project name 
+00:32 we have project slug here, and over in the json, 
+00:35 I've added that little trick to take the project name and generate a slug from it, 
+00:40 so that we have a little more reliability, for the file or the project,
+00:44 the folder that we generate because, 
+00:47 if we have things like colons and slashes and stuff 
+00:50 it's not going to work out so well for us. 
+00:52 So let's suppose that we want creator to be a required value, 
+00:56 maybe we could start like this, let's suppose 
+00:58 those two have to be required values,
+01:01 one possibility we say let's put in nothing and see what happens here, 
+01:06 so if I run this, cookicecutter cookiecutter.colors, it's going to ask some questions, 
+01:10 my project I'll say the best ever and you can see the best ever 
+01:14 how cool is that, right, so we'll take that default and creator, 
+01:17 well, what we would like for it to do is say you must specify a creator name,
+01:20 you must specify color name, and now if we open up the best ever, 
+01:26 like this, you can see up here at the top where it used to say blue, 
+01:31 it's just empty, right, so much for required value, 
+01:35 because, these empty values just went in as empty values. 
+01:38 Well, we can try one more thing, maybe we can have
+01:41 something like required here, yeah. 
+01:44 that is probably going to do it, let's try one more time, 
+01:46 run the same code here, like this, alright, 
+01:50 we'll just take the defaults blank and required, no, still nothing. 
+01:54 Although, in a slightly better way, we should be able to see 
+01:58 that our blue is now required. 
+02:01 Okay, so this is not working, but the one half that we do want is 
+02:04 we should be able to use either of these, we want to create a system 
+02:07 where we can say creator is blank, and somehow maybe know that
+02:12 that is required, we want to be able to say favorite color=required 
+02:15 and they are not allowed to enter, something else. 
+02:18 we could see that we could give them a choice here, 
+02:21 and then they would have to choose from the list, like blue yellow green red, 
+02:24 but if we want the full rainbow, the entire spectrum of colors, 
+02:28 well, we're going to have to do something more interesting than that.  
