@@ -1,29 +1,29 @@
 00:00 Alright, let's talk about how to install the various tools,
 00:03 in Python on your operating system. 
 00:06 So there is only two tools, two resources you need
-00:08 to take this class outside the source code on the github repository. 
+00:08 to take this class outside the source code on the GitHub repository. 
 00:11 One is, you're going to need Python 3, remember, 
 00:14 Python 3 does not come on OS 10, Python 2.7 does, 
 00:19 but Python 3 does not, so you've got install that, 
 00:22 as well as PyCharm, so let's go look at these.
 00:25 I pulled up the websites that we're going to be working with, 
-00:27 Python.org, this is where we get Python 3, 
+00:27 python.org, this is where we get Python 3, 
 00:30 PyCharm over here in jetbrains.com,
 00:34 we're going to download PyCharm here 
-00:37 and I also pulled up the other three options Sublime text if you're interested in that, 
+00:37 and I also pulled up the other three options Sublime Text if you're interested in that, 
 00:40 Atom, you've got to watch this video, it's very funny, 
 00:43 a great little lightweight editor; we'll come over here, download this, click,
 00:46 just it defaults you to the latest of both 
 00:50 Python 2 and Python 3 for your operating system, 
 00:53 so pick this, download, save, I've already done that, 
-00:56 so let's go over here and see if I type Python, you'll get something, 
-01:01 but you'll see that Python 2.7.10 comes up, if I type Python 3, 
+00:56 so let's go over here and see if I type python, you'll get something, 
+01:01 but you'll see that Python 2.7.10 comes up, if I type python3 
 01:06 there is no Python 3, so let's install Python 3 
 01:10 and make sure everything is set up good there. 
-01:14 So this is what I got off Python.org, just click through, 
+01:14 So this is what I got off python.org, just click through, 
 01:18 agree to whatever its going to make you agree to,  
 01:22 okay so Python is installed, let's just try a little trick again, 
-01:27 we can even do a -- version on the end, excellent, 
+01:27 we can even do a python3 --version on the end, excellent, 
 01:31 so we have Python 3 installed, and it's the latest version. 
 01:34 So, that is off to a good start. next, PyCharm, 
 01:37 when you just click download it gives us a choice
@@ -51,16 +51,16 @@
 02:45 there is two places, you can say Dracula 
 02:47 if you want the same theme as me, or pick another one. 
 02:50 The other two editors are just Atom, here is Atom nice and clean,
-02:53 and Sublime text, again, super small, super clean. 
+02:53 and Sublime Text, again, super small, super clean. 
 02:57 Let me show you a technique that will be helpful for opening these projects 
 03:01 and basically work with Python projects in general. 
-03:04 So here I have request masters, I got this off of github, 
+03:04 So here I have request masters, I got this off of GitHub, 
 03:07 this is the requests package and this is actually the source code 
 03:11 so here you can see here is all the Python files, this is like the project based, 
 03:14 if I want to open this in PyCharm, I just drop it on here, 
 03:17 this is a OS 10 only feature, but if I drop it like this, it will open the whole project, 
 03:21 you can see here is all the code that we need. 
-03:25 You can do a similar thing for Sublime text and you can do a similar thing for Atom. 
+03:25 You can do a similar thing for Sublime Text and you can do a similar thing for Atom. 
 03:30 So here is all the packages, same thing. 
 03:33 So that is a really helpful tip if you're jumping from project to project 
 03:36 and you want to just open up this project, 
