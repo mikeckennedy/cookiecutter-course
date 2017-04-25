@@ -4,26 +4,26 @@
 00:10 to know anything about Python, but it does use it 
 00:12 as its underlined runtime so you have to have it installed. 
 00:14 Alright, so to install Cookiecutter, we're going to use Python's package manager, 
-00:17 we're just going to say pip 3 install cookiecutter.
+00:17 we're just going to say pip3 install cookiecutter
 00:20 Now, this will install into Python 3, if for some reason
-00:23 you want to install it to Python 2 you would say pip 2 install cookiecutter.
+00:23 you want to install it to Python 2 you would say pip2 install cookiecutter
 00:27 Now this will work, but this is going to modify the global system setup for Python, 
 00:31 and that requires admin rights and you probably don't want to do that, 
-00:35 so instead, we can say pip 3 install -- user cookiecutter, 
+00:35 so instead, we can say pip3 install --user cookiecutter 
 00:39 and then it just installs in your local user profile, 
 00:41 and you can just go to the terminal and type cookiecutter whatever and it will run, 
 00:46 so this is probably the recommended way to do it, 
 00:49 now if you're on windows, windows Python for whatever reason 
-00:52 doesn't have a pip 2, pip 3 variation, 
+00:52 doesn't have a pip2, pip3 variation, 
 00:56 similarly it doesn't have a Python 2 and Python 3 executable variation
 01:00 like Mac OS and Linux do. I don't know why they don't, 
 01:04 it's really frustrating but you just have to make sure you use the right path to pip, 
-01:07 so it's pip install cookiecutter, but pip can mean different things, 
+01:07 so it's pip install cookiecutter but pip can mean different things, 
 01:10 and you've got ot make sure you are pointing 
 01:12 at the version you want to install it into.
 01:15 If you don't know, go and install it into Python 3. 
 01:18 Finally, if you've already installed it but you want to make sure 
-01:20 you have the latest version, you can give it a -- upgrade flag 
+01:20 you have the latest version, you can give it a --upgrade flag 
 01:23 and this will install it if it's not there, and upgrade it if it is. 
 01:27 Awesome, if you run these commands, probably the last one is the best, 
 01:31 you will have Cookiecutter and you will be ready 
