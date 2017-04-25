@@ -18,23 +18,23 @@
 00:55 the community edition is always free, is the community edition does 
 00:58 a whole bunch of cool Python stuff, but doesn't do web or database work, 
 01:02 the professional edition does in addition to standard Python things, 
-01:05 web frameworks, typescript, database, designer type things. 
+01:05 web frameworks, TypeScript, database, designer type things. 
 01:10 So for this course, you can totally get by with community 
 01:13 but for professional work, well, maybe a professional is the thing to go with. 
 01:17 Some of the other editors you might choose, 
 01:20 if for some reason you don't want to use PyCharm, is you could use Atom, 
-01:24 this is a really great editor from github, I really like it, 
+01:24 this is a really great editor from GitHub, I really like it, 
 01:27 and the video is hilarious so check out the video just for a laugh. 
-01:30 Sublime text is very popular and of course you can use Emacs or Vim 
+01:30 Sublime Text is very popular and of course you can use Emacs or Vim 
 01:34 that a lot of people are using. 
 01:36 As I said, Ubuntu comes with Python 2 and 3 but for some reason 
 01:39 if you need to download it, just come over here, 
-01:41 Python.org, grab the latest version,
+01:41 python.org, grab the latest version,
 01:44 it will automatically find the right thing for your operating system, 
 01:47 you could also install it with aptitude, you can do things like 
-01:50 apt-get install Python 3- dev, there is a couple of packages that you can install.
+01:50 apt-get install python3-dev there is a couple of packages that you can install.
 01:55 So first, let's verify that I actually do have Python installed, Python 3, 
-01:59 so I can come over here and say Python 3-- version and we have 3.4.3 plus, 
+01:59 so I can come over here and say python3 --version and we have 3.4.3 plus, 
 02:05 which makes it even better than 3.4.3, awesome, 
 02:08 and then we have PyCharm, we're going to go download it now, 
 02:12 it's kind of big so I actually already downloaded it, 
@@ -51,10 +51,10 @@
 02:54 and it will just open in gedit, not the best, 
 02:56 so I am going to come over here and just drop it, into my terminal, and run it. 
 03:01 Now, it turns out there is a problem, PyCharm is built on the IntelliJ platform, 
-03:06 the Ide platform, and that platform is Java based, 
+03:06 the IDE platform, and that platform is Java based, 
 03:10 so we need to install Java before we can carry on. 
 03:13 So on Ubuntu, we'll just use apt get so we'll say sudo 
-03:18 for running super user, apt-get install open-gdk-8. 
+03:18 for running super user, sudo apt-get install openjdk-8-jdk 
 03:22 And I'll put in my password, I'll wait for a moment, 
 03:26 it says are you sure you want to do this, it might take a moment, 171 MB it's fine, go. 
 03:32 
@@ -62,15 +62,15 @@
 03:41 let's try to run that again, PyCharm shell, now it's running, 
 03:46 you can see it says do you want to import previous versions, 
 03:48 well no, this is a brand new machine so no, not really. 
-03:51 Now normally I would just login with my Jetbrains account but for now, 
+03:51 Now normally I would just login with my JetBrains account but for now, 
 03:54 I'll just evaluate it for free, which you guys should be able to do for this class. 
 03:58 
 04:01 When PyCharm first opens, it asks us what keyboard map 
 04:05 and Visual Theme we would like, I am going to leave the keyboard map alone, 
-04:09 but I like my code, my ides and Windows and stuff to be dark, not bright, 
+04:09 but I like my code, my IDEs and Windows and stuff to be dark, not bright, 
 04:16 so dark background, light code, 
 04:19 so I am going to pick the Dracula theme for both, 
-04:22 the code colors as well as ide theme and we'll say ok, 
+04:22 the code colors as well as IDE theme and we'll say ok, 
 04:26 and you can't make this change unless you restart so yes, let's let it restart. 
 04:33 Excellent, my PyCharm is running, it's nice and dark with its Dracula theme 
 04:36 now the one other thing I'd like to do is notice it's over here, 
