@@ -1,42 +1,42 @@
-00:01 Here is a slightly richer default configuration file, for cookiecutter. 
+00:01 Here is a slightly richer default configuration file, for Cookiecutter. 
 00:06 So we've seen the default context, and these are the values
 00:09 that get past to the actual templates to overwrite their defaults,
-00:14 so we've added full name, email and github username, 
+00:14 so we've added full name, email and GitHub username, 
 00:17 so we don't have to type that again, we can also set some directories, right, 
 00:22 so we can come down here and say if I don't want .cookiecutters 
 00:26 to be the folder where it does a checkout 
-00:28 and where it manages all my cookiecutter data, well, 
+00:28 and where it manages all my Cookiecutter data, well, 
 00:31 I can change cookiecutters_dir put that somewhere else. 
 00:34 Similarly, there is a replay directory that takes the inputs you give the template, 
 00:38 we'll talk about that later, but you can overwrite that directory as well. 
 00:41 You can also create little shortcuts, so if you want to
-00:44 instead of type https://bitbucket.org/some thing, you could just type bb:that thing, 
+00:44 instead of type https://bitbucket.org/something, you could just type bb:thatthing, 
 00:50 or even if you want just a shorter version, just ps, 
 00:53 so if I want to run pyramid cookiecutter starter often, 
-00:56 I could just say cookiecutter (space) ps enter 
+00:56 I could just say cookiecutter ps enter 
 00:59 and that would run that template over and over again. 
-01:02 You can see, we have the little curly zero string format type things to fill in pieces, 
+01:02 You can see, we have the little {0} string format type things to fill in pieces, 
 01:06 so you can create really interesting little aliases here. 
 01:09 In order for you to avoid typing the config file name all the time, 
-01:14 just do set up an environment variable, cookiecutter_config, 
+01:14 just do set up an environment variable, COOKIECUTTER_CONFIG 
 01:18 and set its value to be wherever that file lives. 
-01:22 So on Linux or Mac OS you say export cookiecutter config=this 
-01:26 and you put that into your .profile, your .zshrc 
+01:22 So on Linux or Mac OS you say export COOKIECUTTER_CONFIG=this 
+01:26 and you put that into your ~/.profile, your ~/.zshrc 
 01:29 wherever your shell startup script is. 
 01:33 So this sets the environment variable so cookiecutter will always use it, 
-01:36 unless you specify --default config and then it says 
+01:36 unless you specify --default-config and then it says 
 01:40 I know there is this environment variable set, 
 01:43 but just run the thing entirely from scratch, which is mostly used 
 01:46 for when you either want to see what their defaults would have been 
 01:49 or if you're developing your own templates 
 01:52 and you want to make sure the defaults work okay. 
 01:55 Now, how about on Windows, if we're going to do this on Windows, 
-01:57 you don't have like a .profile file, instead, you have a gui 
-02:01 for managing your environment variables, so open up the control panel, 
-02:04 go to system and then click on advanced system settings,
-02:08 it will open up this dialogue, click on environment variables there, 
-02:11 it will open up this dialogue and then you can add a new user variable. 
-02:17 So cookiecutter_config and then you put the path
+01:57 you don't have like a ~/.profile file, instead, you have a GUI 
+02:01 for managing your environment variables, so open up the Control panel, 
+02:04 go to System and then click on Advanced system settings,
+02:08 it will open up this dialogue, click on Environment Variables there, 
+02:11 it will open up this dialogue and then you can add a New User Variable. 
+02:17 So COOKIECUTTER_CONFIG and then you put the path
 02:20 to wherever you happen to want it to be, right, 
 02:23 I put it in the .cookiecutters folder, you can put it wherever you like. 
 02:26 Now, just, it seemed odd to me, but for some reason, 
@@ -48,7 +48,7 @@
 02:42 give this thing a strong kick to get it to take it, 
 02:45 maybe you will have better luck than me, I don't know. 
 02:47 Alright, so let's see these default values in action, 
-02:49 create that file and register the environment variable either in .profile 
+02:49 create that file and register the environment variable either in ~/.profile 
 02:52 or in Windows in the environment variables, we run it, we can say hit enter, go. 
 02:57 And now, you can see it's pulling all of our variables in, 
 03:00 and putting them as the default, so you can just hit enter, enter, enter, 
