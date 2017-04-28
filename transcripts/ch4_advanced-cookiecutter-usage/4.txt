@@ -1,9 +1,9 @@
-00:02 We've seen that cookiecutter templates have default values for us, 
-00:05 so if I come over here and I type cookiecutter (space) cookiecutter-model, 
+00:02 We've seen that Cookiecutter templates have default values for us, 
+00:05 so if I come over here and I type cookiecutter cookiecutter-model
 00:09 and I run this, it will provide a default, 
 00:12 like a default name and a default email and so on,
-00:15 and if I don't like my bottle app as the name, I have to type that in.
-00:18 If that's not my github username, I have to type that in. 
+00:15 and if I don't like mybottleapp as the name, I have to type that in.
+00:18 If that's not my GitHub username, I have to type that in. 
 00:21 Wouldn't it be great if we could somehow configure the system
 00:24 so like those defaults were ours if we had entered them- 
 00:27 of course you can, and I'll show you how to do it. 
