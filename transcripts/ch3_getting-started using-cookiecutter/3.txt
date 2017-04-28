@@ -6,11 +6,11 @@
 00:17 in the Python web framework space, so we can use this template 
 00:21 to create one along with the dependencies, and a little bit of starter code for us. 
 00:24 Let's start over here in the pantry, and you can see right here, 
-00:27 I've already clicked on it, Cookiecutter-bottle 
+00:27 I've already clicked on it, cookiecutter-bottle 
 00:30 for creating reusable Bottle projects quickly. 
 00:33 Alright, so we can go over here and notice, this is just a public git repo, 
 00:36 and the way you can there is some Cookiecutter stuff going on 
-00:39 is this {{ cookiecutter stuff }} we'll see what that means later, 
+00:39 is this {{cookiecutter.stuff}} we'll see what that means later, 
 00:44 but if you look inside here, basically these are the files 
 00:47 that are going to be used when you run the template. 
 00:50 Like I said, when we get to another section about creating our own templates,
@@ -24,10 +24,10 @@
 01:20 for some reason downloaded and cloned this, but I don't need to, 
 01:23 Cookiecutter will do that for us, okay, so we run it, 
 01:27 it takes just a moment to quietly clone it in the background, 
-01:30 it asks us what our name is, I'll go and put mu name, 
+01:30 it asks us what our name is, I'll go and put my name, 
 01:33 it asks us what our email is, I'll do that as well, 
-01:37 my github, no that's not me, that is me, 
-01:41 and what I want to call this, super bottle web, something like that, 
+01:37 my GitHub, no that's not me, that is me, 
+01:41 and what I want to call this, Super bottle web, something like that, 
 01:45 and I'll just call it super_bottle, like that, this needs to be 
 01:48 some kind of folder that Python could use as a web app name, 
 01:53 so probably no spaces, things like that and you will see later 
@@ -41,37 +41,37 @@
 02:18 but the template is giving you a default first,
 02:21 right, we hit enter and done. 
 02:24 So, let's see what we got, well, 
-02:26 we've got a super bottle folder here, let's open it up and have a look. 
-02:29 So if we go in here, notice we've got the manage py we've got the readme,
-02:33 let's go over here and cd into the super bottle, 
-02:36 and just look at the readme here, so here you can say 
+02:26 we've got a super_bottle folder here, let's open it up and have a look. 
+02:29 So if we go in here, notice we've got the manage.py we've got the README,
+02:33 let's go over here and cd into the super_bottle, 
+02:36 and just look at the README here, so here you can say 
 02:42 it's a cookiecutter template for creating this 
 02:45 and this is the default that we saw right here, 
-02:48 see my super bottle web, and so on, it shows me how to get started, 
-02:50 so Python py, manage py run server. 
+02:48 see my Super bottle web, and so on, it shows me how to get started, 
+02:50 so python manage.py runserver 
 02:53 Okay, that's cool, now actually I am going to need to install these requirements here 
-02:59 I don't have Bottle or Click or Jinja 2, potentially installed, 
+02:59 I don't have Bottle or Click or Jinja2, potentially installed, 
 03:03 now you don't need to know any Python to use Cookiecutter, 
 03:05 but just to show you I can take this thing and run it for that, 
 03:08 because it's a Python web app, we got to do a really quick thing, 
 03:10 so let me just briefly create a virtual environment 
 03:13 so this thing doesn't actually affect my machine here, 
-03:16 so what I am going to do is I am going to say python 3-m venv 
+03:16 so what I am going to do is I am going to say python3 -m venv [path]
 03:20 and this can be a clean place 
 03:22 where we just install things for the rest of this class here,
 03:25 so that was cool, that worked, and then I got to activate it, 
 03:28 okay, notice that my prompt has changed, okay, great, 
 03:32 so let's go ahead and install the requirements, 
-03:36 we'll say pip install-r requirements, 
+03:36 we'll say pip install -r requirements
 03:39 so it's going to download all the packages that this thing 
 03:43 that was just created needs to run, and now, we can just say 
-03:46 Python manage py run server, and look at that, it's up and running, 
+03:46 python manage.py runserver and look at that, it's up and running, 
 03:50 let's go see what we got here. 
 03:53 Congratulations, our app worked, 
 03:55 okay, great, so now go write your web app, basically,
 03:57 but it's setup that structure, the requirements, 
 03:59 all that so we could get started more quickly. 
 04:03 This is pretty cool, right, well, there is not a lot going on here, 
-04:05 because hey, this is bottle, it's a micro framework, 
+04:05 because hey, this is Bottle, it's a micro framework, 
 04:08 if we had done this with Pyramid, you would have seen actually 
 04:11 a lot more stuff happen and we'll do that later. 
