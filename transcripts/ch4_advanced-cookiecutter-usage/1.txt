@@ -1,29 +1,29 @@
 00:01 Let's look at the full command line interface. 
-00:05 We're going to dig into cookiecutter's extra features 
+00:05 We're going to dig into Cookiecutter's extra features 
 00:08 and we'll look at how each one of them works 
 00:10 and how you can get the most out of them. 
-00:12 Let's just start with a quick overview, so cookiecutter--help 
+00:12 Let's just start with a quick overview, so cookiecutter --help 
 00:15 and it's going to say here is the usage, right, 
 00:18 we're going to create some kind of project as you know, 
-00:20 first thing, you can say V or lower case version to get the version,
-00:24 that's easy you can say --no input, now --no input is really interesting, 
+00:20 first thing, you can say V or lower case --version to get the version,
+00:24 that's easy you can say --no-input, now --no-input is really interesting, 
 00:29 each prompt that you see in that process that runs the template has a default, 
-00:34 so if you say --no input it will ask no questions and just take all the defaults. 
+00:34 so if you say --no-input it will ask no questions and just take all the defaults. 
 00:39 The place that to me seems most useful is if you want to execute 
-00:44 a cookiecutter template as part of a continuous integration, 
+00:44 a Cookiecutter template as part of a continuous integration, 
 00:47 so you can just configure your CI build to run 
-00:51 with whatever the defaults are, and just say --no input 
+00:51 with whatever the defaults are, and just say --no-input 
 00:54 and it will just run and output the results and then maybe do unittests 
 00:58 or builds or whatever you're going to do against the result of running that template. 
 01:02 You can say -c or --checkout to get alternate branches, 
-01:06 we've seen that we can run directly from github repos or get repos in general,
+01:06 we've seen that we can run directly from GitHub repos or git repos in general,
 01:11 and often, there is multiple branches, maybe we want to run 
 01:14 a different branch for whatever reason, 
 01:17 like we could be evolving our template and using the git flow 
 01:20 so we have a feature branch for some change, right, 
 01:22 we can run that by saying -c branch name along with the url. 
 01:26 So that's pretty cool. 
-01:29 Verbose, if you want to understand what cookiecutter is doing, 
+01:29 Verbose, if you want to understand what Cookiecutter is doing, 
 01:32 -v is great because it will show you all the things, 
 01:35 especially this is really helpful when you are building your own template 
 01:38 or working with your own sort of post processing code that will run across this, 
@@ -38,7 +38,7 @@
 02:11 whatever you put into the answers for those prompts 
 02:14 and then reexecute it, so this is really nice. 
 02:17 Also, this could be useful for continuous integration as well. 
-02:20 - f again, if you want to blast away the files, 
+02:20 -f again, if you want to blast away the files, 
 02:23 you want to be really careful here, 
 02:25 if you're just a regular user, and you are just running this, 
 02:28 this will erase whatever is there if there is a directory with the same name, 
@@ -46,29 +46,29 @@
 02:34 if you're building a template or you're doing continuous integration, 
 02:36 that might be exactly what you want, so a little -f it will save a lot of trouble. 
 02:41 You want to change where the files go, -o or --output-dir 
-02:45 cookiecutter by default puts the generated project 
+02:45 Cookiecutter by default puts the generated project 
 02:48 as a subdirectory right wherever you are, 
 02:51 your working directory so this will let you overwrite that. 
-02:53 You can specify a configurations file, so if you run a lot of cookiecuter templates
+02:53 You can specify a configurations file, so if you run a lot of Cookiecuter templates
 02:57 you are going to get tired of answering the question what is your name,
-03:01 what is your email, what is your github account name, things like that, 
+03:01 what is your email, what is your GitHub account name, things like that, 
 03:04 so we can create this thing called a config file, put my email address is this, 
-03:08 my github account name is this, and then when cookiecutter runs 
+03:08 my GitHub account name is this, and then when Cookiecutter runs 
 03:13 it will look at this config file, if you pass it like this, 
 03:15 and it will change those default prompts to be your default values, 
 03:19 not the default values out of the template, that is so nice. 
 03:23 You can also say don't do that, don't run the configuration file, 
 03:27 run without it, you might be thinking well, 
-03:30 if you're going to just put --config file it will run it, but just omit that, 
+03:30 if you're going to just put --config-file it will run it, but just omit that, 
 03:35 well, we'll see later that we can actually register
 03:38 a global config file for our user profile 
 03:41 and not have to pass this config flag or path or anything, 
 03:44 it will just automatically find and always use it, which is definitely recommended. 
 03:48 But periodically you might want to say well what's this look like 
 03:51 without my config file on a bare machine, 
-03:54 so --default config you can get lots of debug output kind of like verbose 
+03:54 so --default-config you can get lots of debug output kind of like verbose 
 03:58 and you can feed that to a file so great for debugging 
 04:01 maybe for continuous integration as well, 
 04:03 not really sure about that but definitely good
 04:06 if you want t try debug what you're working on and save it to a file. 
-04:09 Anyone see this message -h. 
+04:09 Anyone see this message -h
