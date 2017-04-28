@@ -7,7 +7,7 @@
 00:22 much much faster than just starting with an empty directory 
 00:25 and starting to create Python and resource files. 
 00:27 So, on the Cookiecutter read the docs page, 
-00:30 there is a thing called the pantry full of Cookiecutters. 
+00:30 there is a thing called the "Pantry Full of Cookiecutters". 
 00:34 And here you can browse through all the ones that are there, 
 00:37 so let's go take a quick tour. 
 00:39 So if you are just at cookiecutter.readthedocs.io you can see 
@@ -30,11 +30,11 @@
 01:42 So there is a Python section, Python Django, Python Pyramid,
 01:46 even some stuff for Cookiecutter metadata here, 
 01:50 so like Cookiecutters for Cookicutter templates and so on, 
-01:53 but there is also C, C#, Golang, Javascript and so on. 
+01:53 but there is also C, C#, Golang, JavaScript and so on. 
 01:57 So, technically, Cookiecutetr runs on Python but it will generate any of these, right, 
 02:02 so this is a great listing here, but I am not sure how many are here
 02:07 if you flip through, I don't know, a couple of hundreds or something, 
-02:11 so let's do something else, let's go to github, 
+02:11 so let's do something else, let's go to GitHub, 
 02:13 come over here and just type Cookiecutter, 
 02:15 now you can see there is 1321 public repositories called Cookiecutter, 
 02:21 okay, so there are many many more out there that people are not necessarily
