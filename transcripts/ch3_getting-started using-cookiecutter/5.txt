@@ -6,7 +6,7 @@
 00:18 whatever we called our project, install the requirements and run the server, 
 00:22 just like that, we had our web application running bottle, 
 00:25 we didn't have to go and create all the files and set up the configs 
-00:28 or anything like that, so you saw we can use cookiecutter bottle 
+00:28 or anything like that, so you saw we can use cookiecutter-bottle 
 00:31 to get started really quickly with a bottle web app. 
 00:34 So, let's look behind the scenes. 
 00:36 When we ran the command, cookiecutter (space) git repo, 
