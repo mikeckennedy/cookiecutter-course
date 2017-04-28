@@ -1,21 +1,21 @@
 00:02 I told you that the no inputs feature might be really nice 
-00:06 for continuous integration and this is not a ci build machine or anything, 
+00:06 for continuous integration and this is not a CI build machine or anything, 
 00:10 but let's go and have a look anyway. 
-00:12 So we can run cookiecutter bottle 
+00:12 So we can run cookiecutter cookiecutter-bottle 
 00:15 and it was going to ask us some questions, 
 00:18 now let's just take the all of the defaults for now, 
 00:21 so if I say yes this is my name, this is my email address, 
-00:24 this is my github user, whatever, 
-00:27 boom, and then it's going to generate this my bottle. 
+00:24 this is my GitHub user, whatever, 
+00:27 boom, and then it's going to generate this mybottlea. 
 00:30 Alright, so if we go and look in here, we'll see that things like,
-00:34 we'll see it named it my bottle like we had said, 
+00:34 we'll see it named it mybottle like we had said, 
 00:37 if we look at the read me you can see it's just taken the defaults everywhere, 
 00:41 okay, so that's all going good, let's go back out for a second here, 
 00:44 and erase this so we have nothing in this folder anymore. 
 00:48 So now we can run this again, but this time, without it asking any questions, 
 00:51 just say take all the defaults which is what we did anyway 
 00:54 but I had to hit enter a bunch of times. 
-00:59 So say --no input and we hit enter, and bam, what happens, 
+00:59 So say --no-input and we hit enter, and bam, what happens, 
 01:06 well it generates exactly the same thing, 
 01:09 so if you're going to make executing a cookiecutter template 
 01:12 as part of something like continuous integration build 
