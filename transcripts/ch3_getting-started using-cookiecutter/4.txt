@@ -1,16 +1,16 @@
 00:01 Now you've seen that we could use this command cookiecutter 
-00:05 and the full path to the github repo to clone our template and run it, 
+00:05 and the full path to the GitHub repo to clone our template and run it, 
 00:11 but once we've done this, on our machine, in this user profile, 
 00:15 we can use a much simpler version, we could just say cookiecutter 
-00:19 and give it the short name, cookiecutter-bottle. 
+00:19 and give it the short name, cookiecutter-bottle
 00:22 And we hit enter, again, it runs, 
-00:24 however, if I try other ones like cookiecutter-data science, 
+00:24 however, if I try other ones like cookiecutter-data-science 
 00:27 it says I have no idea what this is, and look where it is looking. 
 00:32 So in your user profile, my username is screencaster for this recording, 
 00:37 so if I go here and look, you can see that this is the location 
 00:42 where that cloning gets done, so when we make this command, 
 00:45 to the git repo, it actually clones it and stores in our profile under .cookiecutters 
-00:50 and if we come here and say cd into cookiecutter bottle, 
+00:50 and if we come here and say cd cookiecutter-bottle 
 00:54 you can see that this should look exactly like hat git repo that we saw earlier, 
 00:58 do you know why- because it is that git repo we saw earlier, 
 01:02 it's the same thing, right, it just clones it, 
@@ -21,7 +21,7 @@
 01:17 and then once you have that you can run the simpler version, like this. 
 01:22 So what would be cool is if there was some kind of thing 
 01:26 like we could say list those, 
-01:29 so if I could say cookiecutter i for installed or something, but there is no i. 
+01:29 so if I could say cookiecutter -i for installed or something, but there is no -i 
 01:33 Right, so maybe someday that will change, 
 01:36 maybe even I will add that feature, I don't know, 
 01:38 but for now, you can tell what you have installed, just by doing this. 
