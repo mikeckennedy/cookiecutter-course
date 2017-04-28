@@ -2,11 +2,11 @@
 00:03 Here the first one I want to talk about is Pyramid, 
 00:05 so Pyramid is web framework in Python, and it will create a variety of starter, 
 00:10 what are called scaffolds, basically all the starter code 
-00:13 along with associated css, Javascript, image files,
+00:13 along with associated CSS, JavaScript, image files,
 00:16 and everything that you need to run this project.
 00:19 The way that you create these scaffolds has always been to run 
-00:22 a built in program when you install Pyramid called pcreate,
-00:26 so a little bit like the manage py in Django. 
+00:22 a built-in program when you install Pyramid called pcreate,
+00:26 so a little bit like the manage.py in Django. 
 00:28 Now, in the most recent version of Pyramid 1.8.1 maybe 1.8.0, anyway, 
 00:34 very recently, they just switched to deprecate their own built in scaffold generator 
 00:39 and the recommended way to create new Pyramid projects going forward 
@@ -27,7 +27,7 @@
 01:38 so how cool is that, if you're a scientist or some kind of academic 
 01:41 this is a really cool thing to get started with. 
 01:43 Now, how is that for a blast from the past, Atari 2600, 
-01:46 anybody want to play some pitfall- I remember playing this when I was a kid, 
+01:46 anybody want to play some Pitfall- I remember playing this when I was a kid, 
 01:50 I loved this game, and in fact, I am sure there are still Atari 2600s out there, 
 01:55 but more importantly, there is probably emulators that you can get and run, 
 01:58 so you can go and get cookiecutter-atari2600 and that will give you 
@@ -37,7 +37,7 @@
 02:14 Finally, let's look at the meta template, so the Cookiecutter as Cookiecutter, 
 02:18 here is a really nice Cookiecutter called cookiecutter-template 
 02:22 and we're going to come back and look at this a number of times over, 
-02:26 the idea is if  I want to create a Cookiecutter project myself, 
+02:26 the idea is if I want to create a Cookiecutter project myself, 
 02:30 I want to create a Cookiecutter template myself, 
 02:32 I can use Cookiecutter on this thing 
 02:35 and it will generate the exact project structure
