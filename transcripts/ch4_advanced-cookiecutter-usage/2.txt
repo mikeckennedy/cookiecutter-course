@@ -17,13 +17,13 @@
 00:54 but I had to hit enter a bunch of times. 
 00:59 So say --no-input and we hit enter, and bam, what happens, 
 01:06 well it generates exactly the same thing, 
-01:09 so if you're going to make executing a cookiecutter template 
+01:09 so if you're going to make executing a Cookiecutter template 
 01:12 as part of something like continuous integration build 
 01:15 or if for whatever reason you want to run it 
 01:18 without it asking the user questions then you got this. 
 01:20 You'll see that we can actually pass additional information
 01:22 to overwrite some of those values, when we run this 
-01:25 when we get to consuming the cookiecutter API 
+01:25 when we get to consuming the Cookiecutter API 
 01:27 you will see that you can pass no input 
 01:29 but then overwrite it with stuff that maybe your program asks for, 
 01:32 things like that, so it's pretty cool, but this is a good start, 
