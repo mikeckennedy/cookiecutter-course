@@ -27,7 +27,7 @@
 01:41 and this one was just the default out of the template 
 01:44 and so it's stored with the final results set of all the values passed to the template 
 01:48 before it ran it, in this file, right, so you can on a per template type bases
-01:54 always do cookiecutter, cookiecutter-the-thing --replay 
+01:54 always do cookiecutter cookiecutter-the-thing --replay 
 01:58 and it's going to do that same this, so for example,
 02:01 on some sort of continuous integration thing,
 02:04 you could run this once and then it will store this value 
