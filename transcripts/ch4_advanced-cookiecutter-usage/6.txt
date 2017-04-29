@@ -12,7 +12,7 @@
 00:41 You can also create little shortcuts, so if you want to
 00:44 instead of type https://bitbucket.org/something, you could just type bb:thatthing, 
 00:50 or even if you want just a shorter version, just ps, 
-00:53 so if I want to run pyramid cookiecutter starter often, 
+00:53 so if I want to run Pyramid Cookiecutter starter often, 
 00:56 I could just say cookiecutter ps enter 
 00:59 and that would run that template over and over again. 
 01:02 You can see, we have the little {0} string format type things to fill in pieces, 
@@ -23,7 +23,7 @@
 01:22 So on Linux or Mac OS you say export COOKIECUTTER_CONFIG=this 
 01:26 and you put that into your ~/.profile, your ~/.zshrc 
 01:29 wherever your shell startup script is. 
-01:33 So this sets the environment variable so cookiecutter will always use it, 
+01:33 So this sets the environment variable so Cookiecutter will always use it, 
 01:36 unless you specify --default-config and then it says 
 01:40 I know there is this environment variable set, 
 01:43 but just run the thing entirely from scratch, which is mostly used 
