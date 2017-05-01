@@ -1,0 +1,110 @@
+00:00 We've welcomed the user, we've gathered their inputs 
+00:03 about how they want to create the game and now it's time to come down here 
+00:06 and actually use our game info to create the game. 
+00:09 So first of all, let's start by saying something like this, 
+00:12 hey we're building the game with info.projectname and game type 
+00:19 and notice how cool it is to be using named tuples, game type and so on. 
+00:25 Right, that's why we did that at the beginning. 
+00:28 Also, it can be important to use flush because if we get the system really busy 
+00:32 waiting on something it might actually not put that message out straight away, 
+00:35 so this is kind of like a hey we're busy hold on,
+00:38 so if we want to make sure that gets straight up so we use a flush here, 
+00:41 now the first thing we need to do is locate the template, that folder right there. 
+00:46 Actually that folder right there, so our game is here, let me collapse templates, 
+00:50 so our game is here we want to go into templates and we want to go there. 
+00:54 Now in Python, we can say we can hold the directory using os.path 
+00:58 and let's say we want the absolute path of os.path.dirname, of this particular file.
+01:05 Wherever this file lives on the hard drive, we want to get that directory and then, 
+01:11 we're going to say os.path.join, and we're going to join the working directory 
+01:15 with the templates directory. Now it's easy to type  /cookiecutter-use-api 
+01:21 but don't do that, because that will prohibit it from being cross platform. 
+01:25 so you want to just let the join, put all the pieces together 
+01:28 so down here we'll say cookiecutter-use api. 
+01:33 Okay, so now we have our template and it's time to actually execute this 
+01:38 so it should be really straightforward to do, it's just one function call 
+01:43 but in order to do that, we have to come up here and import cookiecutter main
+ 01:48so we're going to come down here and we're going to actually get back the project directory
+01:52 so we'll say cookiecutter.main.cookiecutter kind of annoying, 
+01:58 all the cookiecutters in there but this is the create function and this is the package. 
+02:04 So first thing we're going to give it is the path to the template, 
+02:07 the next thing we're going to give it is to say no input, true, 
+02:12 don't ask the users anything, take either the defaults or what I've collected 
+02:16 I am about to give you here. We'll say output directory=info.working dir, right,
+02:21 remember we asked the user where do you want to create the project, 
+02:24 we could have some defaults for them like active directory or whatever, 
+02:29 but this is what we did, so we have to give it the output directory 
+02:32 and then we're going to say the extra context, 
+02:35 now this is the data that we've gathered about them, 
+02:38 so this is going to be a dictionary of things like project name 
+02:41 this is what is going to be in here. So we need to specify project name, 
+02:46 full name and game type. Okay, so we'll come down here 
+02:49 and say put something for that in a moment, 
+02:52 game type we'll put something and we're going to have full name. 
+02:56 so we can get this from our little info, so we have full name, 
+02:59 we've already collected that, up here we have info.project_name, 
+03:03 and that was a little funky, wasn't it, down here we'll have info.game_type, 
+03:09 little format, okay, it looks like we're about ready let's return project directory. 
+03:15 Okay, so if I run this, we should be able to- let's say that is not misspelled,
+03:22 let's go ahead and run it. it's going to ask us for our location, 
+03:25 so let me find the location here, maybe we can make a thing called projects, 
+03:30 and I'll put it in there so I'll move the other one in there that my game as well, 
+03:35 okay this is what we're going to give it for the working directory, alright, 
+03:40 now notice, empty, let's go over here and run this, so the game maker runs, 
+03:46 it says welcome to the game creator, woohoo, we're going to create the game 
+03:49 either hi-lo, packman, or pong for you which one do you want? 
+03:52 Oh I want hi-lo, definitely hi-lo, I am going to call it super hi and kind of low. 
+03:57 Full path is going to be like this, but let's test it if I get it wrong, 
+04:01 remember, it will ask again, oh no that doesn't exist, let's try it again, 
+04:05 okay now we'll give it the path, boom, building the game super hi and kind of low,
+04:12 of type hi-lo just a moment, and there it is, 
+04:16 so if we cd in there we could actually run our game as we saw before, 
+04:22 right, my name is Michael, I am going to guess it's going to be 43, 42, too high, 
+04:28 22, man I am lucky these days, okay, so our thing is working really well, 
+04:33 one final step that we could take is we could actually ask it to start our game 
+04:39 so hey we just created for you, we just started the game we created it, you want to play it?
+04:43 So let's do that, let's go over here and up at the top, 
+04:48 so w have our project directory, and let's just give a little message here, 
+04:52 so w can say do you want to run, yes or no, we'll say we've just created the game 
+04:57 and let's wrap that around here create the game,
+05:01 whatever the project name is/game py, do you want to run it yes or no, 
+05:05 and then, we can of course generate the path and if they said yes, 
+05:09 or they just hit enter to take the default, we could run that. 
+05:12So because it's just a bunch of subprocessed mumbo jumbo 
+05:17 I am just going to paste it here so we are going to need to import subprocess 
+05:20 we are going to need to import standard in and standard out 
+05:24 because this is a console game and we want to take the input from our console 
+05:28 and feed it over to that process and as well take the input or the output of that 
+05:33 and show it to our users and the final trick is for this to work shell = false.
+05:37 Okay, so let's try this one more time, and I am going to do it like this, 
+05:42 I am going to copy this path and I'll run it, copy this path 
+05:46 and I am going to run it in its full glory over here so we'll say Python 3 this, 
+05:50 woohoo welcome to the game creator, 
+05:53 we can create either hi-lo or pacman or pong, alright, 
+05:56 so let's create hi-lo again, I am going to call it way high 
+06:02 the full path is here, building the game just a moment, 
+06:05 alright we've created way high at this crazy long location here, 
+06:09 do you want to run it, I'll say yes so I'll take the default, boom, 
+06:13 straight into the game, just like that, right, you can't do that with cookiecutter 
+06:16 but you can with the cookiecutter api, awesome, 
+06:19 my name is Michael, and let's see if my luck continues, 
+06:23 oh too high, 11, 15, 18, 19, 20, 21, excellent, 21, now our app is done. 
+06:31 So our game is done and that was the creation. 
+06:34 Okay, so I am not necessarily saying this is the best experience we could create, 
+06:38 we could do way better, but by wrapping up the API, 
+06:42 by wrapping up the cookiecutter API here 
+06:45 and by shipping with a template installed locally we can of course 
+06:49 run even if there is no internet connection, 
+06:51 we can run in a way that asks the users for all sorts of interesting data and inputs 
+06:56 in like you saw we could verify that you entered the correct thing 
+07:00 when it came to the directory like no no that directory doesn't exist try again, 
+07:05 things like that, that's is just not possible there, 
+07:08 so I think this is a really cool way if you're creating a project 
+07:11 and you are going to install some library
+07:13 and say somebody is going to use the library 
+07:16 and they are going to say I'd like to start with some scaffold, 
+07:18 some starter thing and you've got an app that will do that, 
+07:21 I recommend you integrate cookiecutter 
+07:23 as long as having the requirements to execute cookiecutter 
+07:26 that is basically Python around 
+07:28 this is a really easy thing to do, it's great idea. 
+ 

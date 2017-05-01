@@ -1,0 +1,38 @@
+00:01 The cookiecutter API is quite rich, but also simple to use. 
+00:06 Basically, the way it works is you ship your app with a template in some way, 
+00:11 or I suppose if you care to depend on the internet 
+00:14 you can even ship it straight off github, right, just use the url. 
+00:17 And we want to call one function, cookicutter.main.cookiecutter. 
+00:21 So, we just call this, we need to pass it an absolute path to our template 
+00:26 so it knows where that is and in Python it's really easy, 
+00:29 you just use the dunder file and you can sort of work out a relative path 
+00:32 with os.path module; now you want to be sure to set no input to true. 
+00:37 Otherwise cookiecutter is going to ask the questions
+00:40 that are in cookiecutter.json well, you don't want that, right,
+00:44 this is your application, it can ask those questions
+00:47 and it can be much smarter and conditional 
+00:49 and retrying about the answers that it gets. 
+00:52 You also need to specify where this is going to output the data 
+00:56 so we're going to set up a directory here we've already computed this 
+00:59 actually we asked the user where that was and verified it, 
+01:02 and then you need to pass along the questions
+01:05 that cookiecutter itself would ask in the extra context here. 
+01:09 So we've gathered all of the questions that would have been asked 
+01:13 what is a project name, full name and game type we've asked the user 
+01:16 what that was, and then we just passed it along, 
+01:19 so cookiecutter just takes those and applies them directly 
+01:22 and doesn't ask any questions. 
+01:25 And then what comes back is the project directory 
+01:27 and we can open that up, we can execute code in there, whatever. 
+01:30 We also want to make sure that we're leveraging the defaults, 
+01:33 so if somebody is using cookiecutter already, and they have a default file, 
+01:37 we want to be sure to use that, so we can import cookiecutter.config 
+01:41 and then call get user config, alright, and that will give us this whole dictionary back, 
+01:47 everything about them as far as cookiecutter is concerned, 
+01:50 cookiecutetr directory, the replay directory, even their aliases 
+01:54 which are not shown in here, but the pert that matters to us is the default context, 
+01:57 so grab that and then you can use that before we even start asking questions 
+02:02 propose that as a default, or even don't ask the question if you find it here. 
+02:05 We've just scratched the surface of the API here
+02:08 there is quite a bit going on so jump over to the read the docs 
+02:10 for the cookicutter package and you can explore the full API here. 

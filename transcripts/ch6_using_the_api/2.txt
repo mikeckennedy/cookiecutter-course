@@ -1,0 +1,42 @@
+00:00 For this programmatic cookiecutter demo throuhgout this chapter, 
+00:05 we're going to try to do something fun here,
+00:05 I am going to create an application called game maker, 
+00:08 and this game maker can make three types of games,
+00:10 it can make pong, it can make tic tac toe, it can make hi-lo, 
+00:14 guess the number, it's too high, too low, that game. 
+00:17 So what we're going to do is we are going to start with the template, 
+00:20 and we are going to write a program 
+00:22 that wraps up the project creation and of course, 
+00:25 leverages cookicutter in the internals to do so, 
+00:28 but it's going to have a custom experience, for the user, okay. 
+00:31 Now, first thing we want to do is I want to start with the template, 
+00:34 I am going to just paste that in here, and it's called 
+00:37 cookiecutter use API, not a super creative name, 
+00:40 but that is what I am calling it. 
+00:42 Now, notice over here in the template this is a cookiecutter thing,
+00:45 we have a hook we have a post generation hook, 
+00:48 we have a name, we have three games, 
+00:51 we have hi-lo, we have pong, we have a readme 
+00:53 that tells you what kind of game you've created, things like that, 
+00:56 really, it's just a demo but you know, people can play the game if they want. 
+00:59 Right, so the idea is we are going to have our game maker, 
+01:03 and we are going to have this thing here, 
+01:05 which I am going to need the path to in just a moment, 
+01:08 and, we are going to basically ask the necessary questions 
+01:10 that would otherwise be asked here, by cookiecutter itself 
+01:14 and we're going to use that to create the project, 
+01:16 but before we do, let's just see what would happen 
+01:19 if I ran this directly, so if I say cookiecutter and I give it the whole url there, 
+01:23 it's going to run, it says what is the name of my game, 
+01:25 okay my game my name, I am going to pick let's say hi-lo,
+01:29 boom, great, so that was kind of an okay experience, 
+01:32 it didn't really tell me what kind of game it was going to be 
+01:35 or it didn't explain a lot about what cookiecutter use APIs about, 
+01:39 but technically, if I look here I do have a game, 
+01:42 and I can even go into my game maybe I should have put that in source, 
+01:46 huh, I'll move, actually no, I want it right here, so I can come down here, 
+01:49 I could even play my game, if you want, so that's pretty cool, 
+01:53 hey, my name is Michael, 3, 50, too low, 75 wow 
+01:59 how was that for some luck awesome, 
+02:02 so we played the game we created, but we can do better 
+02:04 if we wrap this API and just use this as the kernel to create the game itself. 
