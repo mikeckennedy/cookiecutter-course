@@ -1,0 +1,72 @@
+00:01 So, we've made the change to the restructured text 
+00:03 to put our cookiecutter link in here. 
+00:05 Next what we need to do is just create the pull request 
+00:08 so we've already made the change here, and we've already cloned it over here 
+00:12 so let's go back to this folder right here
+00:14 cookiecutter is what we want to work with 
+00:17 now you can do whatever you want for managing these files 
+00:21 in git, I very much like source tree.
+00:25 At first it was overwhelming with too many buttons and knobs 
+00:28 but once I got used to it I really liked it a lot better than command line 
+00:31 or any of the other UI tools.
+00:33 So I'm going to come over here and basically register this inside a source tree
+00:40 so then I open it up, it already knows about my repository, the history 
+00:44 like here you can see all the forked history and whatnot 
+00:46 because that came from the original one, so I'm going to come down here and say
+00:50 adds this to the python pyramid cookiecutter template 
+00:59 now you want to be really clear here 
+01:02 because this is going to be part of the message
+01:04 that Audrey and the whole cookiecutter team will see 
+01:06 Okay so I check it in and I'm actually going to push that back to github, excellent 
+01:10 so we have that done, now we go back over to github here 
+01:14 to our fork, the mikeckennedy not the audrey one and I refresh, it's going to say 
+01:19 hey look this branch is one commit ahead of master 
+01:24 create a pull request, let's do that first of all let's compare to just see 
+01:29 what's going on here, we've made a change to one file
+01:33  ok that's cool, what is that one change,
+01:37  we didn't mess up anybody else's stuff, but we added this one 
+01:41 and we added it here, and what is this deal with 01:46 down below
+01:46  I'm not really sure I think it's just some random formatting or something
+01:49 yeah that doesn't look really changed to me, 
+01:52 it just looks like some sort of funky detection thing going on there about the diffs 
+01:56 okay great so we've added this, and we've added this 
+02:00 okay so now that I feel happy, I'm not going to break what they have 
+02:06 let's double check in, we still have 02:09  we still have TF module 
+02:09 yes okay I feel confident that I'm not going to break this
+02:11  I'm going to click create pull request, and notice here 
+02:15 it adds cookiecutter to pyramid cookiecutter template 
+02:17 so I'm going do it like so, just put a little message 
+02:20 maybe make this into a link so they can review it 
+02:23 ok this pull request adds cookiecutter pyramid talk python starter 
+02:28 to the python pyramid cookie cutter templates 
+02:32 let's do a preview, make sure it all looks good, 
+02:34 maybe even double check the link, it looks like it went somewhere 
+02:36 cool and I think it's ready to send off 
+02:41 so now if they accept this pr, it's going to just merge back 
+02:43 and show up right there on our page 
+02:46 okay the pull request is open that doesn't mean they're going to accept it 
+02:50 they kind of look through and they're going to say
+02:52 you did it well, you messed up something I'm not sure 
+02:55 it's going to run some continuous integration 
+02:59 you can come back and check that in a little bit 
+03:00 assuming we did this correctly they'll approve it 
+03:02 and it should pretty soon show up in that pantry.
+03:06 Oh, one more thing I want to tell you before we move on
+03:09 you saw me editing that restructured text file 
+03:14 and I want to make sure that everything came together correctly 
+03:18 so it would look all right; once I committed it I can go back to my clone 
+03:23 my fork of cookiecutter, I can come down here
+03:26 and I can click on that restructured text file 
+03:29 and notice if I scroll down and you can notice that I added this 
+03:31 so we can come down until we get to the templates
+03:36 or the pantry full templates okay, so we got this,
+03:39 we come down to until we get to the pyramid one 
+03:42 and notice right here python pyramid
+03:44 the last one is cookiecutter pyramid talk python starter 
+03:46 there's that and if I click the link- boom, it looks like it works 
+03:51 okay so just the point is you can come back to github
+03:53  and verify that everything still looks the same as you would expect.
+03:57 All right so long as they approve this, 
+04:00 and you can participate in the conversation over here 
+04:03 as there is the back and forth 
+04:06 long as they approve this, you should have your cookiecutter template in the pantry. 

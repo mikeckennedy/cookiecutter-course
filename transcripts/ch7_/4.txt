@@ -1,0 +1,55 @@
+00:01 Next, let's look at the Pyramid web framework. 
+00:03 So, Pyramid is one of the more popular web frameworks 
+00:06 it fits in there somewhere between Django and Flask, 
+00:10 it's not quite as micro of a microframework as like Bottle of Fask 
+00:14 but it's not a big sort of building block thing that Django is.
+00:18 So, somewhere in the middle period. I like their little slogan here, 
+00:22 projects with ambition start small and finish big and have to stay finished, 
+00:25 so I really love this framework, 
+00:27 it runs a lot of the Talk Python websites and web infrastructure 
+00:31 so let's go look how we get started with Pyramid.
+00:34 So, if I come over here I can say p create 
+00:37 and p create is the tool, we just talked about having the API 
+00:42 in a tool or our game maker wrapping the API and this is kind of 
+00:46 serving that purpose, it sort of uses a cookiecutter it didn't until recently 
+00:52 and I'm not sure if it actually uses cookiecutter or if it's just the same files
+00:57 that come out but it's not really important as you'll see 
+00:59 so what we can do is we can counter a peak create I want to use the scaffold starter 
+01:03 and let's call it first web app something like that something real simple 
+01:07 and if we run this watch what happens
+01:11 ok it looks like some the wrong there's a sorry at the end 
+01:14 but it really, welcome to the Pyramid, sorry for the inconvenience
+01:17 now let's go back to the top, bunch of stuff happened, but check this out 
+01:19 note, as of Pyramid 1.8, which basically just came out, this is actually deprecated
+01:26 this p create concept, instead you should be using cookiecutter 
+01:29 all right it shows you how to go look for all the cookiecutter things 
+01:33 so we come over here and do a search, that search didn't go so well, did it?
+01:37 Let's try again, here we go, 
+01:39 so we have cookiecutter Alchemy, cookiecutter starter and so on 
+01:43 so the thing I just created with a starter we can come over here 
+01:46 and get this, now let's copy that, so we talked about the hooks 
+01:51 here are some things to do with hooks pre impose generation 
+01:54 come down here to the repo, there's a template folder here 
+01:58 that has the various templates and notice we have Jinjja Mako 
+02:01 and a pt these are page similar or Chameleon temples 
+02:05 now originally this one shipped with just Jinja, 
+02:07 but somebody here added Chamelon support 
+02:13 and another guy that works on the project Mako support,
+02:16 ok so these three got added and the tricks I showed you 
+02:20 about using the hooks and modifying the files and so on 
+02:23 you can actually see those in here, about deleting non used files and whatnot 
+02:29 so we can come down and achieve basically the same thing here, 
+02:33 we got our first web and Beeware, let's make a dir Pyramid
+02:39 and move first web into Pyramid 
+02:43 okay so we come in here in cookiecutter, install this one
+02:47 I've already installed it but I need to re-clone it  
+02:50 because it now has to Mako support, yeey, 
+02:52 so it's going to run Pyramid scaffold 
+02:55 and now it asks uses the choice template, let's say Chamelon 
+02:58 that is the best; boom and then here is that little welcome message 
+03:02 welcome to the project, here's how you get started. 
+03:04 Well the first thing I would do is I'd cd in here, 
+03:08 and then I'd run this and then I would run that etc. etc. 
+03:11 Okay, so very cool project here, 
+03:14 and the fact that they're using cookiecutters, they haven't been for long time,
+03:17 but they are moving to it, I think that's pretty interesting. 

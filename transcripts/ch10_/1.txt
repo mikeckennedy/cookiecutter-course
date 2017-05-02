@@ -1,0 +1,101 @@
+﻿ 
+00:01 Congratulations, you've made it to the end of this course,
+00:05 and not only did you make it through the course 
+00:08 you now have a new magic power- it's called cookiecutter.
+00:11 So the question is what are you going to build now?
+00:15  I think you should take this moment, pause this video 
+00:18 and write down three things you think could be made better with cookiecutter
+00:22 and then make a plan to create at least one of those over the next month
+00:27 if we all did that, think how many cool things we could create 
+00:30 with cookiecutter in just a really short time.
+00:34 So congratulations, I hope you feel as you've gained 
+00:36 a lot of knowledge about cookiecutter
+00:38 that you can now use this new tool to do amazing things 
+00:41 both with your own project, as well as other cookiecutter templates 
+00:44 that people have already created and published to the pantry full of cookies.
+00:49 Let's do a quick lightning review. So we started out in this course 
+00:52 by discussing what is cookiecutter and when to use it 
+00:56 and you saw that cookiecutter is a project template creation framework 
+01:00 we can take these templates, we can run them 
+01:03 we can create any sort of project it doesn't have to be Python 
+01:06 even though the implementation is Python.
+01:08 We saw that we can create Atari games C++ applications 
+01:11 JavaScript apps all sorts of stuff;
+01:14 we talked about some of the advanced features, running cookiecutter
+01:17 with no inputs, great for continuous integration and unit tests,  
+01:20 things like that; running it with the replay option so that it just reruns 
+01:25 whatever we configure it to run, again this is good
+01:29 for when you're building your own temple 
+01:31 it's good when you're doing continuous integration 
+01:33 and you don't want to take the default 
+01:35 we also saw that it can be annoying to type in answer 
+01:37 questions like what's your name, what's your e mail 
+01:39 what's your gituhub account name and things like that continuously 
+01:41 so we can create a global default file that solves that once and for all.
+01:45 We talked about creating templates, we'd start with the cookiecutter.json file 
+01:50 that has the prompts as well as things like extensions, 
+01:54 files that we should not transform, copy without render things like that 
+01:57 we talked about the folder structure naming our folder things like 
+02:01 {{cookiecutter.project_name}} something like this 
+02:05 we saw that we can create dependent properties
+02:07 that the cookiecutter.json is not just a static thing 
+02:10 but it kind of comes to life as it evaluates top to bottom 
+02:13 so we can put Jinja expressions in here 
+02:15 and do a lot of cool things there for the most advanced features 
+02:18 we would use hooks, we have a pre generation hook 
+02:21 and a post generation hook
+02:24  and we also have a choice variable
+02:27 if you've got a small restricted set of things 
+02:29 like the template engine you want to use for a web framework 
+02:31 a choice variable would be great.
+02:34 We saw that we can take this concept of creating templates in a program 
+02:38 and make it even better, recall we made our game maker application 
+02:43 and it can make hi-lo, it can make pong, and it can make hangman 
+02:46 and instead of just having the general prompts and inputs that cookiecutter gives
+02:51 we actually wrote a program that would take in that information 
+02:54 verify it if it was wrong it asked the question again 
+02:57 and get everything ready to go and then it would create the game 
+03:01 using the underlying cookiecutter template programmatically 
+03:05 so we would call cookiecutter.main.cookiecutter one as a package 
+03:10 one as a sub package, the final part is the method we would call that 
+03:12 and of course we want to leverage the default values 
+03:15 so we could work with the config sub module and pull in the default values 
+03:19 for whoever joining this minimize a number of questions 
+03:22 or at least make it nicer for them and we created our little app 
+03:25 the game maker, and it presented itself 
+03:27 more nicely as sort of a project creation thing
+03:30 I didn't have to know anything about projection for the most part 
+03:33 because it just delegated all that information 
+03:36 and that functionality to cookiecutter;
+03:39 we went through a few case studies 
+03:41 we talked about Beeware, OpenStack and Pyramid 
+03:43 and how all three of these projects are making heavy use of cookiecutter 
+03:46 and how there's some really interesting stuff happening there;
+03:49 we shared our template, in fact,
+03:51 I can tell you that the time of this recording now my template 
+03:55 that I used as an example in this section 
+03:58 is now officially part of the pantry full of cookies 
+04:01 on the cookiecutter site, so that process
+04:03 I took you through that work for me at least, that was great.
+04:06 And finally we talked about modifying cookiecutter
+04:09 there was a feature that I- or behavior let's say, not a feature, behavior 
+04:13 I didn't like and I've talked about it throughout the course
+04:15 that the yaml file, the parsing of is too strict and having a new line at the end 
+04:20 is really frustrating we went through and we saw how we could fix that 
+04:23 in fact I did a little bit of back and forth with those guys 
+04:26 and now that is also accepted and should be officially part of cookiecutter 
+04:31 so that shouldn't be a problem anymore, you can use that technique 
+04:33 to modify cookiecutter for whatever your needs are.
+04:36 Look at that, this is a ton of stuff that you've learned 
+04:39 and now you should be really empowered to do cool stuff with cookiecutter.
+04:43 But, before you go don't forget to take the code with you 
+04:45 visit github.com/mikeyckennedy-cookiecutter-course,
+04:49 and star this and fork this so that you have everything 
+04:53 that we've done, everything we've created throughout the course  
+04:57 with you forever.
+04:59 I've done a small amount of reorganization 
+05:01 because I noticed as I was doing things live it got a little messy sometimes 
+05:05 I had multiple projects generated next to the temple at itself 
+05:08 and so it might not look identical but it should be very very similar 
+05:11 and self explanatory to what you saw us to together on the screen.
+05:16 Thanks so much for taking this course I'll see you online! Bye. 

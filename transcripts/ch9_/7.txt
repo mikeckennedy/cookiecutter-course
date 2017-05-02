@@ -1,0 +1,78 @@
+00:01 Now that we've worked through actually adding a feature
+00:04 or enhancement to cookiecutter 
+00:07 let's go back and review the core concepts or steps that we needed.
+00:10 So, we're going to start by forking the cookiecutter repo
+00:14 so github.repo/audreyr/cookiecutter 
+00:17 and we're going to fork that to our own repository.
+00:20 Next, we want to clone that locally so we can work with the source 
+00:24 so git clone our cookiecutter fork- downloads and then we're ready to go, 
+00:30 just make sure that that is your user name not audreyr,
+00:34 because if it's audreyr you probably can't make changes 
+00:36 and submit fixes back to the repository.
+00:39 Next, we're going to create a feature branch.
+00:41 This is partly optional, but I strongly recommend you create a feature branch,
+00:45 and this whole pr work flow, so probably you can just go to the top of the list 
+00:50 I have changes on mine I had to go back a little bit 
+00:54 because I tweaked my fork for some other reasons 
+00:57 you can read them there in the list
+00:59 but I went back to this one that's highlighted and I said create a branch from there 
+01:03 and you saw my convention, my github name/ feature or fix branch name 
+01:08 make sure it's all underscores or something like that 
+01:11 so we checked it out and it was ready for us to start working on it.
+01:14 Next, we have to create a virtual environment;
+01:17 technically is not required but you probably don't want to run 
+01:21 your dev version of cookiecutter as your main thing on your computer 
+01:24 maybe you do, but let's go ahead and create a virtual environment here
+01:30 so we're going to make sure we have, in Python 2 we have virtual env 
+01:33 remember on windows pip 2 doesn't exist,
+01:35 you just have to make sure you use pip out of Python 2.
+01:38 Okay, so we've installed it, next we can create the virtual environment 
+01:40 again making sure we're using the python 2 version 
+01:43 so python 2 - m for module virtual env, and then .env with the name 
+01:48 and then we activated it, and notice how when we activated the prompt changed 
+01:52 okay so now we're ready to basically register the local div package
+01:58 as something we can run. 
+02:00 So we're going to do that when I register the dev package 
+02:03 so we just say Python set up and develop, not install or any of these things, 
+02:07 Python set up develop, so that means 
+02:10 the local it's going to basically run out of our source directory 
+02:13 so as we make changes, those changes will immediately appear 
+02:16 in this virtual environment, so if we run this it does a whole bunch of work 
+02:19 to install the dependencies and then finally when it's done 
+02:21 we have cookiecutter 1.5.1or whatever version you have
+02:26 registered and ready to run from the command line.
+02:29 Finally we go and make our change, we've got it ready to run locally 
+02:32 so we can test it, we've got our branch checked out for our feature 
+02:36 in our case I was really bugged by that missing by that weird pars error in yaml
+02:42 and so I went and fixed that by adding a new line at the end 
+02:46 if there wasn't one right, it didn't really make a change to the contents of the file 
+02:51 but it made it parseable even if it wasn't there.
+02:54 Make sure you follow the conventions that they use in cookiecutter 
+02:57 and notice the u for unicode, so we were using Python 2
+03:02 because it's little less forgiving and some other the things 
+03:06 and it's a little easier for me, at least to remind myself 
+03:09 I'll put the you for u in a code rather than in Python 3 where it's not required 
+03:12 ok so we made our change here, then we're going to check in our change 
+03:17 and we're going to give it a detailed description
+03:19 notice we have a detailed description for the people reviewing the pr 
+03:22 and were pushing the changes to mikeyckennedy/ in this case forgiving yaml fix,
+03:27 whatever the name of our feature branch is.
+03:30 Finally, once that's done, we go back to github to our repo 
+03:33 click the button to create the pull request, and boom,
+03:36 then our pull request is here, 
+03:39 one final note, notice down here at the bottom, 
+03:41 there is 3 checkins with my picture next to it, 
+03:43 it says if the yaml config file does not end with the single blank line, it has an X
+03:47 now I ran the tox tests and I guess I didn't look carefully enough,
+03:51 I just figured oh no, I don't have flake 8 installed or whatever, 
+03:54 and that didn't work, but it actually didn't work when I checked it in here, 
+03:57 this comes from the continuous integration, on the server, on the git repo, 
+04:02 that they have configured, and what happened was, 
+04:05 I had actually my doc string was 83 characters long 
+04:10 and they have a restriction that says 79 columns or fewer in any given line, 
+04:17 so notice I actually made another change I fixed that format in the doc string 
+04:22 and I just checked it back into my repo, to that branch 
+04:25 and it automatically updates the pull request, and finally, 
+04:28 it went all green everything was happy, everything passed. 
+04:31 Alright, do you have a great idea to make cookiecutter better,
+04:34 now you know how to develop and do contributions back to it. 

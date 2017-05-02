@@ -1,0 +1,127 @@
+00:01 Okay let's go back to the folder here 
+00:03 basically I want to open up this directory in the editor 
+00:05 so I click show in finder and it'll take me where the git ignore was
+00:08 which actually is right where I want to be, so I want to open this in PyCharm, 
+00:11 and on MacOS you can do that really nicely 
+00:14 by just dragging and dropping the root into PyCharm.
+00:18 In Linux or in Windows you have to actually go file, open directory go find this thing.
+00:23 So, you don't have to use PyCharm, I like it the best,
+00:27 it's totally up to you on whether you want to do it or not.
+00:30 PyCharm has built in source integration, so let's say add root here 
+00:35 here you see all the things that we're going to work with 
+00:38 and this folder is actually where we're most interested 
+00:42 so let's let it do its little indexing, so we have auto complete
+00:44 and then we'll be ready to roll.
+00:47 First thing I'd like to be able to run this inside PyCharm,
+00:50 so there's a couple of options, let's go to this configuration,
+00:53 say add a new Python run, and normally,
+00:56 you would put the script here, you could even right click and say run it 
+00:59 but this is a package so that makes it kind of tricky 
+01:02 so we'll say script parameters, oops, not there, interpreter options -m 
+01:06 and then what are we going to do- we're going to say cookiecutter 
+01:09 and then who knows what we're going to give it here, right now I just run the help ok 
+01:13 So notice the right virtual environment was found because of the naming convention
+01:19 PyCharm knows to load that one up, 
+01:21 also unnamed is probably not the best name 
+01:24 let's just call this cookiecutter, and we'll say single instance of that 
+01:28 okay, now if we hit run, we should see at the bottom error, no template 
+01:32 that's good that's actually okay right, that's what we wanted 
+01:36 we could pass in like -h for help or whatever 
+01:41 but you'll see like it's running down here now.
+01:44 The other thing we can do if we want to fiddle with it 
+01:46 is we can run it in the terminal, 
+01:49 notice the terminal automatically activates the virtual environment 
+01:52 so we can just say cookiecutter -v to see which one 
+01:54 and it's the same one out of the same place 
+01:57 ok, so we are ready to run, this thing is set up locally
+02:00 it's in our editor, let's go make a change.
+02:02 Now, the part that we care about, the part I want to start exploring from 
+02:06 is from the cli, so if you look at the cli here, you can see it's using click 
+02:11 which is a thing to basically manage the command line interface for you 
+02:16 and down here, there's a bunch of stuff happening right, 
+02:19 is going to come down here and run of the cookiecutter for us.
+02:23 And you can go see the various pieces that are being called, 
+02:27 and I would encourage you to sort of explore the flow from here on down 
+02:31 so you understand how all the pieces fit together,
+02:34 there is some documentation and so on, but I've already done this,
+02:37 I've already figured out where I want to go, so I'm going to go edit this location 
+02:41 okay, down here notice this is the stuff about config files 
+02:46 remember we're working on the yaml thing, that's the default config for the user; 
+02:51 here is where we're working, at the very root of everything,
+02:57 whether we use a default config, a pass config, a user config, 
+03:00 we're going to be getting into this get config here, okay, 
+03:04 we actually will find that the error happens right here,
+03:09 so let's go ahead and set up our system, 
+03:13 so we can try that, let's see if we can make this thing fail basically,
+03:16 so I want to say cookiecutter and I give it little output folder here,
+03:20 cookiecutter desktop test, and let's just do something simple,
+03:25 cookiecutter-template, alright, that runs, everything looks great.
+03:33 Now, let's try that again, but first let's edit and make our yaml defaults broken.
+03:40 It doesn't matter if this is our default file or some other one, 
+03:43 it's just by default this will be the one selected.
+03:46 So I deleted that little bit there, let's try it again.
+03:49 Let's see what mistake did we make- oh there is no pattern for github username 
+03:55 what is going on, and if we see where that is, that's in config line 61,
+04:00 which is right here, this is basically in this try accept block.
+04:05 So what we need to do is add a little fix right here,
+04:11 so let's do this, let's add a function, right up above here, 
+04:14 so we're going to call this function fix missing end line in yaml.
+04:20 We're going to do that here, and what I actually want to do is
+04:23 I want to sort of separate this out a bit here 
+04:25 so I want to say yaml lines this is going to return actually a set of lines of text here
+04:32 we want to pass this and instead of passing in here like so, 
+04:37 we want to create a yamltext= a string. join  
+04:44 put the lines back together, yaml text, okay.
+04:47 So our goal now is to somehow get this value passed in here,
+04:52 make some changes, get it back, so say yaml lines equals this 
+04:56 we'll say read lines which instead of returning the whole string, 
+04:59 the whole thing as a string, and we're going to actually return a bunch of lines
+05:04 it's a little easier to work with it that way, so we'll come down here 
+05:07 and we'll say get all the lines from the original file 
+05:09 and then potentially modify them and then turn that back into a flat single string 
+05:14 which this was expecting, before.
+05:17 Ok, so all we got to do is write this little function here 
+05:21 and what do we need to check for-
+05:25 let's go ahead and pass in our yaml lines, we'll return our yaml lines, 
+05:29 ok so we're going to say if yaml lines we don't want to crash 
+05:32 if for some reason that's not there, and if the yaml lines 
+05:37 the last entry is not equal to just a new line, and it's Python 2 so unicode, 
+05:44 if the last line in this file is not just a blank line,
+05:48 all we have to do is say append a new line, that's it, 
+05:54 this should actually fix our code, this should fix that annoying little bug in cookiecutter 
+06:00 and it's six, eight lines of code, not too bad.
+06:04 Let's try this now, let's just verify that we do have the missing piece here,
+06:08 and let's try this again; ta-da, fixed. 
+06:11 How do I know it's fixed, what if I skip this little part right here 
+06:15 try it again, it crashes; put it back- fixed.
+06:19 Okay, so I think this is a pretty cool little feature, this is not much work 
+06:24 PyCharm thinks this is misspelled, so I am going to say it's not,
+06:28 so everything looks ok, the one thing that we should probably do is
+06:31 let's go ahead and document this, add some document strings here and some there
+06:35 so let's go ahead and add some doc strings here as well, 
+06:38 just so people come along know what this thing is about,
+06:40 like why is this weird thing adding a new line, maybe in some time 
+06:43 when poyo doesn't need it then we could take this away right.
+06:47 Alright, so there is a little description I wrote beforehand 
+06:51 so it says if the yaml configuration file does not end with a single bank line
+06:55 a cookiecutter exception invalid configuration 
+06:57 is thrown within an indecipherable error 
+07:00 I think we can all agree that's the current state,
+07:02 this method fixes that by adding a trivial new line if it is missing.
+07:05 Save one more thing here, alright, it looks like it's still working, fabulous.
+07:10 Okay, so let's go ahead and submit this back. 
+07:13 Now, probably it should be running the test here, right,
+07:16 we should run all of our tests here,
+07:19 so running our tests, with tox, give it a moment, 
+07:22 ok so it looks like all the tests ran fine, I don't have Python 3.3 or 3.4 
+07:27 but when we do the check in, the continuous integration and automated build system 
+07:33 has all of this stuff set up, so you see like 
+07:36 flake 8, PyPy, Python 3.3 and 3.4 didn't quite work 
+07:39 but they'll work in the final version, as you'll see in a little bit, 
+07:43 but at least we saw it worked on Python 2.7 and Python 3.5
+07:47 and that gives me a lot of confidence 
+07:49 that we didn't break anything during this process.
+07:52 So, we just pip install tox, and then I just type tox and it runs all these tests, perfect. 
+07:59 So now we're ready, we've added our feature, 
+08:03 created our feature branch, added feature we've run the test 
+08:06 we're ready to check this in and create a pull request. 

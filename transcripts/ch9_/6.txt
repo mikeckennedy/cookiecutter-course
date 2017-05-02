@@ -1,0 +1,69 @@
+00:01 We've run our tests, we've added our feature, 
+00:03 we're pretty confident with the work we've done, 
+00:05 let's submit this back to cookiecutter. 
+00:08 We'll come over to our source control here, this is our cookiecutter repo, 
+00:12 not theirs and we're in our feature branch which means 
+00:16 that we can possibly make other pull request, and other changes to cookiecutter
+00:19 without this code being part of that, right,
+00:22 we probably want to do this, isolate on their website reasonably 
+00:26 so it says please submit only one feature at a time with any given pull request,
+00:31 one change, and the easiest way to do that is have one branch per change.
+00:34 So, we're going to check into this, and this is super easy 
+00:38 but what we want to do is give it a nice description 
+00:41 so I'm going to write a little description here 
+00:44 and zoom ahead, and then tell you about it.
+00:46 So, notice I'm even using markdown here
+00:48 because people are going to read this and decide whether or not
+00:51 it should be added to that project, so you want to format this as best as you can,
+00:54 so it will show up on github. 
+00:57 So what I am going to say is if the yaml file config does not end with a single blank line 
+01:00 a cookiecutter exception invalid configuration exception is thrown 
+01:04 within indecipherable error, this pull request pretty much took this code from my doc string,
+01:08 fixes that air by adding a trivial line to the config yaml file if it is missing, okay. 
+01:13 So let's go ahead and check that in,
+01:17 now if we go back to github, notice right now we already have this
+01:22 I didn't even refresh the page I just found this says okay,
+01:26 mikeyckennedy in forgiving yaml fix less than a minute ago, 
+01:30 and here's the compare and pull request 
+01:33 so we want to submit this, notice I am up in mikeyckennedy
+01:36 I want to submit this to audreyr and everybody that works on this project 
+01:40 to say here's my fix, I want you to take.
+01:42 So I'll click this, it's going to come down here,
+01:45 and we should be able to take this change, let me go and copy that,
+01:51 and I am going to use that basically that same text here,
+01:54 if the yaml file does not contain a cookiecutter and do this little shortening thing
+02:01 but I'm going to put it back, exception this pull request fixes that okay.
+02:12 So okay I'm going to give it a nice little subject up here,  
+02:14 fix this trivial error of config file when it does not end in a new line 
+02:17 has a description, let's preview it here, it has a little code bit for that thing,
+02:21 alright I think it's good, let's go down here, 
+02:24 make sure the changes we've had don't change something else
+02:27 we've got our git ignore, and we've got our change to cookiecutter 
+02:30 so we've added the fix missing end line in yaml,
+02:34 got our little bits there, and then in our git config, 
+02:37 notice I had just this straight read here before 
+02:40 and now we're doing it across a few lines 
+02:43 where we get the actual lines we apply our fix, 
+02:45 we turn it back into straight text and then we do what they did before 
+02:48 with the straight text, this time though it automatically fixes it. 
+02:51 Alright, so it looks like everything is good,
+02:54 make sure that you have read the guidelines for contributing to this repository
+02:58 verify that we can merge with master we're not out of sync or something 
+03:03 so that's really important, people don't want to do them merge conflict stuff 
+03:06 if at all possibly, you should do sort of rebase,
+03:10 get the new version, apply your change again, to the latest if that happens.
+03:13 Alright, let's go. Now we're over in audreyr, 
+03:17 you can see we have the 49th pull request, 
+03:21 actually 49 active, 917th pull request and here it is,
+03:25 my changes, my description, files that have changed, the two commits,
+03:30 and notice, I talked about the test being run, about the flake 8 and Python 3.3, 3.4, 
+03:37 notice here this is updates live, there is a continuous integration for app veyor,
+03:43 I think is for windows builds and Travis CI  for Linux and Mac 
+03:46 I'm pretty sure that's how that works, but these are running 
+03:49 and these will automatically give the maintainers of cookiecutter some feedback
+03:54 to say this change that we just made, it either broke something 
+03:58 or it didn't break something with regard to code coverage 
+04:00 with regard to tests and whatnot, right. 
+04:03 So now we just wait and you'll be able to come here 
+04:06 and check out a pull request 917 after you watch this class 
+04:09 and see if this change was accepted or not accepted. 

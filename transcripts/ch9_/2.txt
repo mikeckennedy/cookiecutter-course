@@ -1,0 +1,24 @@
+00:01 Now, our first step is going to be getting writable source code,
+00:04 we could clone this repository but we're not allowed to check into it 
+00:07 we're not core contributors, so the right flow here is to go fork it,
+00:11 so we're going to fork this repository, and then we're going to create a feature branch 
+00:16 do our work on the feature branch on our repository,
+00:19 check that back in, and do a pull request back here, ok.
+00:23 So I've already forked this, and so I'm going to come over to my fork here 
+00:27 all right, so I've been fiddling around with it a little bit, 
+00:31 you can see that it's this one I've submitted some changes,
+00:34 this is an unrelated thing, but what we want to do is, we want to check this out.
+00:38 So this one belongs to me, so I have right access to it cool.
+00:42 So, let's go over, I think I'll just check this out here,
+00:47 I don't want to put this into the source repository 
+00:49 because you'll be able to link back to it on my system 
+00:52 and you have the whole cookiecutter thing as a sub directory
+00:56 which I don't think it's a great idea 
+00:59 so I'm going to just clone that here
+01:01 so we'll say git clone, and you give it the path,
+01:04 of course you have get installed, but I'm assuming
+01:07 that you guys can do that it's kind of out of the scope of this course
+01:10 okay so here we can open a cookiecutter project 
+01:12 so now we have the source code on our machine 
+01:15 next thing is to install it, so that we can actually run the code 
+01:19 run the cookiecutter module or package. 

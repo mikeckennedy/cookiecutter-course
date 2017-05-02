@@ -1,0 +1,32 @@
+00:01 The next place I want to look at as a case study is OpenStack,
+00:04 so here you can see there's a little picture graphic showing you
+00:06 what OpenStack is about, it's got some kind of dashboard
+00:09 you've got compute resources, think of those as virtual machines as well,
+00:13 infrastructure as a service and platform as a service,
+00:15 software-defined networks, storage and so on.
+00:18 Like I said, this is basically AWS, you can install on your own data center
+00:23 and configure as you like, it's pretty cool.
+00:26 So let's see what they're doing with cookiecutter.
+00:28 So we can come over here and the first thing is there's an install guide
+00:31 that you can create for various parts and they want to make sure
+00:35 that this comes out the same, so here's a cookiecutter template
+00:38 for new install guides, here it just gives you a little info
+00:40  about cookiecutter and whatnot but basically
+00:42 you go in here and it shows you how to create
+00:45 all the various documentation and settings that you need
+00:48 to tell people how to install your particular thing
+00:52 that you're going to integrate into OpenStack; ok so that's cool.
+00:55 Another one is Puppet, so Puppet is like a devops type thing
+01:00 you can manage infrastructure and whatnot with Puppet,
+01:04 here is a template that generates an OpenStack compliant Puppet script
+01:08 so it's pretty involved you can see all the various pieces
+01:11 like the test scripts and what not going here, you can see it it sets everything up
+01:16 that you need to run Puppet just so, all right,
+01:19 all the specifications, the details about the Puppet files and so on.
+01:23 So this is really nice if you want to use Puppet with OpenStack, start here of course.
+01:27 Finally, you can test OpenStack and the system that they use for testing is
+01:33 this thing called Tempest, so here's a way to create tests that run on OpenStack
+01:38 it shows you how to use it, how to get started and so on, pretty straightforward
+01:42 you guys already know because you know cookiecutter.
+01:45 So, here's just three ways that they're using cookiecutter
+01:48 that are official listed on their github repo.

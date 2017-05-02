@@ -1,0 +1,48 @@
+00:02 Let's review the steps that we went through to create our template,
+00:06 get it online, share it and submit it to the pantry.
+00:10 So step one is having a template, period. So create some kind of template 
+00:15 I recommend using the cookiecutter-template cookiecutter template 
+00:19 because that's the one that helps you get started 
+00:21 here I've created one for Pyramid, we've already talked about it 
+00:24 and I want to share it, so I created the template, that was step one 
+00:26 and this was quite a bit of work this is complicated, we have app 
+00:30 and it needs a lot of documentation, so I spent at least half a day
+00:34 working on this template, but you know it depends 
+00:36 on what kind of template or building, how much effort this step is.
+00:38 Next I put it on github, so already I can use this in my documentation 
+00:44 I can use it in training videos or instructional videos 
+00:48 say you want to get started with my version of a Pyramid web app 
+00:51 well you just cookiecutter space that url and you're off to the races. 
+00:55 Having it somewhere online, github is probably the best place, is the first step, 
+01:01 right hopefully people come along, submit pull request to my template
+01:04 make it even better; next we go to the official cookiecutter template  
+01:07 that's github.com/audreyr/cookiecutter and we fork it. 
+01:12 So we fork this to our own repository so after we have it frked
+01:16 we check it out to edit it locally
+01:19 I suppose if it's just restructured text if it's just those two lines 
+01:23 you could technically do this online, but you probably want to have  
+01:25 a working copy locally anyway, so you do a get clone, 
+01:29 notice this is my url, not theirs, that's very important 
+01:34 so we clone it, it comes down, we're ready to go 
+01:36 now we can go and edit this folder right 
+01:39 basically that one file is surely all we got to edit in this case 
+01:42 all right so like I said, make sure that that's your username not audreyr. 
+01:46 Next there's a whole bunch of files here this is the entire project 
+01:50 that generates and runs cookiecutter as well as its documentation 
+01:55 but the only one we care about is this readme here 
+01:58 so, because I'm working on a Python project I went to the Python section 
+02:02 and I'm going to add an entry here if I was working on assembly 
+02:06 I would have gone to that section right, or if I was working on-
+02:11 not sure or section that doesn't exist, but if there's a section 
+02:14 that really makes sense for your type of work, and it doesn't exist 
+02:18 make anyone right, like Python online 2.99 and 300 do that for yours,
+02:22 so once we've edited it we've put our entry in there 
+02:24 we've checked it in, here we've committed our changes back to our repository 
+02:31 we're going to want to create a pull request based on this 
+02:34 so we should have when we first do this a button right here
+02:38 that says create a new pull request, or just new pull request
+02:42 I don't call it the exact verbiage but because I've already done it 
+02:45 that button is gone, right, you saw me do that in the previous video 
+02:48 but you are going to have this ability to create a new pull request back to audreyr 
+02:52 and that's it, if you've done everything right, they like your addition
+02:58 they will accept it and you will be part of the pantry, congratulations. 
