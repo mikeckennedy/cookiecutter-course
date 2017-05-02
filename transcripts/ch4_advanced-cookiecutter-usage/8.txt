@@ -5,14 +5,14 @@
 00:14 and for some reason, you want to set the app name to something else. 
 00:17 So let's try this, if we go over here and just say app_name=
 00:23 and we just use key=value, and we say app_name=the_bottle 
-00:27 and let's also say project_name= "The Bottle", like this, 
+00:27 and let's also say project_name="The Bottle" like this, 
 00:31 now if we run it, we'll see that we get the defaults from our default file, 
-00:35 Michael Kennedy, email, github and now, project_name default is The Bottle, 
-00:40 instead of My Bottle App, app name is the_bottle, right, 
+00:35 Michael Kennedy, email, GitHub and now, project_name default is "The Bottle", 
+00:40 instead of "My Bottle App", app name is the_bottle, right, 
 00:43 so if you're going to try to automate this stuff, this is really nice 
 00:47 and maybe even you want to give it a no inputs at this point. 
 00:50 Alright, so here we could do this, and we could of course say --no-input 
-00:55 and even a -f. 
-01:00 And boom, there it goes, so now we have The Bottle, 
+00:55 and even a -f
+01:00 And boom, there it goes, so now we have "The Bottle", 
 01:04 and we actually created it twice, first when I hit enter a bunch of times, 
 01:07 the second one when I just ran that one command line. 

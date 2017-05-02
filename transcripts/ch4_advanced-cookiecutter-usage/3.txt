@@ -1,5 +1,5 @@
 00:01 Alright, let's quickly play with verbose mode. 
-00:05 We've seen that we're able to run cookiecutter with no inputs,
+00:05 We've seen that we're able to run Cookiecutter with no inputs,
 00:08 let's try it in verbose mode, it's going to ask some questions, 
 00:11 tell me all sorts of stuff like here is some default values we're using, 
 00:15 we generated this context and this is what we're going to use 
@@ -13,14 +13,14 @@
 00:45 and then we're making sure that it doesn't exist, 
 00:48 first we create the directory then we make sure it does exists, right, 
 00:51 okay there it goes, and it found no hooks, if there were hooks, 
-00:54 it would say we're running the pre generation script, the post generation script, 
+00:54 it would say we're running the pre-generation script, the post-generation script, 
 00:57 that's what hooks are about, so it's processing all these files that are here, 
 01:00 it's transformed requirements to see if anything is there, 
-01:04 change the readme and it checks to see what's binary 
+01:04 change the README and it checks to see what's binary 
 01:06 then it wrote the contents of that, which is cool, 
 01:09 remember it uses like the summary or whatever of the project that goes there, 
 01:13 you could just go through and see all the steps that it's going, 
-01:16 as it's processing these files and finally there is no post hooks either, 
+01:16 as it's processing these files and finally there is no post-hooks either, 
 01:20 so it didn't run that and we're done. 
 01:22 Alright, so this verbose mode is really helpful if you need it, 
 01:25 especially when you're creating your own templates. 
