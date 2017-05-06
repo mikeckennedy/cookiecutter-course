@@ -1,6 +1,6 @@
 00:01 So let's look at the concepts behind this dependent value thing.
-00:04 So if we come over here and we run the cookiecutter template template 
-00:07 that's the one that generates cookiecutter templates for us, 
+00:04 So if we come over here and we run the Cookiecutter template template 
+00:07 that's the one that generates Cookiecutter templates for us, 
 00:10 and we run it, it asks a bunch of questions: what's your name, 
 00:13 what's your email and so on, and then it gets to this point where it asks 
 00:16 what's the project name, and I just entered whatever I feel like, greatest thing ever; 
