@@ -9,27 +9,27 @@
 00:30 and it needs a lot of documentation, so I spent at least half a day
 00:34 working on this template, but you know it depends 
 00:36 on what kind of template or building, how much effort this step is.
-00:38 Next I put it on github, so already I can use this in my documentation 
+00:38 Next I put it on GitHub, so already I can use this in my documentation 
 00:44 I can use it in training videos or instructional videos 
 00:48 say you want to get started with my version of a Pyramid web app 
-00:51 well you just cookiecutter space that url and you're off to the races. 
-00:55 Having it somewhere online, github is probably the best place, is the first step, 
+00:51 well you just cookiecutter space that URL and you're off to the races. 
+00:55 Having it somewhere online, GitHub is probably the best place, is the first step, 
 01:01 right hopefully people come along, submit pull request to my template
 01:04 make it even better; next we go to the official cookiecutter template  
 01:07 that's github.com/audreyr/cookiecutter and we fork it. 
-01:12 So we fork this to our own repository so after we have it frked
+01:12 So we fork this to our own repository so after we have it forked
 01:16 we check it out to edit it locally
 01:19 I suppose if it's just restructured text if it's just those two lines 
 01:23 you could technically do this online, but you probably want to have  
-01:25 a working copy locally anyway, so you do a get clone, 
+01:25 a working copy locally anyway, so you do a git clone, 
 01:29 notice this is my url, not theirs, that's very important 
 01:34 so we clone it, it comes down, we're ready to go 
 01:36 now we can go and edit this folder right 
 01:39 basically that one file is surely all we got to edit in this case 
 01:42 all right so like I said, make sure that that's your username not audreyr. 
 01:46 Next there's a whole bunch of files here this is the entire project 
-01:50 that generates and runs cookiecutter as well as its documentation 
-01:55 but the only one we care about is this readme here 
+01:50 that generates and runs Cookiecutter as well as its documentation 
+01:55 but the only one we care about is this README here 
 01:58 so, because I'm working on a Python project I went to the Python section 
 02:02 and I'm going to add an entry here if I was working on assembly 
 02:06 I would have gone to that section right, or if I was working on-

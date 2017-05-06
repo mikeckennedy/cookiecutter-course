@@ -16,9 +16,9 @@
 00:56 which I don't think it's a great idea 
 00:59 so I'm going to just clone that here
 01:01 so we'll say git clone, and you give it the path,
-01:04 of course you have get installed, but I'm assuming
+01:04 of course you have git installed, but I'm assuming
 01:07 that you guys can do that it's kind of out of the scope of this course
-01:10 okay so here we can open a cookiecutter project 
+01:10 okay so here we can open a Cookiecutter project 
 01:12 so now we have the source code on our machine 
 01:15 next thing is to install it, so that we can actually run the code 
-01:19 run the cookiecutter module or package. 
+01:19 run the Cookiecutter module or package. 

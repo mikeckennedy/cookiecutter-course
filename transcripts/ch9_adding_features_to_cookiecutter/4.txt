@@ -4,17 +4,17 @@
 00:09 so that things are a little simpler for us 
 00:12 in order to add this feature on a feature branch 
 00:15 so we can make multiple features, have them all in flight at the same time, things like that.
-00:20 So I'm going to switch out of the terminal to my favorite git client which is source tree,
+00:20 So I'm going to switch out of the terminal to my favorite git client which is SourceTree,
 00:25 so I'm going to open this directory so I can get hold of it, 
 00:28 go over here, let's come to source tree, and let's just put cookiecutter right there
-00:32 ok that's my cookiecutter on github, notice here you can see 
+00:32 ok that's my cookiecutter on GitHub, notice here you can see 
 00:39 it's just got all the features from when was the last from what they did, here we go,
 00:44 this is the last branch as you can see, 
 00:48 these are all modified by me on my local version
 00:51 this is the last branch in sync with cookiecutter itself.
 00:55 When you do this, it'll probably be right at the top,
 00:58 so you just want to branch from there, but I'm going to find the latest one
-01:01 that's in sync with the official cookiecutter repro
+01:01 that's in sync with the official cookiecutter repo
 01:05 and I'm going to create a branch because what I want to do is 
 01:07 do all of the work only for that feature on that one branch, so let's do that. 
 01:10 So we'll come over here, and we'll say branch, 
@@ -22,10 +22,10 @@
 01:17 if you use your name or your user name or basically if you separate with slashes 
 01:20 you can make a hierarchy of features, so I am going to say this 
 01:23 I'll say mikeycennedy that's my github name 
-01:26 and then I'm going to say forgiving yaml fix, 
-01:30 so forgiving yaml formats not super annoying, 
-01:34 hey you need a new line there, you forgot that version 
-01:37 so I'm going to check out to this particular commit,
+01:26 and then I'm going to say forgiving YAML fix, 
+01:30 so forgiving YAML formats not super annoying, 
+01:34 hey you need a newline there, you forgot that version 
+01:37 so I'm going to checkout to this particular commit,
 01:41 and I'm going to go ahead and check out that new branch 
 01:44 so I'll start working from there ok 
 01:47 and notice, with the / here, this will actually create like a little tree of things,
@@ -34,11 +34,11 @@
 01:56 hey there's this virtual environment here, I don't want that, so what I'm going to do is 
 01:59 I'm going to say ignore everything under .env,
 02:01 if this pull request gets accepted you probably won't have to do this, we'll see 
-02:05 but we're going to just update the git ignore to say 
-02:08 don't check in that virtual environment it's not cross platform anyway 
+02:05 but we're going to just update the .gitignore to say 
+02:08 don't check in that virtual environment it's not cross-platform anyway 
 02:12 so I'll just add that in real quick, ignore virtual env directory, ok,
 02:17 so now everything is clean in our feature branch right here, 
 02:22 if we go over here you can see that we have that one checked out 
-02:26 we're on the forgiving yaml fix directory 
+02:26 we're on the forgiving YAML fix directory 
 02:28 we're ready to make the code itself 
-02:31 actually do the code change that makes this forgiving yaml. 
+02:31 actually do the code change that makes this forgiving YAML. 

@@ -5,8 +5,8 @@
 00:12 one remember what I called the working farther with integrated systems 
 00:16 that might happen inside of your company and you probably wouldn't want to do that 
 00:20 but if you are working on anything open source or out in the public
-00:24 you will very much likely want to have your cookiecutter listed 
-00:26 on the cookiecutter home page, of course you'll have it in your documentation
+00:24 you will very much likely want to have your Cookiecutter listed 
+00:26 on the Cookiecutter home page, of course you'll have it in your documentation
 00:29 and you'll have it on your website and so on, 
 00:32 but you go ahead and put it to here so everybody can find it.
 00:35 Right, so what we're going to talk about is how we take a template that we create 
