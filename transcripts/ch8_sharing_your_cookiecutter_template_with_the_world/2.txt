@@ -2,9 +2,9 @@
 00:04 so let me show you the template that I have created 
 00:06 crated both for some of my other courses or just for the community 
 00:09 and sort of spurred on to do it at this moment, for this particular course. 
-00:14 So if we look over in my cookiecutters, there is a thing 
-00:17 I'm calling cookiecutter pyramid talk python starter 
-00:20 so Pyramid is a web framework, and they use cookiecutter by default
+00:14 So if we look over in my Cookiecutters, there is a thing 
+00:17 I'm calling cookiecutter-pyramid-talk-python-starter 
+00:20 so Pyramid is a web framework, and they use Cookiecutter by default
 00:24 they have three or four different starter templates,
 00:26 and they all pretty basic, and so you start very close to the beginning of a project 
 00:31 it doesn't have a lot of integrated things and I wanted to create one 
@@ -28,14 +28,14 @@
 01:35 so that's really nice, description goes at the top of the pages 
 01:39 and then it ask you some questions about integration 
 01:42 so like there's no real way to say pause, show them something
-01:46 so it's just going to be blanks as I press enter, 
+01:46 so it's just going to be blanks as I press Enter, 
 01:48 so I'll just put a few things you can see where this goes,  
 01:50 it asks you what is your MailChimp API what's the key there 
 01:53 so if you have the key you can put this in and automatically  
 01:55 MailChimp will start working and this will be list 7, 
 01:58 if you have an outbound email server you can set that up 
 02:01 so this will be admin, and this is going to be root,
-02:05 I'm just making up stuff right, the server is going to be local host 
+02:05 I'm just making up stuff right, the server is going to be localhost (127.0.0.1)
 02:11 port take the default for encrypted, and Rollbar I'll just put some random stuff there 
 02:16 so now we have this template here, this thing is created by the template 
 02:21 so what we can do to get started, the way Pyramid works 
@@ -61,10 +61,10 @@
 03:33 if I was actually to open it up, you would see that this is the package name 
 03:37 it's used throughout, let's look at one thing here, let's look at the development.any 
 03:43 so you can go through this and see that it's been configured 
-03:46 our smtp settings we gave it are configured 
+03:46 our SMTP settings we gave it are configured 
 03:49 this is configured, it looks like it might have a bug here 
 03:51 about the list id versus API key, 
 03:54 here's the Rollbar, everything that we need, right.
 03:57 So this is great, this is a really good way to get started with this web app. 
 04:01 Now my goal is to share this template with the world 
-04:05 and get it listed on the cookiecutter homepage. 
+04:05 and get it listed on the Cookiecutter homepage. 
