@@ -23,7 +23,7 @@
 01:12 but before it actually executes the process that creates the directories, 
 01:17 copies the files, does the replacement, and you'll get a look 
 01:19 at what is called the context, and this context is all the values, 
-01:22 the keys and the values, basically listed in cookiecutter json, 
+01:22 the keys and the values, basically listed in cookiecutter.json, 
 01:26 so we could say if the value favorite color is still required, 
 01:29 or if it doesn't seem like some kind of color we could say no, no, 
 01:33 we're not going to run, we're going to cancel this, 

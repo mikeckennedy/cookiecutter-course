@@ -1,23 +1,23 @@
 00:01 Now you've seen post generation hooks in action, let's look at them as a concept. 
 00:04 So, we can put whatever script or code we want here, you can see at the end, 
-00:09 the very bottom I call sys.exit clean unused color files. 
+00:09 the very bottom I call sys.exit() clean unused color files. 
 00:13 And, that is just going to call this function I've written above, 
-00:16 so one of the things that is very common to do in cookiecutter 
+00:16 so one of the things that is very common to do in Cookiecutter 
 00:19 is to remove files that you don't need anymore, and maybe some day 
 00:23 this will be built into some part of the system, I don't really know, 
 00:27 like a conditional statement in the cookiecutter.json or something, 
 00:30 but for now, this is left up to you, the template creator, in these hooks, 
 00:36 so here we can write a little bit of code, it's going to grab the selected color, 
-00:40 in this case the favorite color, we called this variable selected color,  
-00:43 we are using the os.path.current_dir to find the root of the generated project folder, 
+00:40 in this case the favorite color, we called this variable selected_color,  
+00:43 we are using the os.path.cur_dir() to find the root of the generated project folder, 
 00:50 and then, we are just looking in the colors directory 
 00:53 and grabbing like the yellow.txt file 
 00:55 if it's not needed and we're calling remove on that. 
 00:58 Okay, and then finally, notice at the very bottom we're returning zero, 
 01:01 maybe if there was some kind of error, we have really basically no error checking, 
 01:04 but if we checked and there was something wrong, 
-01:07 we could return a non zero value and we're calling sys.exit 
+01:07 we could return a non zero value and we're calling sys.exit() 
 01:11 which would actually stop and fail the project creation, 
 01:14 if we say this hook didn't run successfully. 
-01:17 You say it ran successfully by sys.exit is zero
+01:17 You say it ran successfully by sys.exit() is zero
 01:20 and it doesn't run successfully by exiting something non zero. 

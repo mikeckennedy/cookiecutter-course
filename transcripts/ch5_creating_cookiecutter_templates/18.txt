@@ -1,15 +1,15 @@
-00:01 Now you know how to create these cookiecutter templates 
+00:01 Now you know how to create these Cookiecutter templates 
 00:03 and I feel like I've shown you something of the hard way. 
 00:06 And I did that on purpose, not to torture you 
 00:09 but because I want you to really see and understand all the moving parts, 
-00:12 but, if I was going to go create a new cookiecutter template, 
-00:15 there is a very good chance I would use a cookiecutter template to do that. 
+00:12 but, if I was going to go create a new Cookiecutter template, 
+00:15 there is a very good chance I would use a Cookiecutter template to do that. 
 00:19 That's kind of circular, isn't it, but there is a template called cookiecutter-template, 
 00:24 and its goal is to ask you the questions to generate 
-00:28 the basic project structure for creating a cookiecutter template. 
-00:32 So you can get it from this url here, let's go and run it. 
+00:28 the basic project structure for creating a Cookiecutter template. 
+00:32 So you can get it from this URL here, let's go and run it. 
 00:35 Alright, my name is Michael Kennedy, remember that comes from my default file, 
-00:39 similarly my email, my github user name all these things, 
+00:39 similarly my email, my GitHub user name all these things, 
 00:42 the name of the project, let's suppose we want to do something 
 00:45 with race cars simulations, so I'll call this Race Sim, 
 00:49 something like that, and notice, it uses that dependent thing 
@@ -23,13 +23,13 @@
 01:29 yes, we want to copy hooks.
 01:33 Boom it's done, okay, let's see what we got, it should be in cookiecutter-race-sim 
 01:37 and there it is so let's open it up, alright, now in here,
-01:41 notice, we've got a cookiecutter template, it has a cookiecutter.json 
+01:41 notice, we've got a Cookiecutter template, it has a cookiecutter.json 
 01:47 and it has a directory that has got a name in there and it's going to have 
-01:51 basically the project slug name put there when you run it, it also has a change log, 
+01:51 basically the project slug name put there when you run it, it also has a CHANGELOG, 
 01:55 it has hooks, a post generation hook with some code already built for us, 
 02:01 so we can use that to start, no pre gen hook but that's okay, 
-02:05 it has a license, a readme and so on. 
+02:05 it has a license, a README and so on. 
 02:08 This is really nice and if you're going to get started, 
 02:11 just make sure, you don't want to make any mistakes, 
-02:13 so might as well just say cookiecutter and then cookiecutter template. 
+02:13 so might as well just say cookiecutter cookiecutter-template 
 02:15 And get started that way. 

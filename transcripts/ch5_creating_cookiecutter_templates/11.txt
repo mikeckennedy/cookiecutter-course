@@ -1,12 +1,12 @@
-00:01 Jinja 2 comes with the ability to write extensions for its template language, 
+00:01 Jinja2 comes with the ability to write extensions for its template language, 
 00:04 here is the officially listed extensions as well as the API 
 00:08 that we can go to and write our own. 
-00:10 We could also go to github and do searches for those extensions, 
+00:10 We could also go to GitHub and do searches for those extensions, 
 00:13 and we saw that there were 25 of those, at the time of the recording, 
 00:17 that is pretty cool, so if we want to use the extension, 
 00:20 we have to list it, right here in this _extensions. 
 00:24 Now, unfortunately, this must be an installed Python package, 
-00:28 which means pip install package name typically depending on, 
+00:28 which means pip install package-name typically depending on, 
 00:33 there is a few intricacies around which version of pip you're using 
 00:38 based on your path and so on, so this can get actually a little bit tricky 
 00:41 for your users and it's too bad that it doesn't somehow install 
@@ -18,7 +18,7 @@
 01:02 you can use these extensions there is a little bit of a security tightrope
 01:06 to walk there but I think something like that would be really nice, 
 01:09 it doesn't exist now so if you're going to do this, 
-01:11 your users have to install Jinja 2 time before they could run this template. 
+01:11 your users have to install jinja2-time before they could run this template. 
 01:15 But once we put this in here as an extension, then in our project, 
-01:18 we can say things like release date is {% now}. 
+01:18 we can say things like release date is {% now 'local' %}
 01:24 And that comes from the time extension, so that's really cool. 

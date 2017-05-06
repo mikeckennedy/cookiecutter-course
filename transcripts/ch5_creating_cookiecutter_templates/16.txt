@@ -4,10 +4,10 @@
 00:14 A real world example of this would be a web application
 00:17 with different types of templates, Jinja, Chameleon, Mako and so on, 
 00:20 and you only want to keep the files that correspond to the ones selected, 
-00:25 by the creator, the person who ran the cookiecutter template.
+00:25 by the creator, the person who ran the Cookiecutter template.
 00:30 Now we're going to do one final thing here, we're going to display 
 00:33 some helpful instructions for the user, 
-00:37 okay, so when we run the cookiecutter template, 
+00:37 okay, so when we run the Cookiecutter template, 
 00:40 what we'd love to see is here we've created your project, 
 00:43 we asked you the questions, and here is a friendly little getting started message 
 00:47 so we can help people fall into the pit of success. 
@@ -25,8 +25,8 @@
 01:37 it's pre replaced with the color when they selected it, 
 01:41 but I kind of like having this ability to get in one place and pass it around. 
 01:45 Alright, so now we should have a nice message when we're done with this. 
-01:49 Okay, let's create one final template, so again, it's going to be cookiecutter 
-01:53 and cookiecutter_colors, we're going to run this here, and let's see, 
+01:49 Okay, let's create one final template, so again, it's going to be 
+01:53 cookiecutter cookiecutter_colors, we're going to run this here, and let's see, 
 01:58 the project is going to be final exam 
 02:02 and of course our little dependent property here, 
 02:05 grab that and create this, you creator is going to be me, 

@@ -1,14 +1,14 @@
-00:01 Now we've come to the really critical part of this course- creating templates. 
-00:06 While it's great to use and understand cookiecutter as a consumer, 
-00:10 the real power is taking the concept of cookiecutter templates 
+00:01 Now we've come to the really critical part of this course. Creating templates. 
+00:06 While it's great to use and understand Cookiecutter as a consumer, 
+00:10 the real power is taking the concept of Cookiecutter templates 
 00:13 and applying them to your projects, your teams, your companies and so on.
 00:18 So, let's go through some of the reasons why we might want to create a template. 
 00:21 Well, first of all, they often can decrease frictions on projects that you use, 
 00:26 so imagine you have some project and it requires some setup, 
 00:30 certain number of files in certain place, folder structure and so on, 
 00:33 and if this does not have some kind of scaffolding tool already, 
-00:37 then a cookiecutter template would be awesome for you to add, 
-00:41 so even if you don't own that project, maybe creating a cookiecutter 
+00:37 then a Cookiecutter template would be awesome for you to add, 
+00:41 so even if you don't own that project, maybe creating a Cookiecutter 
 00:44 that will generate it just the way you lie it is a good idea, and who knows, 
 00:48 you could submit that as a pull request back to the original team 
 00:51 and maybe they will take that and that could become the official way 
@@ -19,9 +19,9 @@
 01:08 Well, suppose again, there is a certain way as a team 
 01:11 you have agreed upon any project of your language should look, 
 01:15 it should always have this folder structure, it should always have these files, 
-01:18 it should always have this readme, and some sort of startup script and so on, 
+01:18 it should always have this README, and some sort of startup script and so on, 
 01:21 so you can make it easier for all new projects to come out that way 
-01:25 and if you have a cookiecutter that always does that 
+01:25 and if you have a Cookiecutter that always does that 
 01:28 when somebody new comes on the team just go this 
 01:30 for no matter what project you are working on,
 01:32 this is how it's going to look, this is why it works that way. 
@@ -56,19 +56,19 @@
 03:08 not within a company that is like very structured, 
 03:11 but you've got some open source project that has some setup basically in my mind, 
 03:16 if your open source project has more than two lines, 
-03:19 on how to get started it could use a cookiecutter template; 
+03:19 on how to get started it could use a Cookiecutter template; 
 03:23 here is how I think it should go. 
-03:25 Pip install or somehow install, right, if it's Python pip, if it's Javascript npm, 
-03:28 install your project library, run your cookiecutter, 
+03:25 pip install or somehow install, right, if it's Python pip, if it's Javascript npm, 
+03:28 install your project library, run your Cookiecutter, 
 03:33 okay, maybe the other order, depending on how you want to do it, right, 
-03:36 maybe the cookicutter could be on github and it could generate 
+03:36 maybe the Cookicutter could be on GitHub and it could generate 
 03:39 the some kind of requirement listing and then you install it there, 
 03:42 either way there should basically be two steps, 
 03:45 if you have a whole bunch of steps in an open source project, 
 03:47 there is a lot of people that will come along, they will try to get started 
 03:50 and go oh this is too complicated, I am out of here, right, so you can bundle up
 03:53 the best practices for getting started with your open source project, 
-03:55 as a cookicuter template. That's excellent. 
+03:55 as a Cookicuter template. That's excellent. 
 03:57 And, this can regardless of whether you're inside of a company, 
 04:01 or you're in an open source project, this can lower the support overhead,
 04:04 all that startup stuff, all that initial integration that can just go away 

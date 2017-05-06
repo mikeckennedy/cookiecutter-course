@@ -1,22 +1,22 @@
 00:00 Several times you've heard me say things like 
 00:03 oh, we could totally validate this, 
 00:06 and verify it if we just had this things called hooks. 
-00:09 So, cookiecutter itself it's Jinja syntax here and some of its other features, 
+00:09 So, Cookiecutter itself it's Jinja syntax here and some of its other features, 
 00:12 is very flexible and sometimes that's all you need; 
 00:15 but there is certain things, at least at the time of this recording that you can't do, 
 00:19 like for example, you can't conditionally include or exclude files 
 00:23 you can conditionally include or exclude parts of files 
 00:27 but the files themselves you can't really do that. 
 00:30 So imagine you’re creating a web app, and you ask a question, 
-00:33 what kind of front end frameworks do you want to use, 
-00:36 do you want t use foundation, do you want to use Bootstrap, 
+00:33 what kind of front-end frameworks do you want to use, 
+00:36 do you want t use Foundation, do you want to use Bootstrap, 
 00:39 there is all these different choices you could make 
 00:41 and probably those have a bunch of files, css and json that go with it 
 00:43 so without this concept of hooks, you can't really do that. 
 00:46 So hooks are the way to basically write arbitrary code 
 00:49 before and after project creation. 
 00:51 So let's see how that works, so here I have opened this up into PyCharm, 
-00:55 like I said, most of this class and to use cookiecutter 
+00:55 like I said, most of this class and to use Cookiecutter 
 00:58 you don't need to know Python, you need to have it 
 01:01 because it executes on top of the runtime, but other than that, you don't care. 
 01:04 In this case, you're going to care, you're going to need to be able 
@@ -25,17 +25,17 @@
 01:13 like a bash script, so if you want to write that instead, 
 01:15 but then that locks you into unix platforms only; 
 01:18 and there is some talk that maybe somebody adding a feature 
-01:22 say for like a power shell script for windows, something like that, but for now, 
+01:22 say for like a PowerShell script for Windows, something like that, but for now, 
 01:25 the best way to do these hooks is really with Python, so how does that work? 
 01:28 So we're going to get started by creating a new folder, called hooks, lowercase,
 01:34 just like that, it has to be at the top level of your template, 
 01:37 not where the files are, or things you're actually using 
 01:40 to give to the users are, above that, and here we're going to have 
-01:43 a Python file and it's going to be called pre_gen_project.py. 
+01:43 a Python file and it's going to be called pre_gen_project.py
 01:49 Now, let's go ahead and add another one, 
 01:52 we're not going to do anything with this yet, 
-01:55 but let's go over here and say post gen hook, 
-01:58 and let me just do a print post gen hook running. 
+01:55 but let's go over here and say post_gen_project.py, 
+01:58 and let me just do a print "Post gen hook running". 
 02:01 Alright, so that should show up, don't you think, in our output here, 
 02:05 and we'll just do the same for the pre gen hook. 
 02:08 Just so we can check that everything is setup okay. 
@@ -46,7 +46,7 @@
 02:24 we're going to say cookiecutter to install that. 
 02:27 And, we need to say local, alright, it's going to say where is my project, 
 02:31 I am going to call it the-new-hooked-project, something like that, 
-02:35 creator we'll leave empty for now, data is now, notice if I hit enter 
+02:35 creator we'll leave empty for now, data is now, notice if I hit Enter 
 02:39 I just choose the default for the select the favorite color, 
 02:43 and pre gen hook is running and post gen hook is running. 
 02:46 Now, I am not sure if that behaves the way you would expect or not. 
@@ -68,7 +68,7 @@
 03:35 which is pretty interesting, so check this out, 
 03:38 we'll say the creator is and now what we can put in here is 
 03:41 some kind of string like Jeff or Michael or a Jinja expression,
-03:45 and the Jinja expression is cookiecutter.creator. 
+03:45 and the Jinja expression is {{ cookiecutter.creator }} 
 03:50 Alright, let's just do a quick print pre hook found creator of 
 03:55 and do a little format here, okay, so if we run that and then let's just say-
 04:01 hold on, there is going to be one small problem, it's not going to do this, 
@@ -86,21 +86,21 @@
 04:40 and what this Python script actually sees, if we run this 
 04:43 in some kind of verbose mode and find out where this file gets put, 
 04:46 on some temporary location, what this sees as it executes as Python 
-04:50 it's simply this, like that is what it sees, it's cookiecutter itself 
+04:50 it's simply this, like that is what it sees, it's Cookiecutter itself 
 04:54 that does the transformation of the hook file 
 04:58 and then you run it with the values that were dropped in, 
 05:01 so we write it like this, but effectively imagine the replacements were done 
 05:04 before this was ever loaded by Python. 
 05:07 Alright, so now we can do a little test here, we can say something like this, 
-05:12 if not creator, so if it's empty or something like that, or not creator.strip, right, 
+05:12 if not creator, so if it's empty or something like that, or not creator.strip(), right, 
 05:20 I think actually because of the way we'er doing it, it's never going to be none; 
 05:25 if it's basically empty, we'll do something like this, 
-05:29 print error you must specify a creator to use this template. 
+05:29 print("ERROR: You must specify a creator to use this template."). 
 05:35 Now, how do we indicate that this was the problem. 
-05:39 okay, so what we need to do is we need to say exit and 
-05:42 basically the way we tell cookiecutter there is a problem, 
+05:39 Okay, so what we need to do is we need to say exit and 
+05:42 basically the way we tell Cookiecutter there is a problem, 
 05:45 is we exit with a non zero status code, Python the way you do that 
-05:49 is you import sys, you say exit- let's say 1, right, 1 means there is no creator, 
+05:49 is you import sys, you say sys.exit(1) let's say 1, right, 1 means there is no creator, 
 05:58 we'll add another validation as well.
 06:01 Let's try this again, project name will be New project with hook and creator, 
 06:07 it seems like a great name to me, creator, let's go without the creator first.
@@ -119,9 +119,9 @@
 06:51 So it's not just basic validation, we could do all sorts of things, 
 06:56 like we could check to see that the favorite color
 06:59 maybe right now we don't support black so we can also come down here 
-07:02 we could say something to this effect favorite color=same thing, 
-07:05 this cookiecutter thing, and we can say if favorite color=black 
-07:09 print currently black is actually not supported, not implemented. 
+07:02 we could say something to this effect favorite_color = '{{ cookiecutter.favorite_color }}' 
+07:05 this cookiecutter thing, and we can say if favorite_color == black 
+07:09 print("Currently black is actually not implemented.")
 07:15 And let's go over here and exit
 07:19 let's see if we say exit 7, that means the color is invalid. 
 07:23 So let's try it one more time. Black project, we'll never worry about this 

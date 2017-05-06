@@ -7,18 +7,18 @@
 00:23 or you've got to setup your system this way, or bunches of things. 
 00:26 So we can so a little nice message right at the end by using a post generation hook. 
 00:30 One of the things that is very common in these templates, 
-00:33 but is not built in to cookiecutter at the time of this recording, 
+00:33 but is not built in to Cookiecutter at the time of this recording, 
 00:36 is the ability to include or exclude files and directories conditionally. 
 00:41 So, we can write a little bit of code to do that, and I've changed our project, 
 00:45 just a tiny bit to set this up before us, so over here notice there is this folder 
 00:49 called color_files and it has a blue_file a green_file and a yellow_file. 
-00:54 If we look at the cookieuctter.json, I trimmed this down just for sanity sake, 
+00:54 If we look at the cookiecutter.json, I trimmed this down just for sanity sake, 
 00:58 so we have blue, green and yellow, 
 01:01 these three you can all create projects of that type, 
 01:03 remember our pre generation hook already will not allow you 
 01:06 to create a black one, because we were just playing around with that idea. 
 01:09 So we have these three realistic options for a color.
-01:12 Now, when you choose a color, what we want to do is only include the blue file, 
+01:12 Now, when you choose a color, what we want to do is only include the blue_file, 
 01:16 which simply says this is the file that appears only in blue projects, 
 01:20 when you choose blue. If you choose green, we want to have only green, 
 01:23 we want to get rid of blue and yellow, if you choose green. Okay.
@@ -36,39 +36,39 @@
 02:18 Okay, so how are we going to remove our files, 
 02:21 let's try one more little helper function called delete_files, 
 02:24 this will be file_list, and this will be a working_dir.
-02:30 Okay so we're going to need to use an OS module in Python, 
-02:35 so we are going to import OS and let's just go down here and say 
-02:38 for file in file_list: full_file=os.path.join, we want to take the working directory 
+02:30 Okay so we're going to need to use an os module in Python, 
+02:35 so we are going to import os and let's just go down here and say 
+02:38 for file in file_list: full_file = os.path.join(working_dir, file) we want to take the working directory 
 02:45 and in a platform independent way combine it with this file. 
 02:49 So this is going to be the file and then we're going to test whether it exists, 
 02:52 so we'll say if os.path.exists(full_file):, we're going to say os.remove(full_file). 
 02:58 So, we were given a set of files and if they exist, we want to delete them 
 03:04 so up here we are going to choose which ones do we send to this function, 
 03:07 which ones do we actually want to delete based on some sort of input. 
-03:11 Let's go ahead and also here say else print warning 
-03:15 could not find file to remove or something. 
+03:11 Let's go ahead and also here say else: 
+03:15 print("WARNING: Could not find file to remove in hook: " + full_file) 
 03:19 And we'll just print out the full file here. Hopefully, if we do things right, 
 03:22 we'll never ever see that warning, but just in case. 
-03:24 Now what we need to do is figure out the favorite color. 
-03:27 And as long as we spell this correctly, this will be cookiecutter.that.
+03:24 Now what we need to do is figure out the favorite_color. 
+03:27 And as long as we spell this correctly, this will be cookiecutter.that
 03:34 Like so, alright, so that is going to be the color, 
 03:38 and then we just need to test is it blue, green or yellow, 
 03:41 and first of all, let's get the working directory that is going to be the same, 
-03:43 so we'll say os.path.absolute path, and then we'll say os.path.current directory.
+03:43 so we'll say os.path.abspath(os.path.curdir)
 03:50 So, when our hook executes, it's going to execute in the context 
 03:54 in the current directory, it's going to be where that template is, 
 04:00 where the files were created, okay. 
-04:03 Then we'll say like this, file list is empty, we'll say if favorite color is yellow, 
-04:09 say file list is going to be and we'll just put blue_file and yellow_file. 
-04:15 Sorry green_file, okay, we got blue_file.txt and green_file.txt, 
+04:03 Then we'll say like this, file_list = [] (is empty), we'll say if favorite_color == 'yellow' 
+04:09 say file_list is going to be and we'll just put "blue_file.txt" and "yellow_file.txt" 
+04:15 Sorry green_file, okay, we got "blue_file.txt" and "green_file.txt", 
 04:21 now there is a bit of a problem in that, 
 04:23 this current directory here is actually this directory, 
 04:27 and we need to get into the colors file, so we could do one more step,
 04:31 if we know we're only working in the colors file folder, we'll just do like this. 
 04:35 Join that directory, with color files. 
 04:40 And then we can just say the short names here. 
-04:44 And let's just keep going, and finally in all of these we just say delete files, 
-04:49 we give it the file list and the working directory. 
+04:44 And let's just keep going, and finally in all of these we just say delete_files(), 
+04:49 we give it the file_list and the working_dir. 
 04:53 Okay, if everything is working correctly, 
 05:00 we should be able to delete these files, 
 05:03 okay, now what we're going to do is we want to create a few projects 
