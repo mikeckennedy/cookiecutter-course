@@ -1,27 +1,27 @@
-00:01 By now you're quite capable with cookiecutter,
+00:01 By now you're quite capable with Cookiecutter,
 00:04 you know all the advance uses as a user,
 00:07 you know how to create your own including things like hooks
 00:11 and conditional statements inside the cookiecutter.json,
 00:14 as well as how to use the API to actually wrap up
-00:17 the functionality of cookiecutter with a nicer shell.
+00:17 the functionality of Cookiecutter with a nicer shell.
 00:20 So I think it's a good time to take a moment and just look around the industry
-00:25 and see how other people, other projects are using cookiecutter .
+00:25 and see how other people, other projects are using Cookiecutter.
 00:29 Now, I grabbed three projects that I'm familiar with
-00:32 but there are many more as you saw when we did a search on github,
+00:32 but there are many more as you saw when we did a search on GitHub,
 00:36 there was quite a few options out there.
 00:39 So feel free to do your own exploration
 00:41 I'm going to take you on a tour of three particular projects
 00:44 first one we are going to look at is Beeware,
-00:46 these guys are doing really interesting cross platform
-00:50 native type things with Python and cookiecutter plays a central role in this
+00:46 these guys are doing really interesting cross-platform
+00:50 native type things with Python and Cookiecutter plays a central role in this
 00:53 so I think this is going to be an interesting use case here;
 00:57 OpenStack, OpenStack is an open source largely Python based
 01:02 version of more or less AWS, right,
 01:05 you can take and add VM capabilities, you can add storage capabilities,
 01:10 database capabilities, all sorts of stuff like this and it's quite a large project
 01:14 so working with it can be quite challenging, and so you'll see
-01:18 how they're using cookiecutter on certain parts of OpenStack.
+01:18 how they're using Cookiecutter on certain parts of OpenStack.
 01:21 Finally, we'll look at the Pyramid web framework,
 01:25 this is a project that I've been involved with
-01:27 on the cookiecutter side as well as the web app
-01:30 and you'll get a look inside how these guys are moving to cookiecutter.
+01:27 on the Cookiecutter side as well as the web app
+01:30 and you'll get a look inside how these guys are moving to Cookiecutter.
