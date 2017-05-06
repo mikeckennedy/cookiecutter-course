@@ -17,7 +17,7 @@
 00:56 maybe we could start like this, let's suppose 
 00:58 those two have to be required values,
 01:01 one possibility we say let's put in nothing and see what happens here, 
-01:06 so if I run this, cookicecutter cookiecutter.colors, it's going to ask some questions, 
+01:06 so if I run this, cookicecutter cookiecutter-colors it's going to ask some questions, 
 01:10 my project I'll say the best ever and you can see the best ever 
 01:14 how cool is that, right, so we'll take that default and creator, 
 01:17 well, what we would like for it to do is say you must specify a creator name,
@@ -35,7 +35,7 @@
 02:01 Okay, so this is not working, but the one half that we do want is 
 02:04 we should be able to use either of these, we want to create a system 
 02:07 where we can say creator is blank, and somehow maybe know that
-02:12 that is required, we want to be able to say favorite color=required 
+02:12 that is required, we want to be able to say favorite_color=required 
 02:15 and they are not allowed to enter, something else. 
 02:18 we could see that we could give them a choice here, 
 02:21 and then they would have to choose from the list, like blue yellow green red, 
