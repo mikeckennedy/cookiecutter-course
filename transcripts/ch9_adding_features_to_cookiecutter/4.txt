@@ -24,7 +24,7 @@
 01:23 I'll say mikeycennedy that's my github name 
 01:26 and then I'm going to say forgiving YAML fix, 
 01:30 so forgiving YAML formats not super annoying, 
-01:34 hey you need a new line there, you forgot that version 
+01:34 hey you need a newline there, you forgot that version 
 01:37 so I'm going to checkout to this particular commit,
 01:41 and I'm going to go ahead and check out that new branch 
 01:44 so I'll start working from there ok 
