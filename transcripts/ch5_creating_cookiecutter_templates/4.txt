@@ -2,9 +2,9 @@
 00:04 and cookicutter.json as the json extension would indicate, seems very static, 
 00:10 like if it was cookiecutter.js well, maybe we put a whole bunch 
 00:15 of conditionals and things like that, but just a json file, 
-00:19 that indicates static values, so let's run this cokiecutter template cookiecutter template, 
-00:25 that's right, it's a meta cookiecutter template, 
-00:27 this is the one that we can use actually to create other cookiecutters, 
+00:19 that indicates static values, so let's run this Cokiecutter template cookiecutter-template, 
+00:25 that's right, it's a meta cookiecutter-template, 
+00:27 this is the one that we can use actually to create other Cookiecutters, 
 00:30 I just want to look at a question it asks, so let's run this, 
 00:33 and it says great, what's your name, 
 00:37 my name is Michael, here is my email address, 
@@ -24,7 +24,7 @@
 01:34 This value changes if I run this tomorrow it will say 2017, 03 10. 
 01:40 That's really cool, and the version oh no, this is a very advanced template, 
 01:43 it's there, do you want to copy the hooks- no, don't worry about the details here, 
-01:48 yeah, I don't think it can take this dash, but I suppose I did ti right, 
+01:48 yeah, I don't think it can take this dash, but I suppose I did it right, 
 01:53 it would also generate a thing that we could start, 
 01:56 so instead of one we did in a previous video with the bare template, 
 01:59 we can start from this one, we'll come back to this, 
