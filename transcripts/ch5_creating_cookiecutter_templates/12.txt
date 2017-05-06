@@ -1,16 +1,16 @@
 00:01 Let's imagine you want to create a template 
 00:04 that will generate projects and those projects themselves 
-00:07 need to be able to run a cookiecutter template. 
+00:07 need to be able to run a Cookiecutter template. 
 00:11 Well that can pose a real problem 
 00:13 because anything in this entire directory structure is going to be 
 00:16 renamed and modified and so on, but as you know, 
-00:19 we probably want our cookiecutter to have {{cookiecutter.project_name}} 
+00:19 we probably want our Cookiecutter to have {{cookiecutter.project_name}} 
 00:24 for its directory and it's going to have its own cookiecutter.json 
 00:27 and its own replacements in its files, and so on, 
 00:30 so if you want to ship Jinja content that you want to be not modified, 
 00:34 as part of this template generation process, you can do it and it's pretty easy. 
-00:40 So if your project especially ships with a cookiecutter template 
-00:44 that is supposed to arrive in cookiecutter template form, not process, 
+00:40 So if your project especially ships with a Cookiecutter template 
+00:44 that is supposed to arrive in Cookiecutter template form, not process, 
 00:48 you're going to need to take this step. 
 00:51 So we can come over here to our projects, and you've seen the prompt bits, 
 00:54 but the new things is we can now add copy without render, 
