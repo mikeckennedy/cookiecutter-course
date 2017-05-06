@@ -1,6 +1,6 @@
 00:00 Okay let's begin having this program, which if I run it does nothing so far. 
 00:05 Let's begin by having it have a cool little output here, 
-00:08 so I'll call this print welcome or something like that, we'll create this function, 
+00:08 so I'll call this print_welcome() or something like that, we'll create this function, 
 00:12 and we'll put that there, let's move that below main, okay, 
 00:17 now if we run it, it says welcome to the game creator, 
 00:20 we'll create either hi-lo, pacman, or pong for you, 
@@ -10,41 +10,41 @@
 00:34 the first thing that we're going to do is we're going to gather the inputs, 
 00:37 so we want to ask them questions like hey what's your name,
 00:39 and what kind of game do you want to make, 
-00:42 basically the things that cookiecutter would ask and potentially other ones as well, 
-00:46 but remember, in cookiecutter, we have the cookiecutter defaults 
+00:42 basically the things that Cookiecutter would ask and potentially other ones as well, 
+00:46 but remember, in Cookiecutter, we have the Cookiecutter defaults 
 00:49 so it already knows what my name is, 
-00:51 it already knows what my github username is, things like that.
+00:51 it already knows what my GitHub username is, things like that.
 00:55 So as much as possible, we would like to just leverage the defaults 
 00:57 and not even ask, right, just go hey we got the default values,
-01:00 but how do we do that, well, that's the first step into the cookiecutter API. 
+01:00 but how do we do that, well, that's the first step into the Cookiecutter API. 
 01:04 So when I come over here and say import cookiecutter 
-01:08 and there is a bunch of stuff here, we're going to get the config. 
+01:08 and there is a bunch of stuff here, we're going to get the cookiecutter.config 
 01:11 Now, let's go down here at the gather inputs, 
-01:14 and we're going to say the config = to this, . get user config. 
+01:14 and we're going to say the config = cookiecutter.config.get_user_config() 
 01:20 Now, it seems like that is what you might want to have here, 
 01:23 okay, you might want to say this, but it turns out if we just print this out, 
 01:27 this is actually not what we're looking for, if we look here, 
 01:31 this is the, it's like the full thing, and then down here, 
 01:34 there is this default context and in the default context we have our name, 
 01:37 our email and so on, so it's really the default context that we want, 
-01:40 so let's maybe say something like this, context=config.get, 
+01:40 so let's maybe say something like this, ctx = config.get('default_context') 
 01:47 this is just the dictionary, so now, if we print out our context,
 01:51 I think that's what we're looking for, perfect, 
 01:53 so we can grab like full name and store it. 
 01:56 So once we have this, we can start writing code like this, 
-01:59 so we can say if, we'll say full name=context.get full name, right 
+01:59 so we can say if, we'll say full_name = ctx.get('full_name') right 
 02:06 and this get function on a dictionary in Python will return none if it's not there, 
 02:10 or it will return value for this, so we'll just say if we found a full name, 
-02:14 let's say if we didn't find the full name, then we'll say full name=
+02:14 let's say if we didn't find the full name, then we'll say full_name =
 02:19 and we'll have to ask and let's see, what else do we need to do that for.
 02:23 We have to figure out what type of game it is, 
 02:26 so we can ask a similar type of question, this time,
 02:29 I don't really think there is a reasonable default 
-02:32 like somebody doesn't always want to make pacman or something 
+02:32 like somebody doesn't always want to make Pacman or something 
 02:34 and let me just tell PyCharm this is not misspelled, so it doesn't look wrong to you.
 02:38 So we can figure out the game type that's going to be fun, 
 02:42 and let's figure out the package name, 
-02:45 so we'll say do an input here or what do you call your game. 
+02:45 so we'll say do an input('What do you call your game?') 
 02:49 Now, they might have spaces, a punctuation, all that kind of stuff, 
 02:53 so I wrote a function here that we can take and transform package name
 02:58 and we'll say to package style, right, 
@@ -56,7 +56,7 @@
 03:15 so let's come down here and ask this, we can even ask it in a loop,
 03:17 in case it get it wrong, now, this I am not sure 
 03:20 how great of a user experience this is, but I am pointing this out 
-03:23 because this is not possible in cookiecutter, and it is possible here, 
+03:23 because this is not possible in Cookiecutter, and it is possible here, 
 03:26 so we can ask like this, we can come down here 
 03:29 and say what is the full path to where your project, 
 03:32 where you are going to create it, give us a directory, 
@@ -79,16 +79,16 @@
 04:27 so we can come down here and just say actually, let's just return this. 
 04:31 So we'll need project name, we'll need full name, game type,
 04:36 and working dir. package name, not project name. 
-04:40 So that is going to crate it, and let's just make sure this first part is working, 
+04:40 So that is going to create it, and let's just make sure this first part is working, 
 04:45 I'll just print out the create info and then I want to come back 
 04:49 and we are going to actually do the building in a minute, let's run it see what we get. 
-04:53 So let's come down here I want to play pong, 
-04:55 okay great, I am going to call it the great ping pong, 
+04:53 So let's come down here I want to play Pong, 
+04:55 okay great, I am going to call it "The great ping pong", 
 04:59 the full path will just be this, boom, we're going to create this directory 
 05:06 and there is the full name, notice, it didn't ask me what my full name was, 
-05:10 right, because it got it from the defaults. the game type is pong, 
+05:10 right, because it got it from the defaults. the game type is Pong, 
 05:14 and the working directory is just right here. 
 05:17 Okay great, so it looks like we're gathering the inputs perfectly well here. 
 05:20 The next thing we need to do is actually use those inputs 
 05:23 to build the game and this is where we're going 
-05:26 to execute the cookiecutter template.
+05:26 to execute the Cookiecutter template.
