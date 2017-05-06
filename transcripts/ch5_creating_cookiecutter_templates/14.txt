@@ -1,5 +1,5 @@
 00:01 You've seen that the cookiecutter.json is more powerful 
-00:04 than it initially appears, it's not just static json. 
+00:04 than it initially appears, it's not just static JSON. 
 00:07 That said, there is plenty of advanced processing and validation 
 00:11 and other types of things that we might want to put in here 
 00:15 that just doesn't really fit; and so pre generation hooks 
@@ -15,13 +15,13 @@
 00:46 so we could put something like this required, 
 00:49 so we could do that for full name as well, or we could just have it blank, 
 00:52 so these are however you want to present it to the user,
-00:55 now if you have defaults, as a user set in your cookiecutter defaults, 
+00:55 now if you have defaults, as a user set in your Cookiecutter defaults, 
 00:58 it will fill out full name with your real name, and it will fill out name 
 01:01 and I guess if you've had a favorite color 
 01:03 you could get it to put something there as well, 
 01:06 but let's talk about how we use pre generation hooks to validate this. 
-01:09 So, we're going to create a folder, in our cookiecutter template right at the top, 
-01:13 we're going to put a hooks folder and we're going to put a pre gen project.py
+01:09 So, we're going to create a folder, in our Cookiecutter template right at the top, 
+01:13 we're going to put a hooks folder and we're going to put a pre_gen_project.py
 01:17 and possibly a post as well when we get to that section. 
 01:20 And then, when we run this, we're going to come along and if we leave this empty, 
 01:24 it's going to say no, no, you must specify a favorite color, 
@@ -29,24 +29,24 @@
 01:32 so the blue message comes from our code, 
 01:34 the red messages come from cookiecutter. 
 01:38 So think about how those two messages fit together 
-01:40 because I don't think you can really suppress the cookiecutter error 
+01:40 because I don't think you can really suppress the Cookiecutter error 
 01:44 and you can decide whether or not you put out yours, 
 01:46 but you don't want to just exit 2, status code 2, failed, 
 01:49 who knows what that means, you want to give them a message, 
-01:52 so something like your favorite color is required. 
+01:52 so something like your favorite_color is required. 
 01:55 Here is an example of the code we wrote for that validating required input 
 01:59 and what you just saw in this screen. 
-02:02 So, we say favorite_color= and name doesn't have to match, 
+02:02 So, we say favorite_color = and name doesn't have to match, 
 02:05 it can just be fav color, whatever, right, it's just a variable, equals quotes as a string, 
-02:08 the cookiecutter definition, so {{cookiecutter.fav_color}} 
-02:13 and we saw that this gets actually replaced by cookiecutter before it ever executes, 
+02:08 the Cookiecutter definition, so {{cookiecutter.favorite_color}} 
+02:13 and we saw that this gets actually replaced by Cookiecutter before it ever executes, 
 02:18 so this is a flat static string, this is not some kind of lookup, 
 02:21 there is no dependencies or import statements you need to do for this. 
 02:25 And we can just say hey did they not put a favorite color, 
 02:28 or is the lower empty version of it required either way, 
 02:31 you are going to have to enter something, 
 02:34 and so we just call this function at the bottom, 
-02:37 and notice the return values, we're returning either one or two 
-02:40 on an error case and we're returning zero from this function 
-02:43 at the very bottom we're saying sys.exit whatever validate said. 
-02:46 Okay, if it exits zero, everything is okay, 1 or 2, not so much. 
+02:37 and notice the return values, we're returning either 1 or 2 
+02:40 on an error case and we're returning 0 from this function 
+02:43 at the very bottom we're saying sys.exit() whatever validate said. 
+02:46 Okay, if it exits 0, everything is okay, 1 or 2, not so much. 
