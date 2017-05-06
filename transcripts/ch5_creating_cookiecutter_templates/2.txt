@@ -2,33 +2,33 @@
 00:05 And this won't really be so much programming language template, 
 00:08 it's just to manage some files, we'll just distribute text files 
 00:11 as you saw on the data science repeatable data science thing, 
-00:14 these can be all sorts of stuff, html files, and latex and whatnot, 
+00:14 these can be all sorts of stuff, HTML files, and LaTeX and Whatnot, 
 00:19 so just to keep things simple and neutral, 
 00:21 we'll just sort of manage a bunch of files here, 
 00:23 so notice there is nothing in this directory, but it's chapter 5
 00:26 from the source code repository so you will be able to go and check this out. 
 00:29 So let's start over here, by just creating some structure, 
 00:34 so the first thing that we're going to need to do, so we want to create a folder, 
-00:37 and in this folder, this has a subset as a subdirectiry and subcontent of this folder, 
+00:37 and in this folder, this has a subset as a subdirectory and subcontent of this folder, 
 00:44 this is where the thing we give to the users goes. 
 00:47 Now, we have to give it a funky name, 
 00:50 it has to be {{cookiecutter.something}}
 00:53 and notice this project name here is going to appear again. 
 00:56 Okay, and then next to this, we're going to need, right next to this one, 
 01:00 we are going to need to create a cookiecutter.json so we can say touch okay, 
-01:08 so here we have a cookiecutter json and let me put this into visual studio code, 
+01:08 so here we have a cookiecutter.json and let me put this into Visual Studio Code, 
 01:12 
 01:17 we want to make some more files in here, so let's go in here 
 01:20 and we're going to make a file, I'll call this colors.txt, we'll play with that 
 01:26 throughout this section and we'll make another file called summary 
-01:29 and this called readme, md for markdown, it's pretty common, 
+01:29 and this called readme.md, md for Markdown, it's pretty common, 
 01:34 so the first thing we need to pay attention to is this cookicutter.json 
-01:38 so here what we put is basically a key value json object. 
-01:45 Okay, and the json object is going to contain some keys, 
+01:38 so here what we put is basically a key value JSON object. 
+01:45 Okay, and the JSON object is going to contain some keys, 
 01:49 those keys both specify the default values 
 01:51 and the prompt we're going to actually run, 
-01:54 so let's start like this, and it already knows it's json, okay, that's good, 
-01:59 so we're going to come in here and we'll put things like project name and then, 
+01:54 so let's start like this, and it already knows it's JSON, okay, that's good, 
+01:59 so we're going to come in here and we'll put things like project_name and then, 
 02:03 we could leave it blank, which is probably not a great idea, 
 02:06 let's give it a little default here, I'll call it 
 02:09 my_proj for now that is going to be the default, 
@@ -37,17 +37,17 @@
 02:20 We saw that we could put this into our default file, 
 02:23 and have this change and insert our name there, 
 02:28 so we can go ahead and do that in a little bit. 
-02:30 Let's just have one more thing, favorite color, and let's just say 
+02:30 Let's just have one more thing, favorite_color, and let's just say 
 02:37 everybody's favorite color is blue but they can enter whatever they want. 
 02:40 So we have our project name here, let's go back to our readme, 
 02:43 and we'll say project and then in here we can use what is in our template, 
 02:48 so we can use these names as you can see in file structure, 
 02:52 and here is a directory, we can have a file named, whatever that is,
 02:56 let's actually do that, that would be cool, so if we come in here, 
-02:58 create a file and call this proj_name, we'd like to have it this way but of course, 
-03:03 it's going to be cookiecutter.proj_name.txt and it will also be 
+02:58 create a file and call this project_name, we'd like to have it this way but of course, 
+03:03 it's going to be {{cookiecutter.project_name}}.txt and it will also be 
 03:10 project summary or something like that and again, inside these files, 
-03:14 we can have cookiecutter.project_name, project is like this 
+03:14 we can have {{cookiecutter.project_name}}, project is like this 
 03:19 creator it's going to be similar but it's going to be creator, and so on. 
 03:25 So this projects will get named based on what we call the project name, 
 03:28 this file will be named as well, its contents will be changed so I'll have this over here,
@@ -58,7 +58,7 @@
 03:57 I don't have anything in colors let's just put the favorite color here again, 
 04:00 just to make it appear in some places, you can have content that are unchanged,
 04:04 you can just have plain text like this is plain text, so whatever we put here, 
-04:08 it'll just get copied over but it finds a Jinja 2 expression 
+04:08 it'll just get copied over but it finds a Jinja2 expression 
 04:11 it's going to grab that and evaluate it. 
 04:14 Okay, so I think we have our basic project, let's have a look. 
 04:20 So if we look at it like this, we've got our cookicutter.json. 
@@ -75,9 +75,9 @@
 05:09 actually I could create the project right next to it, 
 05:12 not very common but that is what we're going to do, 
 05:14 so we come over here and say cookiecutter and then 
-05:17 I just give it the path to the template, so I could say ./cookicutter colors, 
-05:21 I could give it that full directory, I copied if it was somewhere remote like on github,
-05:25 I could give it the url and then we'd clone it 
+05:17 I just give it the path to the template, so I could say ./cookicutter-colors 
+05:21 I could give it that full directory, I copied if it was somewhere remote like on GitHub,
+05:25 I could give it the URL and then we'd clone it 
 05:28 and then I wouldn't have to know its path anymore. 
 05:30 So let's go ahead and run this, clear the screen, go, 
 05:33 it's going to ask what is my project let's just call it the_first_color, 
@@ -97,7 +97,7 @@
 06:27 and this one if we look at it, it will say project the_first_name, 
 06:31 we could even preview, project the first color, this is the description of project, 
 06:34 the creator Michael Kenendy's favorite color is blue. 
-06:37 So you see how all this works, so let's go back here to our json file and notice,
+06:37 So you see how all this works, so let's go back here to our JSON file and notice,
 06:41 if I put this next to the thing we ran here, notice the three values we ask here, 
 06:47 project name, creator and favorite color, and notice right here, 
 06:50 those were the three prompts and their values with the default we were given,
@@ -122,4 +122,4 @@
 08:01 or very often is named something to do with the project 
 08:04 and then you have all of your pieces underneath. 
 08:07 Okay, so give this a shot and we'll keep digging into this
-08:10 to see many more cool features that cookiecutter has in store for us. 
+08:10 to see many more cool features that Cookiecutter has in store for us. 
