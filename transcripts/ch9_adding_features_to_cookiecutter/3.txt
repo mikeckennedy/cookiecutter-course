@@ -1,22 +1,22 @@
-00:01 Next step is to actually run cookiecutter, so if I type which cookiecutter, 
+00:01 Next step is to actually run cookiecutter, so if I type which cookiecutter 
 00:05 you'll see this is the one actually installed into Python 3.6
 00:10 and installed into my machine at least my user profile 
 00:14 now, couple of things to note here, one if you're on Windows,
 00:17 you want to type where cookiecutter
 00:20 on Linux and MacOS it's which, so those are basically 
 00:24 equivalent commands but not exactly the same.
-00:26 Second, cookiecutter runs both on Python 2 and on Python3, 
+00:26 Second, cookiecutter runs both on Python 2 and on Python 3, 
 00:29 but it's a little easier to develop under Python 2,
 00:32 so we're going to create a Python 2 virtual environment, 
 00:35 all right, so let's look here, we want to go into the cookiecutter folder 
 00:39 and here we are in the cookiecutter folder, 
 00:42 and we're going to create a virtual environment 
-00:44 so we want to have, we want to say which virtual env, 
+00:44 so we want to have, we want to say which virtualenv 
 00:48 now you probably don't have this command, see I don't have it here for example,
 00:52 so I want to install it but I want to make sure that it gets installed into Python 2,
-00:55 so we'll say pip 2 install virtual env,
+00:55 so we'll say pip2 install virtualenv
 00:59 to keep things simple I could even just do that to my user profile.
-01:05 Now on windows, you can't say pip 2, 
+01:05 Now on windows, you can't say pip2, 
 01:07 they for some reason don't have those aliases
 01:10 so either create an alias or just make sure you run pip from Python 2.
 01:14 Okay, so this should install it, great, it's already installed.
@@ -24,15 +24,15 @@
 01:23 and again, to make sure that this is using Python 2
 01:26 instead of Python 3, I want to be careful 
 01:31 so I'm going to say instead of just saying virtual environment create the directory
-01:35 I am going to say Python 2-,m for module virtual env, and then I'm going to say .env
+01:35 I am going to say python2 -m virtualenv .env (-m for module)
 01:38 So, when  we say .env, it's going to create one right at the root of the cookiecutter 
 01:42 which we're going to ignore that, okay great, it's creating it here in this folder,
 01:47 I want to make sure that I next actually activate this, 
-01:51 so right now, if I ask which or where Python 2, it's the global one, 
+01:51 so right now, if I ask which or where python2, it's the global one, 
 01:55 so what I want to do is, I want to say (dot) on 
 01:59 Windows you don't need to do the (dot) but on Mac and Linux you do,
 02:03 so we'll say .env/bin/activate and it's activate.bat on windows,
-02:08 notice how my prompt changed, now if I ask the same question, which Python, 
+02:08 notice how my prompt changed, now if I ask the same question, which python, 
 02:12 you can see now it is this Python,
 02:15 okay so we've installed the virtual environment, 
 02:18 we've activated our virtual environment,
@@ -40,10 +40,10 @@
 02:24 is to register it, so if I ask which cookiecutter, right now, it's still this one,
 02:28 that's not cool, so that's the globally installed one, we're not modifying 
 02:33 we want to have only run cookiecutter to run the code that's in this folder 
-02:37 cool so what we're going to do, is we're going to say Python 
+02:37 cool so what we're going to do, is we're going to say python 
 02:40 and you might want to double check which Python,
 02:44 that's the one in our virtual environment, okay cool,
-02:47 so Python set up py develop, 
+02:47 python setup.py develop 
 02:50 now the develop says don't copy this over to the system
 02:54 but just leave it here, and point here when you run it 
 02:57 like run it straight from our modifiable source here 
@@ -52,7 +52,7 @@
 03:09 notice, if we actually try to change directories into there
 03:15 ok perfect so now you can see that we have 
 03:17 our cookiecutter installed and ready to go 
-03:20 and let's just say cookiecutter-v for version 
+03:20 and let's just say cookiecutter -V for version 
 03:23 oh notice this how it says it's not found, sometimes this happens 
 03:27 and it's super annoying, I'm not quite sure why 
 03:30 but I think if I exit my terminal, this is not always required, 
