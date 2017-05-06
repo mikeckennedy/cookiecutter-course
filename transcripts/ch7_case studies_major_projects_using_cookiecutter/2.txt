@@ -1,6 +1,6 @@
 00:00 The first place that we're going to look at, 
 00:02 the first project is something called Beeware. 
-00:04 So Beeware is quite the smorgasborg of various things, 
+00:04 So Beeware is quite the smorgasbord of various things, 
 00:09 it's a bunch of great libraries or packages you can use, 
 00:12 it's a number of startup projects for different platforms, 
 00:16 and a few other utilities tossed in here and there. 
@@ -9,7 +9,7 @@
 00:25 but probably the best way to think about this is 
 00:28 Beeware is a set of Python native tools, 
 00:31 so this is a Python project, it just happen to be Python as well 
-00:34 but it could have been node.js or whatever; anyway it's a Python native tool set 
+00:34 but it could have been Node.js or whatever; anyway it's a Python native tool set 
 00:39 for both mobile and desktop, and this is quite interesting, so let's look around. 
 00:44 If we go over here to the project, there's a couple of ways we can explore it, 
 00:47 we can look at the projects so they've got some applications, 
@@ -17,28 +17,28 @@
 00:55 for basically packaging your Python app into a native application 
 01:00 so a .exe on Linux binary, .app on MacOS, things like that, 
 01:05 and some bridges so these are some interesting cross sort of interoperability pieces, 
-01:13 so here's something that compiled by ton into Java bytecode for example, 
+01:13 so here's something that compiled Python into Java bytecode for example, 
 01:16 but where we want to focus is around the templates. 
 01:19 So check this out Android templates, tvOS templates, 
-01:23 iOS templates, Mac OS templates, so if I want to get started 
-01:27 building with their tooling with their native UI framework a Mac OS application 
+01:23 iOS templates, macOS templates, so if I want to get started 
+01:27 building with their tooling with their native UI framework a macOS application 
 01:33 instead of figuring out all the stuff with like plists and .app files, 
 01:38 and icons and whatnot, I can just take this template and run with it. 
 01:42 So since I am on a Mac, let's take the Mac template here, 
-01:46 so you can see standard cookiecutter stuff going on, 
+01:46 so you can see standard Cookiecutter stuff going on, 
 01:49 now I made a folder chapter seven case studies and let's make a directory Beeware 
-01:55 and we could say cookiecutter this, this is going to generate a Mac OS app 
+01:55 and we could say cookiecutter this, this is going to generate a macOS app 
 02:01 that has its logic implemented in Python and it's going to be all ready to go for us. 
 02:07 Now technically, we have to plug in the Python and a few other things, but not a big deal. 
-02:11 So it lets start, what is the name it is going to be Beeware show off,
-02:19 dir name macos is fine, bundle name is fine, 
-02:23 okay so it's created it if we look in here we'll see there's in MacOS, 
+02:11 So it lets start, what is the name it is going to be "Beeware show off",
+02:19 dir_name macos is fine, bundle name is fine, 
+02:23 okay so it's created it if we look in here we'll see there's in macOS, 
 02:27 so let's go over to the browser and notice, look here's an app, 
 02:31 I could double click it and run it. Now it exits immediately, 
 02:34 so not super interesting but let's go look inside; 
 02:37 so we can say show back its contents, look around here's that info.plist 
-02:41 you see it's generated all the various bundle info that MacOS needs to do its thing, 
-02:46 you have resources here, read me, let me change the name so I can open it, 
+02:41 you see it's generated all the various bundle info that macOS needs to do its thing, 
+02:46 you have resources here, README, let me change the name so I can open it, 
 02:52 so we can come over here and see this is where your code should be placed, 
 02:55 the native code that's starting the app is going to be looking for a __main__.py 
 03:01 that's going to start the execution of your code. 
@@ -46,9 +46,9 @@
 03:07 if we again rename this so I can open it, 
 03:10 this is where we put our project dependencies other packages and whatnot. 
 03:14 Ok, that's cool right, so if we want to get started with this, 
-03:17 and build this Beeware show off app then we can use this cookiecutter template 
+03:17 and build this Beeware show off app then we can use this Cookiecutter template 
 03:25 and they as you have seen have a number of different types
 03:29 we could do this for iOS, we could do this for tvOS, we can do this for Android, 
 03:33 I feel like I sell watch somewhere, but anyway 
-03:36 there's a bunch of cool stuff and you could see how central cookiecutter is 
-03:39 to all of these things. Alright, so that's how Beeware is using cookiecutter. 
+03:36 there's a bunch of cool stuff and you could see how central Cookiecutter is 
+03:39 to all of these things. Alright, so that's how Beeware is using Cookiecutter. 
