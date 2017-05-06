@@ -34,7 +34,7 @@
 01:56 hey there's this virtual environment here, I don't want that, so what I'm going to do is 
 01:59 I'm going to say ignore everything under .env,
 02:01 if this pull request gets accepted you probably won't have to do this, we'll see 
-02:05 but we're going to just update the gitignore to say 
+02:05 but we're going to just update the .gitignore to say 
 02:08 don't check in that virtual environment it's not cross-platform anyway 
 02:12 so I'll just add that in real quick, ignore virtual env directory, ok,
 02:17 so now everything is clean in our feature branch right here, 
